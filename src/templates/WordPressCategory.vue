@@ -1,0 +1,192 @@
+<template>
+  <Layout :sidebar="true" class="side">
+
+    <div>
+
+        <div class="post-title">
+          <h1>{{ $page.category.name }} </h1> 
+        </div>
+
+          <div class="breadcrumbs">
+            <ul>
+                <li v-for="breadcrumb in $page.category.seo.breadcrumbs" :key="breadcrumb.text" >
+                    <g-link :to="breadcrumb.url">{{ breadcrumb.text }}</g-link>
+                </li>
+              </ul>
+          </div>
+
+          
+
+          <div class="max-width content-category">
+        
+            
+              <PostCardCategory  :post="edge.node" v-for="(edge, index) in $page.category.posts.edges" :key="edge.node.id" v-if="index <= 5" />
+  
+          
+          <!-- <Pager :info="$page.wordPressCategory.belongsTo.pageInfo"/> -->
+          </div>
+
+          <div class="max-width">
+              <h3 class="recent-half">Post meno recenti</h3>
+              <ul class="block-ul">
+                <li v-for="(edge, index) in $page.category.posts.edges" :key="edge.node.id" v-if="index > 5">
+              
+                  <g-link :to="edge.node.uri" v-html="edge.node.title" />&nbsp;
+                    <formated-date class="post-date date post-card__date" :date="edge.node.date"/>
+                  </g-link>
+                </li>
+              </ul>
+
+          </div>
+       </div>     
+  </Layout>
+</template>
+
+<page-query>
+
+
+
+query Category ($slug: ID!) {
+  category(idType: SLUG, id: $slug) {
+    name
+    posts {
+      edges {
+        node {
+          id
+          title
+          date
+          link
+          excerpt
+          uri
+          author {
+            node {
+              name
+              description
+              avatar {
+                url
+              }
+            }
+          }
+          featuredImage {
+            node {
+              mediaItemUrl
+              altText
+              mediaDetails {
+                width
+              }
+            }
+          }
+        }
+      }
+    }
+    
+    seo {
+      breadcrumbs {
+        text
+        url
+      }
+      canonical
+      metaDesc
+      metaKeywords
+      title
+      twitterDescription
+      cornerstone
+      focuskw
+      metaRobotsNofollow
+      metaRobotsNoindex
+    }
+  }
+}
+
+
+
+
+</page-query>
+
+<script>
+import { Pager } from 'gridsome'
+import Post from '~/components/Post.vue'
+import SiteSidebar from '~/components/SiteSidebar.vue'
+import PostCardCategory from '~/components/PostCardCategory.vue'
+
+import PostCardCarouselCategory from '~/components/PostCardCarouselCategory.vue'
+import FormatedDate from "~/components/FormatedDate.vue"
+
+
+export default {
+  components: {
+    Pager,
+    Post,
+    SiteSidebar,
+    PostCardCategory,
+    PostCardCarouselCategory,
+    FormatedDate,
+  
+  },
+  metaInfo () {
+    return {
+      //title: this.$page.wordPressCategory.title
+    }
+  },
+  data() {
+    
+    return {
+      limitationList:5,
+      flickityOptions: {
+        imagesLoaded: true,
+        prevNextButtons: true,
+        pageDots: true,
+        wrapAround: false,
+        freeScroll: true,
+        cellAlign: 'left',
+        
+        // any options from Flickity can be used
+      }
+    }
+  },
+}
+</script>
+
+<style lang="scss" scoped>
+
+
+.recent-half {
+  width: 100%;
+}
+ul.block-ul {
+    display: block;
+    width: 100%;
+}
+.carousel-cell {
+  max-width: 150px;
+}
+.max-width {
+  max-width: var(--content-width);
+    margin: 0 auto;
+    padding:0;
+}
+.post-title {
+    padding: calc(var(--space) / 2) 0 0 0;
+    padding-bottom: 0;
+    max-width: var(--content-width);
+    margin: 0 auto;
+}
+@media screen and (max-width: 768px) {
+  .post-title {
+    margin-top: var(--space);
+  }
+  .post-title, .breadcrumbs {
+      padding: 0 var(--space);
+  }
+}
+.content-category {
+  display: grid;
+  @media screen and (min-width: 768px) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .post-card {
+        margin: 3px;
+  }
+  
+}
+</style>
