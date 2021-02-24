@@ -9,7 +9,7 @@
         <formated-date class="post-date date post-card__date" :date="post.date"/>
       </div>
       <h2 class="post-card__title" v-html="post.title" />
-      <p class="post-card__description" v-html="post.excerpt.substring(0,100)+ '...'" />  
+      <div class="post-card__description" v-html="post.excerpt.substring(0,100)+ '...'" />  
 
       
 
