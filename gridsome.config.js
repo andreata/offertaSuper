@@ -1,12 +1,12 @@
 module.exports = {
-  siteName: 'Gridsome',
+  siteName: 'App di Incontri',
   //siteDescription: 'A WordPress starter for Gridsome',
   icon: {
-    favicon: './src/assets/images/icon/karatekalogo.png',
-    touchicon: './src/assets/images/icon/karatekalogo.png'
+    favicon: './src/assets/images/icon/appdiincontrilogo.png',
+    touchicon: './src/assets/images/icon/appdiincontrilogo.png'
   },
 
-  //siteUrl: 'https://hardcore-mcnulty-21e60c.netlify.app/',
+  siteUrl: 'https://www.appdiincontri.it/',
   pathPrefix: '/',
 
 
@@ -15,7 +15,7 @@ module.exports = {
     {
       use: 'gridsome-source-graphql',
       options: {
-        url: 'https://www.karateka.it/graphql/',
+        url: 'https://www.appdiincontri.it/graphql/',
         fieldName: 'wp',
         typeName: 'WordPress',   
         headers: {

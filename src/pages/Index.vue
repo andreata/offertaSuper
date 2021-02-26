@@ -2,7 +2,7 @@
   <Layout>
    <div>
       <!-- <CategoryHome class="at-side"/> -->
-      <h1 class="title-home">👋 Benvenuto su Karateka.it</h1>
+      <h1 class="title-home">👋 Benvenuto su App di Incontri</h1>
       
       <div class="container-box">
         <div class="item-box"  v-for="{ node } in $page.posts.edges" :key="node.id">
@@ -30,7 +30,9 @@
 
 <page-query>
 
-query   {
+query  {
+
+
 
  posts(first:4, where: {orderby: {field: DATE, order: DESC}}) {
   	pageInfo {
@@ -63,6 +65,7 @@ query   {
             }
           }
         }
+        
       }
     }
   }
@@ -97,11 +100,43 @@ export default {
    
   },
  
+   metaInfo () {
+    return {
+      title: 'Raggiungi il successo con le app di incontri',
+      meta: [
+      {
+        description: 'Raggiungi il successo con le app di incontri',
+        key: 'Raggiungi il successo con le app di incontri',
+      },
+      {
+        key: 'og:title',
+        name: 'og:title',
+        content: 'App di Incontri',
+      },
+      {
+        key: 'twitter:title',
+        name: 'twitter:title',
+        content: 'App di Incontri',
+      },
+      {
+        key: 'og:description',
+        name: 'og:description',
+        content: 'Raggiungi il successo con le app di incontri',
+      },
+      {
+        key: 'twitter:description',
+        name: 'twitter:description',
+        content: 'Raggiungi il successo con le app di incontri',
+      },
+      {
+        key: 'og:image',
+        name: 'og:image',
+        content: '',
+      },
 
-  
-  metaInfo: {
-    title: 'Raggiungi il successo con le app di incontri!'
-  },
+    ],
+    }
+  }
  
 }
 
@@ -113,29 +148,19 @@ export default {
 }
 
 .container-box {
-  
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-    @media screen and (min-width: 768px) {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  @media screen and (min-width: 768px) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
-    .item-box {
+  .item-box {
       padding: 3px;
-    }
- 
+  }
 }
 .carousel-cell {
   width: 100%;
 }
 
-
-.flik {
-    padding-bottom: 30px;
-   
-    margin-left: calc( -100vw / 2 + 100% / 2 );
-    margin-right: calc( -100vw / 2 + 100% / 2 );
-    max-width: 100vw;
-}
 @media screen and (max-width: 768px) {
   .container-box {
     flex-wrap: wrap;
@@ -148,6 +173,5 @@ export default {
 .light {
   font-weight: 100;
 }
-
 
 </style>

@@ -7,351 +7,363 @@ const c6 = () => import(/* webpackChunkName: "page--src--pages--index-vue" */ "/
 
 export default [
   {
-    path: "/categoria/vita-da-karateka/lifestyle/",
+    path: "/category/app-di-incontri/tinder/",
     component: c1
   },
   {
-    path: "/categoria/vita-da-karateka/gare/",
+    path: "/category/app-di-incontri/meetic/",
     component: c1
   },
   {
-    path: "/categoria/vita-da-karateka/dojo/",
+    path: "/category/app-di-incontri/lovoo/",
     component: c1
   },
   {
-    path: "/categoria/vita-da-karateka/",
+    path: "/category/app-di-incontri/instagram/",
     component: c1
   },
   {
-    path: "/tag/che-muscoli-allenano-le-flessioni/",
-    component: c2
+    path: "/category/app-di-incontri/happn/",
+    component: c1
+  },
+  {
+    path: "/category/app-di-incontri/facebook-dating/",
+    component: c1
+  },
+  {
+    path: "/category/app-di-incontri/coffee-meets-bagel/",
+    component: c1
+  },
+  {
+    path: "/category/app-di-incontri/badoo/",
+    component: c1
   },
   {
-    path: "/tag/colori-nella-cultura-giapponese/",
+    path: "/tag/tinder-come-funziona/",
     component: c2
   },
   {
-    path: "/tag/come-fare-le-flessioni/",
+    path: "/tag/tinder-senza-facebook/",
     component: c2
   },
   {
-    path: "/tag/come-scegliere-arte-marziale/",
+    path: "/tag/tinder-su-pc/",
     component: c2
   },
   {
-    path: "/tag/a-cosa-serve-il-warmup/",
+    path: "/tag/sospendere-account-tinder/",
     component: c2
   },
   {
-    path: "/tag/a-cosa-servono-le-flessioni/",
+    path: "/tag/tinder-applicazione/",
     component: c2
   },
   {
-    path: "/tag/bun-bu-ryo-do/",
+    path: "/tag/tinder-desktop/",
     component: c2
   },
   {
-    path: "/tag/calo-peso-2/",
+    path: "/tag/tinder-italia/",
     component: c2
   },
   {
-    path: "/tag/calo-peso-karate/",
+    path: "/tag/tinder-linkedin/",
     component: c2
   },
   {
-    path: "/tag/canzoni-per-riscaldamento/",
+    path: "/tag/tinder-online/",
     component: c2
   },
   {
-    path: "/tag/capacita-condizionali-karate/",
+    path: "/tag/tinder-pc/",
     component: c2
   },
   {
-    path: "/tag/carolina-amato-kata/",
+    path: "/tag/tinder-sensei/",
     component: c2
   },
   {
-    path: "/tag/cintura-nera-karate/",
+    path: "/tag/recuperare-account-facebook/",
     component: c2
   },
   {
-    path: "/tag/colore-cinture-karate/",
+    path: "/tag/rimorchiare-su-tinder/",
     component: c2
   },
   {
-    path: "/tag/a-cosa-serve-allenarsi/",
+    path: "/tag/tinder/",
     component: c2
   },
   {
-    path: "/tag/allenamento-karate-a-casa/",
+    path: "/tag/ottenere-piu-risposte-su-tinder/",
     component: c2
   },
   {
-    path: "/tag/allenamento-karate-per-bambini/",
+    path: "/tag/risposte-tinder/",
     component: c2
   },
   {
-    path: "/tag/bloccare-il-piede/",
+    path: "/tag/shapr/",
     component: c2
   },
   {
-    path: "/tag/calo-peso/",
+    path: "/tag/relazioni/",
     component: c2
   },
   {
-    path: "/tag/capacita-atletiche/",
+    path: "/tag/lovoo-come-funziona/",
     component: c2
   },
   {
-    path: "/tag/capacita-condizionali/",
+    path: "/tag/lovoo-vs-tinder/",
     component: c2
   },
   {
-    path: "/tag/capacita-mentali/",
+    path: "/tag/meetic-gratis/",
     component: c2
   },
   {
-    path: "/tag/capacita-motorie/",
+    path: "/tag/meetic-italia/",
     component: c2
   },
   {
-    path: "/tag/carola-casale/",
+    path: "/tag/meetic-recensioni/",
     component: c2
   },
   {
-    path: "/tag/carolina-amato/",
+    path: "/tag/lovoo-abbonamento/",
     component: c2
   },
   {
-    path: "/tag/chiara-soldi/",
+    path: "/tag/lovoo-chat/",
     component: c2
   },
   {
-    path: "/tag/cintura-nera/",
+    path: "/tag/lovoo-crediti/",
     component: c2
   },
   {
-    path: "/tag/cintura-rossa/",
+    path: "/tag/lovoo-funziona/",
     component: c2
   },
   {
-    path: "/tag/cinture-karate/",
+    path: "/tag/lovoo-gratis/",
     component: c2
   },
   {
-    path: "/tag/allenamento-a-casa/",
+    path: "/tag/lovoo-opinioni/",
     component: c2
   },
   {
-    path: "/tag/allenamento-brucia-grassi/",
+    path: "/tag/lovoo-premium/",
     component: c2
   },
   {
-    path: "/tag/allenamento-capacita-condizionali/",
+    path: "/tag/meetic/",
     component: c2
   },
   {
-    path: "/tag/arte-del-tuite/",
+    path: "/tag/lovoo/",
     component: c2
   },
   {
-    path: "/tag/benefici-allenamento/",
+    path: "/tag/foto-su-tinder-senza-facebook/",
     component: c2
   },
   {
-    path: "/tag/brucia-grassi/",
+    path: "/tag/happn-come-funziona/",
     component: c2
   },
   {
-    path: "/tag/campione/",
+    path: "/tag/fare-backup-dati-facebook/",
     component: c2
   },
   {
-    path: "/tag/capacita/",
+    path: "/tag/happn-guida/",
     component: c2
   },
   {
-    path: "/tag/cardio/",
+    path: "/tag/instagram/",
     component: c2
   },
   {
-    path: "/tag/cardiofrequenzimetro/",
+    path: "/tag/come-fare-il-backup-su-instagram/",
     component: c2
   },
   {
-    path: "/tag/celadrin/",
+    path: "/tag/happn/",
     component: c2
   },
   {
-    path: "/tag/championship/",
+    path: "/tag/eliminare-account-tinder/",
     component: c2
   },
   {
-    path: "/tag/cinema/",
+    path: "/tag/facebook-dating/",
     component: c2
   },
   {
-    path: "/tag/cinture/",
+    path: "/tag/cancellare-foto-da-lovoo/",
     component: c2
   },
   {
-    path: "/tag/colore/",
+    path: "/tag/chat-simili-a-badoo/",
     component: c2
   },
   {
-    path: "/tag/combattimento/",
+    path: "/tag/come-cancellarsi-da-badoo/",
     component: c2
   },
   {
-    path: "/tag/abilita-motoria/",
+    path: "/tag/come-cancellarsi-da-facebook/",
     component: c2
   },
   {
-    path: "/tag/abilita-motorie/",
+    path: "/tag/come-cancellarsi-da-instagram/",
     component: c2
   },
   {
-    path: "/tag/alessandra-giorgi/",
+    path: "/tag/come-cancellarsi-da-tinder/",
     component: c2
   },
   {
-    path: "/tag/alessandra-mangiacapra/",
+    path: "/tag/come-disattivare-abbonamento-meetic/",
     component: c2
   },
   {
-    path: "/tag/alex-horsfall/",
+    path: "/tag/come-riattivare-account-instagram/",
     component: c2
   },
   {
-    path: "/tag/alex-recchia/",
+    path: "/tag/disattivare-account-facebook/",
     component: c2
   },
   {
-    path: "/tag/alexandra-recchia/",
+    path: "/tag/disattivare-account-instagram/",
     component: c2
   },
   {
-    path: "/tag/allenamento-distanza/",
+    path: "/tag/disattivare-facebook-messenger/",
     component: c2
   },
   {
-    path: "/tag/allenamento-funzionale/",
+    path: "/tag/facebook/",
     component: c2
   },
   {
-    path: "/tag/allenamento-karate/",
+    path: "/tag/cancellare-foto-facebook/",
     component: c2
   },
   {
-    path: "/tag/allenamento-kumite/",
+    path: "/tag/cancellarsi-da-facebook/",
     component: c2
   },
   {
-    path: "/tag/allenamento-trx/",
+    path: "/tag/cancellarsi-da-lovoo/",
     component: c2
   },
   {
-    path: "/tag/angelo-crescenzo/",
+    path: "/tag/cancellarsi-da-meetic/",
     component: c2
   },
   {
-    path: "/tag/antonio-califano/",
+    path: "/tag/coffee-meets-bagel/",
     component: c2
   },
   {
-    path: "/tag/applicazione-kata/",
+    path: "/tag/come-funziona-badoo/",
     component: c2
   },
   {
-    path: "/tag/arbitro-karate/",
+    path: "/tag/come-funziona-meetic/",
     component: c2
   },
   {
-    path: "/tag/arte-marziale/",
+    path: "/tag/come-funziona-tinder/",
     component: c2
   },
   {
-    path: "/tag/arti-marziali/",
+    path: "/tag/come-guadagna-lovoo/",
     component: c2
   },
   {
-    path: "/tag/ashi-sabaki/",
+    path: "/tag/consigli-per-tinder/",
     component: c2
   },
   {
-    path: "/tag/bambini/",
+    path: "/tag/consigli-su-tinder/",
     component: c2
   },
   {
-    path: "/tag/belt/",
+    path: "/tag/cos-e-happn/",
     component: c2
   },
   {
-    path: "/tag/best/",
+    path: "/tag/app-simili-a-tinder/",
     component: c2
   },
   {
-    path: "/tag/bragli/",
+    path: "/tag/badoo-chat-gratis/",
     component: c2
   },
   {
-    path: "/tag/broccoli/",
+    path: "/tag/badoo-o-tinder/",
     component: c2
   },
   {
-    path: "/tag/budo/",
+    path: "/tag/badoo-vs-tindr/",
     component: c2
   },
   {
-    path: "/tag/bunkai/",
+    path: "/tag/cose-badoo/",
     component: c2
   },
   {
-    path: "/tag/bushido/",
+    path: "/tag/cose-lovoo/",
     component: c2
   },
   {
-    path: "/tag/acqua/",
+    path: "/tag/cose-shapr/",
     component: c2
   },
   {
-    path: "/tag/addome/",
+    path: "/tag/cose-tinder/",
     component: c2
   },
   {
-    path: "/tag/aggressione/",
+    path: "/tag/app-come-tinder/",
     component: c2
   },
   {
-    path: "/tag/aida/",
+    path: "/tag/app-di-incontri/",
     component: c2
   },
   {
-    path: "/tag/alenamento/",
+    path: "/tag/app-per-incontri/",
     component: c2
   },
   {
-    path: "/tag/alimentazione/",
+    path: "/tag/badoo-chat/",
     component: c2
   },
   {
-    path: "/tag/alimenti/",
+    path: "/tag/badoo-italia/",
     component: c2
   },
   {
-    path: "/tag/allenamento/",
+    path: "/tag/badou-chat/",
     component: c2
   },
   {
-    path: "/tag/allievi/",
+    path: "/tag/capire/",
     component: c2
   },
   {
-    path: "/tag/amiche/",
+    path: "/tag/abbonamento-meetic/",
     component: c2
   },
   {
-    path: "/tag/amici/",
+    path: "/tag/badoo/",
     component: c2
   },
   {
@@ -359,519 +371,155 @@ export default [
     component: c2
   },
   {
-    path: "/tag/amico/",
+    path: "/tag/amore/",
     component: c2
   },
   {
-    path: "/tag/annan/",
-    component: c2
-  },
-  {
-    path: "/tag/anticipo/",
-    component: c2
-  },
-  {
-    path: "/tag/appunti/",
-    component: c2
-  },
-  {
-    path: "/tag/arbitro/",
-    component: c2
-  },
-  {
-    path: "/tag/arte/",
-    component: c2
-  },
-  {
-    path: "/tag/attacco/",
-    component: c2
-  },
-  {
-    path: "/tag/attivazione/",
-    component: c2
-  },
-  {
-    path: "/tag/autodifesa/",
-    component: c2
-  },
-  {
-    path: "/tag/4-punti-di-forza/",
-    component: c2
-  },
-  {
-    path: "/tag/10-dan-karate/",
-    component: c2
-  },
-  {
-    path: "/tag/20-precetti-funakoshi/",
-    component: c2
-  },
-  {
-    path: "/tag/24-aprile-2016/",
-    component: c2
-  },
-  {
-    path: "/categoria/karate-talks/",
+    path: "/category/pensieri/",
     component: c1
   },
   {
-    path: "/categoria/karate/",
+    path: "/category/app-di-incontri/",
     component: c1
   },
   {
-    path: "/tag/20/",
-    component: c2
-  },
-  {
-    path: "/tag/2016/",
-    component: c2
-  },
-  {
-    path: "/tag/2020/",
-    component: c2
-  },
-  {
-    path: "/categoria/allenamento-karate/",
+    path: "/category/blog/",
     component: c1
   },
   {
-    path: "/warm-up-5-esercizi-sul-posto-specifici-per-il-karate-adatto-al-distanziamento-sociale/",
+    path: "/tinder-come-funziona/",
     component: c3
   },
   {
-    path: "/teoria-joint-by-joint-mobilita-o-stabilita-per-il-karate/",
+    path: "/tinder-senza-facebook/",
     component: c3
   },
   {
-    path: "/preparazione-atletica-karate-i-7-migliori-esercizi-gambe-a-corpo-libero-video/",
-    component: c3
-  },
-  {
-    path: "/se-non-sei-sudato-non-ti-sei-allenato/",
-    component: c3
-  },
-  {
-    path: "/preparazione-e-kumite-con-pieruigi-ungaro-karate-a-distanza-2/",
-    component: c3
-  },
-  {
-    path: "/push-up-la-guida-definitiva-per-imparare-le-flessioni/",
-    component: c3
-  },
-  {
-    path: "/teoria-del-flow-e-karate/",
-    component: c3
-  },
-  {
-    path: "/libri-di-karate-la-via-in-rosa-donne-e-arti-marziali/",
-    component: c3
-  },
-  {
-    path: "/sistemi-energetici-del-karate/",
-    component: c3
-  },
-  {
-    path: "/speed-ladder-e-karate/",
-    component: c3
-  },
-  {
-    path: "/stili-karate-mattia-busato/",
-    component: c3
-  },
-  {
-    path: "/test-e-karate/",
-    component: c3
-  },
-  {
-    path: "/tomari-te-shotokan/",
-    component: c3
-  },
-  {
-    path: "/karate-per-bambini-13-motivi-per-scegliere-il-karate-come-sport/",
-    component: c3
-  },
-  {
-    path: "/libri-storie-di-okinawa-spiriti-magia-e-leggende-dellisola-giapponese/",
-    component: c3
-  },
-  {
-    path: "/qulificazioni-karate-olimpiadi-tokio-2020/",
-    component: c3
-  },
-  {
-    path: "/sport-e-idratazione/",
-    component: c3
-  },
-  {
-    path: "/stili-di-karate/",
-    component: c3
-  },
-  {
-    path: "/prova-gara-mattia-busato/",
-    component: c3
-  },
-  {
-    path: "/intervista-terryana-d-onofrio-michela-pezzetti-carola-casale-karate-talks/",
-    component: c3
-  },
-  {
-    path: "/makiwara-cos-e-come-si-usa/",
-    component: c3
-  },
-  {
-    path: "/mosse-di-karate-spostamenti-ashi-sabaki/",
-    component: c3
-  },
-  {
-    path: "/proiezioni-karate-tecniche/",
-    component: c3
-  },
-  {
-    path: "/kihon-cosa-sono-i-fondamentali-del-karate/",
-    component: c3
-  },
-  {
-    path: "/le-origini-del-kata-seisan-hangetsu/",
-    component: c3
-  },
-  {
-    path: "/michele-giuliani-karate-a-distanza/",
-    component: c3
-  },
-  {
-    path: "/mobilita-articolare-per-il-karate/",
-    component: c3
-  },
-  {
-    path: "/mosse-karate-uke-waza-parate/",
-    component: c3
-  },
-  {
-    path: "/niju-kun-funakoshi-gichin/",
-    component: c3
-  },
-  {
-    path: "/privacy-policy/",
+    path: "/privacy-policy-di-www-appdiincontri-it/",
     component: c4
   },
   {
-    path: "/cardio-e-allenamento-brucia-grassi-a-casa-i-5-migliori-esercizi-per-il-karate/",
+    path: "/tinder-italia/",
     component: c3
   },
   {
-    path: "/partner/",
+    path: "/tinder-online/",
+    component: c3
+  },
+  {
+    path: "/sensei-tinder/",
+    component: c3
+  },
+  {
+    path: "/meetic-recensioni-aiuta-davvero-a-conoscere-persone/",
+    component: c3
+  },
+  {
+    path: "/shapr/",
+    component: c3
+  },
+  {
+    path: "/ottenere-risposte-su-tinder/",
+    component: c3
+  },
+  {
+    path: "/lovoo-vs-tinder-somiglianze-e-differenze/",
+    component: c3
+  },
+  {
+    path: "/la-mia-storia/",
     component: c4
   },
   {
-    path: "/dieta-e-karate-1-come-gestire-il-calo-di-peso-nel-kumite/",
+    path: "/lovoo-come-funziona/",
     component: c3
   },
   {
-    path: "/heian-nidan-il-secondo-kata-del-karate-shotokan/",
+    path: "/lovoo-crediti-gratis/",
     component: c3
   },
   {
-    path: "/heian-sandan-il-terzo-kata-del-karate-shotokan/",
+    path: "/lovoo-abbonamento/",
     component: c3
   },
   {
-    path: "/heian-yondan-il-quarto-kata-del-karate-shotokan/",
+    path: "/lovoo-opinioni/",
     component: c3
   },
   {
-    path: "/il-significato-dei-colori-nella-cultura-giapponese/",
+    path: "/happn-come-funziona-guida/",
     component: c3
   },
   {
-    path: "/intervista-ai-candidati-alle-elezioni-fijlkam-2021/",
+    path: "/capire-chi-ti-sta-accanto-perche-non-farlo/",
     component: c3
   },
   {
-    path: "/intervista-vincenzo-figuccio-mattia-busato-karate-talks/",
+    path: "/come-cancellarsi-da-instagram-tutti-i-passaggi/",
     component: c3
   },
   {
-    path: "/karateka-media-partner-mattia-busato/",
+    path: "/consigli-per-avere-piu-successo-su-tinder/",
     component: c3
   },
   {
-    path: "/elastici-e-kumite-con-leonardo-marchi-karate-a-distanza-3/",
+    path: "/facebook-dating-italia/",
     component: c3
   },
   {
-    path: "/intervista-alessandra-giorgi-karate-talks-31/",
+    path: "/badoo-vs-tinder-somiglianze-e-differenze/",
     component: c3
   },
   {
-    path: "/intervista-carolina-amato-karate-talks-29/",
+    path: "/come-funziona-meetic-guida-completa/",
     component: c3
   },
   {
-    path: "/intervista-erminia-perfetto-karate-talks-28/",
+    path: "/cancellare-foto-da-lovoo/",
     component: c3
   },
   {
-    path: "/intervista-noemi-nicosanti-karate-talks-32/",
+    path: "/come-cancellarsi-da-badoo/",
     component: c3
   },
   {
-    path: "/intervsta-cristian-verrecchia-karate-talks-30/",
+    path: "/come-cancellarsi-da-facebook/",
     component: c3
   },
   {
-    path: "/karate-okinawa-karate-giapponese/",
+    path: "/come-cancellarsi-da-lovoo/",
     component: c3
   },
   {
-    path: "/come-rendere-interessante-una-lezione-di-karate-con-il-metodo-aida/",
+    path: "/come-cancellarsi-da-tinder/",
     component: c3
   },
   {
-    path: "/dieta-e-karate-2-cosa-mangiare-il-giorno-della-gara/",
+    path: "/cancellarsi-da-meetic/",
     component: c3
   },
   {
-    path: "/fasi-dello-sviluppo-delle-abilita-sportive-e-karate/",
+    path: "/coffee-meets-bagel/",
     component: c3
   },
   {
-    path: "/intervista-alessandra-mangiacapra-karate-talks/",
+    path: "/come-funziona-badoo/",
     component: c3
   },
   {
-    path: "/intervista-alexandra-recchia-karate-talks/",
+    path: "/come-guadagna-lovoo/",
     component: c3
   },
   {
-    path: "/intervista-damian-quintero-karate-talks/",
+    path: "/app-simili-a-tinder/",
     component: c3
   },
   {
-    path: "/intervista-gaia-taccola-karate-talks/",
+    path: "/badoo-chat/",
     component: c3
   },
   {
-    path: "/intervista-lorena-busa-karate-talks/",
-    component: c3
-  },
-  {
-    path: "/intervista-luca-maresca-karate-talks/",
-    component: c3
-  },
-  {
-    path: "/intervista-luca-valdesi-karate-talks/",
-    component: c3
-  },
-  {
-    path: "/intervista-mattia-busato-karate-talks/",
-    component: c3
-  },
-  {
-    path: "/intervista-michele-martina-karate-talks/",
-    component: c3
-  },
-  {
-    path: "/intervista-stefano-maniscalco-karate-talks/",
-    component: c3
-  },
-  {
-    path: "/intervista-tiziana-costa-karate-talks/",
-    component: c3
-  },
-  {
-    path: "/intervista-viviana-bottaro-karate-talks/",
-    component: c3
-  },
-  {
-    path: "/karate-bunkai-significato/",
-    component: c3
-  },
-  {
-    path: "/karate-kumite-combattimento/",
-    component: c3
-  },
-  {
-    path: "/karate-vs-boxe/",
-    component: c3
-  },
-  {
-    path: "/landing-karateka/",
-    component: c4
-  },
-  {
-    path: "/come-ottenere-la-fiducia-dei-tuoi-allievi-in-5-step/",
-    component: c3
-  },
-  {
-    path: "/intervistaroberta-sodero-karate-talks/",
-    component: c3
-  },
-  {
-    path: "/come-varia-la-difficolta-tra-flessioni-normali-e-varianti/",
-    component: c3
-  },
-  {
-    path: "/esiste-una-mentalita-vincente-karate-mind-2/",
-    component: c3
-  },
-  {
-    path: "/flessioni-video-delle-8-migliori-varianti/",
-    component: c3
-  },
-  {
-    path: "/intrappolare-il-piede/",
-    component: c3
-  },
-  {
-    path: "/iscrizione-corsi-aks/",
-    component: c4
-  },
-  {
-    path: "/busato-sulla-chiusura-delle-palestre-sono-un-bene-necessario/",
-    component: c3
-  },
-  {
-    path: "/dieta-e-allenamento-guida-al-dimagrimento-efficace/",
-    component: c3
-  },
-  {
-    path: "/grazie-per-esserti-iscritto/",
-    component: c4
-  },
-  {
-    path: "/abilita-motorie-reazione-e-karate-20-esercizi-per-migliorarla/",
-    component: c3
-  },
-  {
-    path: "/come-fare-una-lezione-di-karate-online/",
-    component: c3
-  },
-  {
-    path: "/come-trasformare-una-sconfitta-in-una-vittoria/",
-    component: c3
-  },
-  {
-    path: "/funakoshi-gichin-karate-shotokan/",
-    component: c3
-  },
-  {
-    path: "/heian-shodan/",
-    component: c3
-  },
-  {
-    path: "/a-cosa-serve-il-warm-up-nel-karate/",
-    component: c3
-  },
-  {
-    path: "/cosa-deve-fare-un-bambino-karateka/",
-    component: c3
-  },
-  {
-    path: "/effetto-dunning-kruger-karate/",
-    component: c3
-  },
-  {
-    path: "/formula-saluto-karate/",
-    component: c3
-  },
-  {
-    path: "/home/",
-    component: c4
-  },
-  {
-    path: "/allenamento-delle-capacita-condizionali-per-il-karate/",
-    component: c3
-  },
-  {
-    path: "/allenare-la-resistenza-specifica-per-il-karate/",
-    component: c3
-  },
-  {
-    path: "/capacita-atletiche-del-karateka-vincente/",
-    component: c3
-  },
-  {
-    path: "/capacita-mentali-del-karateka-vincente/",
-    component: c3
-  },
-  {
-    path: "/che-muscoli-allenano-le-flessioni/",
-    component: c3
-  },
-  {
-    path: "/come-fare-orlo-karategi-videotutorial/",
-    component: c3
-  },
-  {
-    path: "/cosa-sono-le-capacita-condizionali/",
-    component: c3
-  },
-  {
-    path: "/allenamento-capacita-condizionali-in-eta-evolutiva/",
-    component: c3
-  },
-  {
-    path: "/allenamento-dei-sistemi-energetici-nel-karate/",
-    component: c3
-  },
-  {
-    path: "/allenatore-atleta-mentalcoach-karate-mind/",
-    component: c3
-  },
-  {
-    path: "/cintura-nera-karate/",
-    component: c3
-  },
-  {
-    path: "/a-cosa-serve-allenarsi/",
-    component: c3
-  },
-  {
-    path: "/aumentare-iscrizioni-corsi-karate/",
-    component: c3
-  },
-  {
-    path: "/busa-aghayev-training/",
-    component: c3
-  },
-  {
-    path: "/cookie-policy/",
-    component: c4
-  },
-  {
-    path: "/allenare-bambini-karate/",
-    component: c3
-  },
-  {
-    path: "/contatti/",
-    component: c4
-  },
-  {
-    path: "/blog/",
-    component: c4
-  },
-  {
-    path: "/10-parole-giapponesi-che-tutti-fraintendono-nel-karate/",
-    component: c3
-  },
-  {
-    path: "/about/",
-    component: c4
-  },
-  {
-    path: "/5-dettagli-per-migliorare-i-tuoi-pugni/",
-    component: c3
-  },
-  {
-    path: "/6-benefici-dellallenamento-che-non-conosci/",
-    component: c3
-  },
-  {
-    path: "/8-esercizi-glutei-efficaci-video/",
-    component: c3
-  },
-  {
-    path: "/9-migliori-esercizi-per-addominali/",
+    path: "/badoo-italia/",
     component: c3
   },
   {

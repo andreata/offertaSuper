@@ -12,12 +12,30 @@ export default function (Vue, { head, isClient }) {
   // Add attributes to HTML tag
   head.htmlAttrs = { lang: 'it' }
 
+
+  head.meta.push({
+    name: 'robots',
+    content: 'index, follow'
+  })
+
+  head.meta.push({
+    name: 'googlebot',
+    content: 'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1'
+  })
+
+  head.meta.push({
+    name: 'bingbot',
+    content: 'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1'
+  })
+
+
   Vue.component('Layout', DefaultLayout)
   Vue.use(VueDisqus)
+
+
+
   
   if (process.isClient) {
-
-   
 
     const VueProgressiveImage = require('vue-progressive-image').default;
     

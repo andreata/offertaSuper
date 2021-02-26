@@ -5,37 +5,37 @@ export default {
   "touchicons": [
     {
       "width": 76,
-      "src": "/assets/static/src/assets/images/icon/karatekalogo.png?width=76&key=ff7fe1f"
+      "src": "/assets/static/src/assets/images/icon/appdiincontrilogo.png?width=76&key=23d9eea"
     },
     {
       "width": 152,
-      "src": "/assets/static/src/assets/images/icon/karatekalogo.png?width=152&key=ff7fe1f"
+      "src": "/assets/static/src/assets/images/icon/appdiincontrilogo.png?width=152&key=23d9eea"
     },
     {
       "width": 120,
-      "src": "/assets/static/src/assets/images/icon/karatekalogo.png?width=120&key=ff7fe1f"
+      "src": "/assets/static/src/assets/images/icon/appdiincontrilogo.png?width=120&key=23d9eea"
     },
     {
       "width": 167,
-      "src": "/assets/static/src/assets/images/icon/karatekalogo.png?width=167&key=ff7fe1f"
+      "src": "/assets/static/src/assets/images/icon/appdiincontrilogo.png?width=167&key=23d9eea"
     },
     {
       "width": 180,
-      "src": "/assets/static/src/assets/images/icon/karatekalogo.png?width=180&key=ff7fe1f"
+      "src": "/assets/static/src/assets/images/icon/appdiincontrilogo.png?width=180&key=23d9eea"
     }
   ],
   "favicons": [
     {
       "width": 16,
-      "src": "/assets/static/src/assets/images/icon/karatekalogo.png?width=16&key=8357590"
+      "src": "/assets/static/src/assets/images/icon/appdiincontrilogo.png?width=16&key=81b75d8"
     },
     {
       "width": 32,
-      "src": "/assets/static/src/assets/images/icon/karatekalogo.png?width=32&key=8357590"
+      "src": "/assets/static/src/assets/images/icon/appdiincontrilogo.png?width=32&key=81b75d8"
     },
     {
       "width": 96,
-      "src": "/assets/static/src/assets/images/icon/karatekalogo.png?width=96&key=8357590"
+      "src": "/assets/static/src/assets/images/icon/appdiincontrilogo.png?width=96&key=81b75d8"
     }
   ]
 }

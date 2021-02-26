@@ -4,7 +4,7 @@
     <header class="header">   
         
         <div class="logo">
-          <g-image src="~/assets/images/icon/karatekalogo.png" alt=""  width="200"/>
+          <g-image src="~/assets/images/icon/app-di-incontri.png" alt=""  width="200"/>
           <g-link class="logo-link"  to="/">link</g-link>
         </div>
         

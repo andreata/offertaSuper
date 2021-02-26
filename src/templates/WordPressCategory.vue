@@ -185,7 +185,7 @@ ul.block-ul {
     grid-template-columns: 1fr 1fr 1fr;
   }
   .post-card {
-        margin: 3px;
+      margin: 3px;
   }
   
 }
