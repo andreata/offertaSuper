@@ -10,8 +10,6 @@
         </div>
       </div>
       
-      
-
       <CategoryQuery /> 
     
       <div>
@@ -103,7 +101,7 @@ export default {
    metaInfo () {
     return {
       title: 'Raggiungi il successo con le app di incontri',
-      meta: [
+      meta: [ 
       {
         description: 'Raggiungi il successo con le app di incontri',
         key: 'Raggiungi il successo con le app di incontri',
