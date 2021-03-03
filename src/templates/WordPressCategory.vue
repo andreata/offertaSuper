@@ -38,6 +38,7 @@
               </ul>
 
           </div>
+          <script type="application/ld+json" class="yoast-schema-graph">{{$page.category.seo.schema.raw}}</script>
        </div>     
   </Layout>
 </template>
@@ -84,6 +85,9 @@ query Category ($slug: ID!) {
       breadcrumbs {
         text
         url
+      }
+      schema {
+        raw
       }
       canonical
       metaDesc

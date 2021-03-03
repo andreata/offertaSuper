@@ -18,6 +18,7 @@
           <!-- <Pager :info="$page.category.belongsTo.pageInfo"/>  -->
         </div>
       </div>
+      <script type="application/ld+json" class="yoast-schema-graph">{{$page.tag.seo.schema.raw}}</script>
   </Layout>
 </template>
 
@@ -56,6 +57,9 @@ query Tag ($slug: ID!) {
       breadcrumbs {
         text
         url
+      }
+      schema {
+        raw
       }
       canonical
       metaDesc

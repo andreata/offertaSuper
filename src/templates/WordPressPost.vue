@@ -70,6 +70,8 @@
       <!-- Add comment widgets here -->
     </div>
 
+    <script type="application/ld+json" class="yoast-schema-graph">{{$page.post.seo.schema.raw}}</script>
+
     <!-- <Author class="post-author" /> -->
 
     <!--  fragPost: word2PressPost(id: $postId) {
@@ -164,6 +166,9 @@ query Post ($slug: String) {
       breadcrumbs {
         text
         url
+      }
+      schema {
+        raw
       }
       canonical
       metaDesc

@@ -57,7 +57,7 @@
     </div>
 
     <!-- <Author class="post-author" /> -->
-
+    <script type="application/ld+json" class="yoast-schema-graph">{{$page.page.seo.schema.raw}}</script>
     </div>
   </Layout>
 </template>
@@ -109,6 +109,9 @@ query Page ($slug: String) {
       breadcrumbs {
         text
         url
+      }
+      schema {
+        raw
       }
       canonical
       metaDesc
