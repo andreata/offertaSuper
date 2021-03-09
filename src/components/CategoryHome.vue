@@ -8,7 +8,6 @@
           </carousel>  
         </ClientOnly> 
     
-
 </template>
 
 <static-query>
@@ -68,11 +67,9 @@ export default {
 }
 
 .flik2.full-width {
-      margin-left: calc( -100vw / 2 + 100% / 2 );
+    margin-left: calc( -100vw / 2 + 100% / 2 );
     margin-right: calc( -100vw / 2 + 100% / 2 );
     max-width: 100vw;
 }
-
-
 
 </style>

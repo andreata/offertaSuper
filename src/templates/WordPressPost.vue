@@ -1,9 +1,9 @@
 <template>
 <Layout :sidebar="true" class="side">
   <div>
+
     <div class="post-title">
       <h1 class="post-title__text" v-html="$page.post.title"/>
-      <!-- <PostMeta :post="$page.Page.post" /> -->
     </div>
     
     <div class="breadcrumbs">
@@ -16,36 +16,21 @@
 
     <div class="post content-box">
       <div class="post__header">
-    
           <img
               v-if="$page.post.featuredImage"
               :src="$page.post.featuredImage.node.sourceUrl"            
               :alt="$page.post.featuredImage.altText"
             />
- 
       </div>
-
-  <!--     <template v-if="$page.fragPost.postFragments">
-        <template v-for="(fragment, i) in $page.fragPost.postFragments">
-      
-        <template v-if="fragment.type == 'html'">
-          <div :key="'html-'+i" v-html="fragment.fragmentData.html" class="entry-content"></div>
-        </template>
-
-          <template v-if="fragment.type == 'img' && fragment.fragmentData.image">
-            <g-image :key="'img-'+i" :src="fragment.fragmentData.image" :alt="fragment.fragmentData.alt"/>
-          </template>
-        </template>
-      </template> -->
 
       <div v-html="$page.post.content"/>
 
       <g-image v-if="$page.post.author.node.avatar.url" :src="$page.post.author.node.avatar.url" class="author-image" />
-      <p>{{$page.post.author.node.name}}</p>
+        <p>{{$page.post.author.node.name}}</p>
       <p v-if="$page.post.author.node.description">{{$page.post.author.node.description}}</p>
 
       <template v-if="$page.post.categories.length">
-        <h4>Posted in</h4>
+        <h4>Postato in</h4>
         <ul class="list categories">
           <li v-for="category in $page.post.categories" :key="category.id" >
             <g-link :to="category.link">{{ category.name }}</g-link>
@@ -61,56 +46,15 @@
         </ul>
       </template> 
 
-        
       <Disqus shortname="appdiincontri" :identifier="$page.post.title" />
 
     </div>
 
-    <div class="post-comments">
-      <!-- Add comment widgets here -->
-    </div>
-
     <script type="application/ld+json" class="yoast-schema-graph">{{$page.post.seo.schema.raw}}</script>
 
-    <!-- <Author class="post-author" /> -->
-
-    <!--  fragPost: word2PressPost(id: $postId) {
-    title
-    date
-    content
-    postFragments {
-      type
-      fragmentData {
-        image
-        alt
-        html
-      }
-    }
-    featuredMedia {
-      sourceUrl
-      altText
-      mediaDetails {
-        width
-      }
-    }
-    categories {
-      id
-      title
-    }
-    tags {
-      id
-      title
-      count
-    }
-    author {
-      name
-    }
-  } -->
   </div>
   </Layout>
 </template>
-
-
 
 
 <page-query>
@@ -152,7 +96,6 @@ query Post ($slug: String) {
       }
     }
     tags {
-      
       edges {
         node {
           databaseId
@@ -183,8 +126,7 @@ query Post ($slug: String) {
       opengraphImage {
         mediaItemUrl
       }
-    }
-    
+    }   
   }
 }
 
@@ -197,7 +139,6 @@ import VueDisqus from 'vue-disqus'
 export default {
   
   components: {
-   
     SiteSidebar,
     VueDisqus
   },
@@ -235,11 +176,9 @@ export default {
         name: 'og:image',
         content: this.$page.post.seo.opengraphImage.mediaItemUrl,
       },
-
     ],
     }
-  }
-  
+  }  
 }
 
 
@@ -263,12 +202,9 @@ export default {
     margin-bottom: calc(var(--space) / 2);
     overflow: hidden;
     border-radius: var(--radius) var(--radius) 0 0;
- 
-
     img {
       width: 100%;
     }
-
     &:empty {
       display: none;
     }
@@ -278,12 +214,10 @@ export default {
     h2:first-child {
       margin-top: 0;
     }
-
     p:first-of-type {
       font-size: 1.2em;
       color: var(--title-color);
     }
-
     img {
       width: calc(100% + var(--space) * 2);
       margin-left: calc(var(--space) * -1);
@@ -295,7 +229,6 @@ export default {
 
 .post-comments {
   padding: calc(var(--space) / 2);
-
   &:empty {
     display: none;
   }

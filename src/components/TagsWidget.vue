@@ -3,8 +3,7 @@
     <h2 class="mb-3 font-family-sans-serif h4">Tag</h2>
     <ul class="list-inline">
       <li class="list-inline-item mb-2" v-for="{ node } in $static.tags.edges" :key="node.slug">
-        <g-link :to="node.uri">{{ node.name }} ({{ node.count }})</g-link>
-        
+        <g-link :to="node.uri">{{ node.name }} ({{ node.count }})</g-link> 
       </li>
     </ul>
   </aside>

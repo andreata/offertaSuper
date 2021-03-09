@@ -18,39 +18,38 @@ export default {
       required: true
     }
   }, 
-  
 }
 </script>
 
 <style scoped>
-    .excerpt {
-      color: white;
-    }
-    .box-image {
-        padding: 20px;
-        margin: 0 5px;
-        border-radius: 10px;
-        min-height: 250px;
-        background-size: cover;
-    }
-    .box-image h2 {
-        color: white;
-    }
-    .box-image:before {
-        display: block;
-        width: 100%;
-        height: 100%;
-        content: '';
-        opacity: .4;
-        background-image: linear-gradient(234deg,#394245,#000);
-    }
-    .read-more {
-        text-transform: uppercase;
-        opacity: .9;
-        border: 1px solid;
-        border-radius: 20px;
-        padding: 4px;
-        font-size: 10px;
-        color: white !important;
-    }
+.excerpt {
+  color: white;
+}
+.box-image {
+    padding: 20px;
+    margin: 0 5px;
+    border-radius: 10px;
+    min-height: 250px;
+    background-size: cover;
+}
+.box-image h2 {
+    color: white;
+}
+.box-image:before {
+    display: block;
+    width: 100%;
+    height: 100%;
+    content: '';
+    opacity: .4;
+    background-image: linear-gradient(234deg,#394245,#000);
+}
+.read-more {
+    text-transform: uppercase;
+    opacity: .9;
+    border: 1px solid;
+    border-radius: 20px;
+    padding: 4px;
+    font-size: 10px;
+    color: white !important;
+}
 </style>

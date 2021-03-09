@@ -1,6 +1,36 @@
 <template>
   <div class="layout">
-    
+
+    <vue-cookie-accept-decline
+        :ref="'myPanel1'"
+        :elementId="'myPanel1'"
+        :debug="false"
+        :position="'bottom-left'"
+        :type="'floating'"
+        :disableDecline="false"
+        :transitionName="'slideFromBottom'"
+        :showPostponeButton="false"
+        @status="cookieStatus"
+        @clicked-accept="cookieClickedAccept"
+        @clicked-decline="cookieClickedDecline">
+
+        <div slot="postponeContent">
+            &times;
+        </div>
+
+        <div slot="message">
+            Utilizziamo i Cookie per migliorare la tua esperienza di navigazione. Leggi la <a href="http://localhost:8080/privacy-policy-di-www-appdiincontri-it/" target="_blank">Cookie Policy</a>
+        </div>
+ 
+        <div slot="declineContent">
+          Nega
+        </div>
+ 
+        <div slot="acceptContent">
+            Ok, acconsento!
+        </div>
+    </vue-cookie-accept-decline>
+
     <header class="header">   
         
         <div class="logo">
@@ -8,7 +38,6 @@
           <g-link class="logo-link"  to="/">link</g-link>
         </div>
         
-      
         <ToggleTheme />     
         <NavBar /> 
 
@@ -56,7 +85,7 @@
   position: relative;
 
   .logo-link {
-    position: absolute;
+      position: absolute;
       top: 0;
       left: 0;
       width: 100%;
@@ -68,31 +97,10 @@
   }
 }
 
-/* .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  min-height: var(--header-height);
-  padding: 0 calc(var(--space) / 2);
-  top:0;
-  z-index: 10;
-
-  &__left,
-  &__right {
-    display: flex;
-    align-items: center;
-  }
-
-  @media screen and (min-width: 1300px) {
-    position: sticky;
-    width: 100%;
-  }
-} */
-
 .header__right {
     display: flex;
     align-items: center;
-  }
+}
 
 .main {
   margin: 0 auto;
@@ -100,7 +108,6 @@
 }
 
 header {
-
     border-bottom: 1px solid var(--border-color);
     flex-wrap: nowrap;
     position: -webkit-sticky;
@@ -115,11 +122,9 @@ header {
   padding: calc(var(--space) / 2);
   text-align: center;
   font-size: .8em;
-
   > span {
     margin: 0 .35em;
   }
-
   a {
     color: currentColor;
   }

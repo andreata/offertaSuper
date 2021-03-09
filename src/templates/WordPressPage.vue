@@ -3,7 +3,6 @@
   <div>
     <div class="post-title">
       <h1 class="post-title__text" v-html="$page.page.title"/>
-      <!-- <PostMeta :post="$page.Page.post" /> -->
     </div>
 
     <div class="breadcrumbs">
@@ -13,8 +12,6 @@
           </li>
         </ul>
     </div>
-
-    
 
     <div class="post content-box">
       <div class="post__header">
@@ -45,19 +42,13 @@
           </ul>
         </template> 
         
-        
-
       <div class="post__footer">
         <PostTags :post="$post" /> 
       </div>
     </div>
 
-    <div class="post-comments">
-      <!-- Add comment widgets here -->
-    </div>
-
-    <!-- <Author class="post-author" /> -->
     <script type="application/ld+json" class="yoast-schema-graph">{{$page.page.seo.schema.raw}}</script>
+
     </div>
   </Layout>
 </template>
@@ -94,8 +85,7 @@ query Page ($slug: String) {
         link
       }
     }
-    tags {
-      
+    tags {      
       edges {
         node {
           databaseId
@@ -162,7 +152,6 @@ export default {
 }
 
 .post {
-
   &__header {
     width: calc(100% + var(--space) * 2);
     margin-left: calc(var(--space) * -1);
@@ -170,26 +159,21 @@ export default {
     margin-bottom: calc(var(--space) / 2);
     overflow: hidden;
     border-radius: var(--radius) var(--radius) 0 0;
-
     img {
       width: 100%;
     }
-
     &:empty {
       display: none;
     }
   }
-
   &__content {
     h2:first-child {
       margin-top: 0;
     }
-
     p:first-of-type {
       font-size: 1.2em;
       color: var(--title-color);
     }
-
     img {
       width: calc(100% + var(--space) * 2);
       margin-left: calc(var(--space) * -1);
@@ -201,7 +185,6 @@ export default {
 
 .post-comments {
   padding: calc(var(--space) / 2);
-
   &:empty {
     display: none;
   }

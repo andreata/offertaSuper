@@ -10,10 +10,7 @@
        <div class="post-card__description" v-html="post.excerpt" />  
 
       <g-link class="post-card__link" :to="post.uri">Link</g-link> 
-      <!-- <PostMeta class="post-card__meta" :post="post" />
-      <PostTags class="post-card__tags" :post="post" />   -->
 
-      
     </div>
   </div>
 </template>
@@ -22,12 +19,10 @@
 import PostMeta from '~/components/PostMeta'
 import PostTags from '~/components/PostTags'
 
-
 export default {
   components: {
     PostMeta,
     PostTags,
-    
   },
   props: {
     post: {
@@ -42,7 +37,6 @@ export default {
 .post-card {
   margin-bottom: var(--space);
   position: relative;
-
   &__header {
     margin-left: calc(var(--space) * -1);
     margin-right: calc(var(--space) * -1);
@@ -50,12 +44,10 @@ export default {
     margin-top: calc(var(--space) * -1);
     overflow: hidden;
     border-radius: var(--radius) var(--radius) 0 0;
-    
     @media screen and (max-width: 768px) {
       margin-left: calc(var(--space) * -0.5);
       margin-right: calc(var(--space) * -0.5);
     }
-
     &:empty {
       display: none;
     }

@@ -3,10 +3,7 @@
       <!-- If wonna like images 
            :style="{ backgroundImage: `url(${post.featuredImage.node.mediaItemUrl})` }" -->
       <h2 v-html="post.title" />
-
-      <g-link class="post-card__link" :to="post.uri">Link</g-link> 
-      
-
+      <g-link class="post-card__link" :to="post.uri">Link</g-link>      
   </div>
 </template>
 
@@ -30,8 +27,6 @@ export default {
 
 <style lang="scss" scoped>
 .post-card {
- 
-  //margin-bottom: var(--space);
   position: relative;
    h2 {
     border: 1px solid var(--border-color);
@@ -43,14 +38,12 @@ export default {
     text-overflow: ellipsis;
     background-color: var(--bg-content-color);
     color: var(--link-color);
-}
-
+  }
 
   &:hover {
     transform: translateY(-5px);
     box-shadow: 1px 10px 30px 0 rgba(0,0,0,.1);
   }
-  
 
   &__link {
     position: absolute;

@@ -24,7 +24,7 @@ export default {
 
 <style lang="scss" scoped>
 .a-link-box {
-  position: absolute;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;

@@ -1,15 +1,12 @@
 module.exports = {
   siteName: 'App di Incontri',
-  //siteDescription: 'A WordPress starter for Gridsome',
+  siteDescription: 'Raggiungi il successo con le App di Incontri',
   icon: {
     favicon: './src/assets/images/icon/appdiincontrilogo.png',
     touchicon: './src/assets/images/icon/appdiincontrilogo.png'
   },
-
   siteUrl: 'https://www.appdiincontri.it/',
   pathPrefix: '/',
-
-
   plugins: [
     
     {
@@ -33,9 +30,6 @@ module.exports = {
       }
     },
 
-  
-    
-
     {
       use: 'gridsome-plugin-flexsearch',
       options: {
@@ -47,12 +41,16 @@ module.exports = {
             path: 'posts.edges.node'
           }
         ],
-
-      
       }
-    },
-
+    }, 
     
+    {
+      use: 'gridsome-plugin-gtm',
+      options: {
+        id: 'GTM-W6W3VJB',
+        enabled: true,
+        debug: true
+      }
+    }
   ],
-
 }

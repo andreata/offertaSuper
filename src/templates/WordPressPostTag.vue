@@ -15,7 +15,6 @@
 
         <div class="content-tag max-width">
           <PostCardCategory v-for="{ node } in $page.tag.posts.edges" :key="node.id" :post="node"/>
-          <!-- <Pager :info="$page.category.belongsTo.pageInfo"/>  -->
         </div>
       </div>
       <script type="application/ld+json" class="yoast-schema-graph">{{$page.tag.seo.schema.raw}}</script>
@@ -98,7 +97,7 @@ export default {
 
 <style lang="scss">
 .max-width {
-  max-width: var(--content-width);
+    max-width: var(--content-width);
     margin: 0 auto;
     padding:0;
 }
@@ -109,7 +108,7 @@ export default {
 }
 @media screen and (max-width: 768px) {
   .post-title {
-    margin-top: var(--space);
+      margin-top: var(--space);
   }
   .post-title, .breadcrumbs {
       padding: 0 var(--space);

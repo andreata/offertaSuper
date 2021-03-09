@@ -10,13 +10,7 @@
           </div>
         </div>
         
-
-     
-
-      </div> 
-
-
-          
+      </div>       
     </div>
 </template>
 
@@ -74,9 +68,6 @@ import Post from '~/components/Post.vue'
 import PostCard from '~/components/PostCard.vue'
 import PostBox from '~/components/PostBox.vue'
 import PostCardCategory from '~/components/PostCardCategory.vue'
-
-
-
 
 export default {
   components: {

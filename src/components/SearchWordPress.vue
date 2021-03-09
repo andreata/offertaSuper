@@ -22,9 +22,7 @@
 
 query   {
   
-
  posts(first: 200) {
- 
     edges {
       node {
         id
@@ -53,9 +51,7 @@ query   {
     }
   }
 
- 
 }
-
 
 </static-query>
 
@@ -66,9 +62,7 @@ import Flexsearch from "flexsearch"
 export default {
  
   components: {
-
     Flexsearch
-    
   },
   data: () => ({
       index: null,
@@ -97,9 +91,6 @@ export default {
       });
     }
   },
-
-
- 
 }
 
 </script>

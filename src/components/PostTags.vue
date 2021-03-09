@@ -6,8 +6,6 @@
     </div>
 </template>
 
-
-
 <script>
 export default {
    props: {
@@ -22,7 +20,6 @@ export default {
 <style lang="scss">
 .post-tags {
   margin: 1em 0 0;
-
   &__link {
   	margin-right: .7em;
   	font-size: .8em;

@@ -1,8 +1,5 @@
 <template>
   <div>
-
-    <!-- <SearchWordPress /> -->
-
     <categories-widget class="mb-5 cat-side"/>
     <tags-widget class="mb-5"/>
   </div>
@@ -19,7 +16,6 @@ export default {
     TagsWidget,
     CategoriesWidget,
     SearchWordPress
-    
   }
 }
 </script>

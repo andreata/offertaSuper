@@ -9,8 +9,7 @@
             <li @mouseover="hover = true" @mouseleave="hover = false" v-for="edge in getNavItems(null)" >
               
                 <g-link :to="edge.node.path" class="link">{{ edge.node.title }}</g-link> 
-
-                   
+            
                     <!-- <div @click="toggle" @mouseover="hover = true" @mouseleave="hover = false" class="plus-li">+</div> -->
                     <ul class="sub-menu" v-bind:class="{ active: active || hover }">
                         
@@ -43,7 +42,6 @@ query  {
 
 <script>
 
-
 export default {
     data () {
         return {
@@ -67,46 +65,6 @@ export default {
 </script>
 
 <style scoped>
-/* .nav {
-    display: flex;
-}
-ul.itemnav {
-    margin: 0;
-}
-.nav li {
-    letter-spacing: .5px;
-    font-weight: 400;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 15px 5px;
-    text-decoration: none;
-    position: relative;
-    font-size: .95rem;
-}
-.nav li a {
-    font-size: .75rem;
-    text-decoration: none;
-}
-
-.nav li a:after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    height: 1px;
-    left: 50%;
-    width: 0;
-    transform: translateX(-50%);
-    background-color: transparent;
-    opacity: .5;
-    transition: all .6s;
-}
-
-.nav li a.active:after {
-    background-color: var(--title-color);
-    width: 100%;
-} */
 
 </style>
 

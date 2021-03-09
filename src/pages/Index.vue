@@ -1,7 +1,6 @@
 <template>
   <Layout>
    <div>
-      <!-- <CategoryHome class="at-side"/> -->
       <h1 class="title-home">👋 Benvenuto su App di Incontri</h1>
       
       <div class="container-box">
@@ -19,9 +18,6 @@
         <PostCard v-for="{ node } in $page.posts.edges" :key="node.id" :post="node"/>
       </div>
 
-
-  
-
     </div>
   </Layout>
 </template>
@@ -29,8 +25,6 @@
 <page-query>
 
 query  {
-
-
 
  posts(first:4, where: {orderby: {field: DATE, order: DESC}}) {
   	pageInfo {
@@ -62,8 +56,7 @@ query  {
               width
             }
           }
-        }
-        
+        }   
       }
     }
   }
@@ -76,7 +69,6 @@ query  {
 import { Pager } from 'gridsome'
 import Post from '~/components/Post.vue'
 import PostBox from '~/components/PostBox.vue'
-
 import PostCard from '~/components/PostCard.vue'
 import CategoryQuery from '~/components/CategoryQuery.vue'
 import Pagination from '~/components/Pagination.vue'
@@ -84,7 +76,6 @@ import CategoryHome from '~/components/CategoryHome.vue'
 import PostCardCategory from '~/components/PostCardCategory.vue'
 
 export default {
- 
   components: {
     Pager,
     Post,
@@ -94,8 +85,6 @@ export default {
     Pagination,
     CategoryHome,
     PostCardCategory,
-
-   
   },
  
    metaInfo () {
@@ -131,11 +120,9 @@ export default {
         name: 'og:image',
         content: '',
       },
-
     ],
     }
   }
- 
 }
 
 </script>
@@ -144,7 +131,6 @@ export default {
 .title-home {
   text-align: center;
 }
-
 .container-box {
   display: grid;
   grid-template-columns: 1fr 1fr;

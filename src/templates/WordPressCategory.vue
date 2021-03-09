@@ -2,7 +2,6 @@
   <Layout :sidebar="true" class="side">
 
     <div>
-
         <div class="post-title">
           <h1>{{ $page.category.name }} </h1> 
         </div>
@@ -15,18 +14,12 @@
               </ul>
           </div>
 
-          
-
           <div class="max-width content-category">
-        
-            
               <PostCardCategory  :post="edge.node" v-for="(edge, index) in $page.category.posts.edges" :key="edge.node.id" v-if="index <= 5" />
-  
-          
-          <!-- <Pager :info="$page.wordPressCategory.belongsTo.pageInfo"/> -->
           </div>
 
           <div class="max-width">
+
               <h3 class="recent-half">Post meno recenti</h3>
               <ul class="block-ul">
                 <li v-for="(edge, index) in $page.category.posts.edges" :key="edge.node.id" v-if="index > 5">
@@ -45,12 +38,10 @@
 
 <page-query>
 
-
-
 query Category ($slug: ID!) {
   category(idType: SLUG, id: $slug) {
     name
-    posts {
+    posts(first: 30) {
       edges {
         node {
           id
@@ -79,8 +70,7 @@ query Category ($slug: ID!) {
           }
         }
       }
-    }
-    
+    }   
     seo {
       breadcrumbs {
         text
@@ -102,9 +92,6 @@ query Category ($slug: ID!) {
   }
 }
 
-
-
-
 </page-query>
 
 <script>
@@ -112,7 +99,6 @@ import { Pager } from 'gridsome'
 import Post from '~/components/Post.vue'
 import SiteSidebar from '~/components/SiteSidebar.vue'
 import PostCardCategory from '~/components/PostCardCategory.vue'
-
 import PostCardCarouselCategory from '~/components/PostCardCarouselCategory.vue'
 import FormatedDate from "~/components/FormatedDate.vue"
 
@@ -135,17 +121,7 @@ export default {
   data() {
     
     return {
-      limitationList:5,
-      flickityOptions: {
-        imagesLoaded: true,
-        prevNextButtons: true,
-        pageDots: true,
-        wrapAround: false,
-        freeScroll: true,
-        cellAlign: 'left',
-        
-        // any options from Flickity can be used
-      }
+      limitationList:15,
     }
   },
 }

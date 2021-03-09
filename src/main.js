@@ -5,6 +5,10 @@ import Vue from 'vue'
 import VueDisqus from 'vue-disqus'
 
 import "@fontsource/poppins"
+import VueCookieAcceptDecline from 'vue-cookie-accept-decline';
+
+
+import 'vue-cookie-accept-decline/dist/vue-cookie-accept-decline.css'
 
 
 export default function (Vue, { head, isClient }) {
@@ -32,7 +36,7 @@ export default function (Vue, { head, isClient }) {
   Vue.component('Layout', DefaultLayout)
   Vue.use(VueDisqus)
 
-
+  Vue.component('vue-cookie-accept-decline', VueCookieAcceptDecline);
 
   
   if (process.isClient) {

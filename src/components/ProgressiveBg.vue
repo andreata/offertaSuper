@@ -1,27 +1,19 @@
 <template>
-<div>
-    
-        <ClientOnly>
-          <progressive-background class="imgage-fit" v-if="post.featuredImage" :src="srcMount"  />
-        </ClientOnly>
-        </div>
+  <div>
+    <ClientOnly>
+      <progressive-background class="imgage-fit" v-if="post.featuredImage" :src="srcMount"  />
+    </ClientOnly>
+  </div>
 </template>
 
 <script>
 
-
-
 export default  {
   components: {
     
-    
- 
-  
-  
   },
   data() {
     return {
- 
       srcMount: ''
     }
   },
