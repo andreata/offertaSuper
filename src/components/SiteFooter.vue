@@ -9,7 +9,7 @@
 </ul> -->
 
     <p>JAMstack of App di Incontri | Dev by <a href="https://andreatasselli.net/">Andrea Tasselli</a></p>
-    <p><a href="http://localhost:8080/privacy-policy-di-www-appdiincontri-it/" title="privacy Policy">Privacy e Cookie Policy</a> <br>Questo sito non ha scopo di lucro e non monetizza in alcun modo </p>
+    <p><a href="https://www.appdiincontri.it/privacy-policy-di-www-appdiincontri-it/" title="privacy Policy">Privacy e Cookie Policy</a> <br>Questo sito non ha scopo di lucro e non monetizza in alcun modo </p>
   </footer>
 </template>
 
