@@ -36,7 +36,7 @@ export default function (Vue, { head, isClient }) {
   Vue.component('Layout', DefaultLayout)
   Vue.use(VueDisqus)
 
-  Vue.component('vue-cookie-accept-decline', VueCookieAcceptDecline);
+  Vue.component('vue-cookie-accept-decline', VueCookieAcceptDecline)
 
   
   if (process.isClient) {

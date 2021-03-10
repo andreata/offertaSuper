@@ -10,6 +10,8 @@
       <ul>
           <li v-for="breadcrumb in $page.post.seo.breadcrumbs" :key="breadcrumb.text" >
               <g-link :to="breadcrumb.url" v-html="breadcrumb.text"></g-link>
+              
+              
           </li>
         </ul>
     </div>
@@ -29,19 +31,35 @@
         <p>{{$page.post.author.node.name}}</p>
       <p v-if="$page.post.author.node.description">{{$page.post.author.node.description}}</p>
 
-      <template v-if="$page.post.categories.length">
+      <div v-if="$page.post.categories.nodes.length">
+        <h4>Ti potrebbe interessare anche</h4>
+        <ul>
+          <div v-for="node in $page.post.categories.nodes" :key="node.id" >
+              
+                <li v-for="edge in node.posts.edges" :key="edge.node.id" >
+                  <g-link :to="edge.node.uri">{{ edge.node.title }}</g-link>
+                </li>
+
+          </div>
+        </ul>
+      </div>
+    
+
+      <template v-if="$page.post.categories.nodes.length">
         <h4>Postato in</h4>
         <ul class="list categories">
-          <li v-for="category in $page.post.categories" :key="category.id" >
-            <g-link :to="category.link">{{ category.name }}</g-link>
-          </li>
+          
+              <li v-for="node in $page.post.categories.nodes" :key="node.id" >
+                <g-link :to="node.link">{{ node.name }}</g-link>
+              </li>
+      
         </ul>
       </template>
       <template v-if="$page.post.tags.edges.length">
         <h4>Tags</h4>
         <ul class="list tags">
           <li v-for="edge in $page.post.tags.edges" :key="edge.node.name" >
-            <g-link :to="edge.node.link" v-html="edge.node.name"></g-link>
+            <g-link :to="edge.node.uri" v-html="edge.node.name"></g-link>
           </li>
         </ul>
       </template> 
@@ -93,6 +111,15 @@ query Post ($slug: String) {
         name
         id
         link
+        posts(first: 2) {
+          edges {
+            node {
+              id
+              title
+              uri
+            }
+          }
+        }
       }
     }
     tags {
@@ -100,6 +127,7 @@ query Post ($slug: String) {
         node {
           databaseId
           id
+          uri
           link
           name
         }
@@ -126,7 +154,8 @@ query Post ($slug: String) {
       opengraphImage {
         mediaItemUrl
       }
-    }   
+    }
+      
   }
 }
 
@@ -178,8 +207,11 @@ export default {
       },
     ],
     }
-  }  
+  },  
+
 }
+
+
 
 
 </script>

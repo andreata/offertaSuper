@@ -75,7 +75,24 @@
       NavBar,
       SearchWordPress
     },
-    props: ['sidebar']
+    props: ['sidebar'],
+    methods: {
+    cookieStatus(status) {
+      this.status = status;
+    },
+    cookieClickedAccept() {
+      this.status = 'accept';
+      
+    },
+    cookieClickedDecline() {
+      this.status = 'decline';
+    }
+  },
+  computed: {
+    statusText() {
+      return this.status || 'No cookie set';
+    }
+  }
   }
 </script>
 

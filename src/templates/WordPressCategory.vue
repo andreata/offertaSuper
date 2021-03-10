@@ -18,7 +18,7 @@
               <PostCardCategory  :post="edge.node" v-for="(edge, index) in $page.category.posts.edges" :key="edge.node.id" v-if="index <= 5" />
           </div>
 
-          <div class="max-width">
+          <div class="max-width" v-if="$page.category.posts.edges.length > 5">
 
               <h3 class="recent-half">Post meno recenti</h3>
               <ul class="block-ul">
@@ -136,6 +136,9 @@ export default {
 ul.block-ul {
     display: block;
     width: 100%;
+    li {
+      max-width: 90%;
+    }
 }
 .carousel-cell {
   max-width: 150px;
@@ -161,6 +164,9 @@ ul.block-ul {
 }
 .content-category {
   display: grid;
+  @media screen and (max-width: 768px) {
+      grid-template-columns: 1fr 1fr;
+  }
   @media screen and (min-width: 768px) {
     grid-template-columns: 1fr 1fr 1fr;
   }

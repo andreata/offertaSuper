@@ -12,7 +12,7 @@ module.exports = {
     {
       use: 'gridsome-source-graphql',
       options: {
-        url: 'https://www.appdiincontri.it/graphql/',
+        url: 'https://cdn.appdiincontri.it/graphql/',
         fieldName: 'wp',
         typeName: 'WordPress',   
         headers: {
