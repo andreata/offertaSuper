@@ -648,8 +648,11 @@ export default {
 .container-box {
   margin-top: 40px;
   display: grid;
-  grid-template-columns: 1fr;
+  
   grid-column-gap: 20px;
+  @media screen and (max-width: 768px) {
+    grid-template-columns: 1fr !important;
+  }
   @media screen and (min-width: 768px) {
     margin-top: 140px;
     grid-template-columns: 1fr 1fr 1fr 1fr;

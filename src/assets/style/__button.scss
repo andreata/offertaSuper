@@ -18,6 +18,9 @@
     &.post-card__link {
         margin-left: 0;
     }
+    @media screen and (max-width: 768px) {
+        font-size: 12px;
+    }
 }
 
 .button-vuoto {
@@ -33,6 +36,7 @@
     width: fit-content;
     @media screen and (max-width: 768px) {
         margin: auto;
+        font-size: 12px;
     }
 }
 
