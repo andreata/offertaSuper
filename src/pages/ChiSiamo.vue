@@ -241,6 +241,10 @@ export default {
     .title-home {
         margin-top: 20px;
     }
+    .orange-home {
+        line-height: 1.3;
+        font-size: 20px !important;
+    }
 }
 
 .orange-home {

@@ -157,16 +157,16 @@
             </g-link>
 
             <g-link to="/home-landing/" class="link-no-deco">
-            <div class="item-box">
-              <p class="promo">Promo del mese</p>
-              <div class="flex-homeland">
-                <g-image class="img-promo" src="~/assets/images/icon/luce.svg" alt="" width="66" />
-                <div>
-                  <h2 class="h2-promo">Luce e gas</h2>
-                  <h3 class="h3-promo">Risparmia 240€ l'anno</h3>
+              <div class="item-box">
+                <p class="promo">Promo del mese</p>
+                <div class="flex-homeland">
+                  <g-image class="img-promo" src="~/assets/images/icon/luce.svg" alt="" width="66" />
+                  <div>
+                    <h2 class="h2-promo">Luce e gas</h2>
+                    <h3 class="h3-promo">Risparmia 240€ l'anno</h3>
+                  </div>
                 </div>
               </div>
-            </div>
             </g-link>
 
             <g-link to="/home-landing/" class="link-no-deco">
@@ -291,80 +291,81 @@
         <div class="">
 
           <h2 class="text-center mb-80">Scopri la migliore offerta selezionata per la tua provincia</h2>
+          <ClientOnly>
+            <carousel class="carousel" :perPageCustom="[[768, 2], [1024, 5]]" :paginationEnabled="true">
+              <slide class="carousel-cell carousel-item-home">
+                <div class="salmone-bg">
+                  <h3>Offerta fibra ottica</h3>
+                  <p class="sal-1">Provincia di Firenze</p>
+                </div>
+                <g-image class="sal-img" src="~/assets/images/icon/fastweb.svg" alt="" width="200" />
+                <p class="sal-2">Prezzo/mese</p>
+                <p class="sal-3">€ 25,<span>90</span></p>
+                <p class="sal-4">Prezzo fisso</p>
+                <g-link to="/home-landing/" class="button button-pieno sal-5">DETTAGLIO OFFERTA</g-link>
+              </slide>
 
-          <carousel class="carousel" :perPageCustom="[[768, 2], [1024, 5]]" :paginationEnabled="true">
-            <slide class="carousel-cell carousel-item-home">
-              <div class="salmone-bg">
-                <h3>Offerta fibra ottica</h3>
-                <p class="sal-1">Provincia di Firenze</p>
-              </div>
-              <g-image class="sal-img" src="~/assets/images/icon/fastweb.svg" alt="" width="200" />
-              <p class="sal-2">Prezzo/mese</p>
-              <p class="sal-3">€ 25,<span>90</span></p>
-              <p class="sal-4">Prezzo fisso</p>
-              <g-link to="/home-landing/" class="button button-pieno sal-5">DETTAGLIO OFFERTA</g-link>
-            </slide>
+              <slide class="carousel-cell carousel-item-home">
+                <div class="salmone-bg">
+                  <h3>Offerta fibra ottica</h3>
+                  <p class="sal-1">Provincia di Firenze</p>
+                </div>
+                <g-image class="sal-img" src="~/assets/images/icon/fastweb.svg" alt="" width="200" />
+                <p class="sal-2">Prezzo/mese</p>
+                <p class="sal-3">€ 25,<span>90</span></p>
+                <p class="sal-4">Prezzo fisso</p>
+                <g-link to="/home-landing/" class="button button-pieno sal-5">DETTAGLIO OFFERTA</g-link>
+              </slide>
 
-            <slide class="carousel-cell carousel-item-home">
-              <div class="salmone-bg">
-                <h3>Offerta fibra ottica</h3>
-                <p class="sal-1">Provincia di Firenze</p>
-              </div>
-              <g-image class="sal-img" src="~/assets/images/icon/fastweb.svg" alt="" width="200" />
-              <p class="sal-2">Prezzo/mese</p>
-              <p class="sal-3">€ 25,<span>90</span></p>
-              <p class="sal-4">Prezzo fisso</p>
-              <g-link to="/home-landing/" class="button button-pieno sal-5">DETTAGLIO OFFERTA</g-link>
-            </slide>
+              <slide class="carousel-cell carousel-item-home">
+                <div class="salmone-bg">
+                  <h3>Offerta fibra ottica</h3>
+                  <p class="sal-1">Provincia di Firenze</p>
+                </div>
+                <g-image class="sal-img" src="~/assets/images/icon/fastweb.svg" alt="" width="200" />
+                <p class="sal-2">Prezzo/mese</p>
+                <p class="sal-3">€ 25,<span>90</span></p>
+                <p class="sal-4">Prezzo fisso</p>
+                <g-link to="/home-landing/" class="button button-pieno sal-5">DETTAGLIO OFFERTA</g-link>
+              </slide>
 
-            <slide class="carousel-cell carousel-item-home">
-              <div class="salmone-bg">
-                <h3>Offerta fibra ottica</h3>
-                <p class="sal-1">Provincia di Firenze</p>
-              </div>
-              <g-image class="sal-img" src="~/assets/images/icon/fastweb.svg" alt="" width="200" />
-              <p class="sal-2">Prezzo/mese</p>
-              <p class="sal-3">€ 25,<span>90</span></p>
-              <p class="sal-4">Prezzo fisso</p>
-              <g-link to="/home-landing/" class="button button-pieno sal-5">DETTAGLIO OFFERTA</g-link>
-            </slide>
+              <slide class="carousel-cell carousel-item-home">
+                <div class="salmone-bg">
+                  <h3>Offerta fibra ottica</h3>
+                  <p class="sal-1">Provincia di Firenze</p>
+                </div>
+                <g-image class="sal-img" src="~/assets/images/icon/fastweb.svg" alt="" width="200" />
+                <p class="sal-2">Prezzo/mese</p>
+                <p class="sal-3">€ 25,<span>90</span></p>
+                <p class="sal-4">Prezzo fisso</p>
+                <g-link to="/home-landing/" class="button button-pieno sal-5">DETTAGLIO OFFERTA</g-link>
+              </slide>
 
-            <slide class="carousel-cell carousel-item-home">
-              <div class="salmone-bg">
-                <h3>Offerta fibra ottica</h3>
-                <p class="sal-1">Provincia di Firenze</p>
-              </div>
-              <g-image class="sal-img" src="~/assets/images/icon/fastweb.svg" alt="" width="200" />
-              <p class="sal-2">Prezzo/mese</p>
-              <p class="sal-3">€ 25,<span>90</span></p>
-              <p class="sal-4">Prezzo fisso</p>
-              <g-link to="/home-landing/" class="button button-pieno sal-5">DETTAGLIO OFFERTA</g-link>
-            </slide>
+              <slide class="carousel-cell carousel-item-home">
+                <div class="salmone-bg">
+                  <h3>Offerta fibra ottica</h3>
+                  <p class="sal-1">Provincia di Firenze</p>
+                </div>
+                <g-image class="sal-img" src="~/assets/images/icon/fastweb.svg" alt="" width="200" />
+                <p class="sal-2">Prezzo/mese</p>
+                <p class="sal-3">€ 25,<span>90</span></p>
+                <p class="sal-4">Prezzo fisso</p>
+                <g-link to="/home-landing/" class="button button-pieno sal-5">DETTAGLIO OFFERTA</g-link>
+              </slide>
 
-            <slide class="carousel-cell carousel-item-home">
-              <div class="salmone-bg">
-                <h3>Offerta fibra ottica</h3>
-                <p class="sal-1">Provincia di Firenze</p>
-              </div>
-              <g-image class="sal-img" src="~/assets/images/icon/fastweb.svg" alt="" width="200" />
-              <p class="sal-2">Prezzo/mese</p>
-              <p class="sal-3">€ 25,<span>90</span></p>
-              <p class="sal-4">Prezzo fisso</p>
-              <g-link to="/home-landing/" class="button button-pieno sal-5">DETTAGLIO OFFERTA</g-link>
-            </slide>
-
-            <slide class="carousel-cell carousel-item-home">
-              <div class="salmone-bg">
-                <h3>Offerta fibra ottica</h3>
-                <p class="sal-1">Provincia di Firenze</p>
-              </div>
-              <g-image class="sal-img" src="~/assets/images/icon/fastweb.svg" alt="" width="200" />
-              <p class="sal-2">Prezzo/mese</p>
-              <p class="sal-3">€ 25,<span>90</span></p>
-              <p class="sal-4">Prezzo fisso</p>
-              <g-link to="/home-landing/" class="button button-pieno sal-5">DETTAGLIO OFFERTA</g-link>
-            </slide>
-          </carousel>
+              <slide class="carousel-cell carousel-item-home">
+                <div class="salmone-bg">
+                  <h3>Offerta fibra ottica</h3>
+                  <p class="sal-1">Provincia di Firenze</p>
+                </div>
+                <g-image class="sal-img" src="~/assets/images/icon/fastweb.svg" alt="" width="200" />
+                <p class="sal-2">Prezzo/mese</p>
+                <p class="sal-3">€ 25,<span>90</span></p>
+                <p class="sal-4">Prezzo fisso</p>
+                <g-link to="/home-landing/" class="button button-pieno sal-5">DETTAGLIO OFFERTA</g-link>
+              </slide>
+            </carousel>
+          </ClientOnly>
         </div>
       </div>
 
@@ -374,75 +375,75 @@
         <div class="container recensioni">
 
           <h2 class="text-center mb-80">Le recensioni dei clienti che si sono affidati al selezionatore</h2>
+          <ClientOnly>
+            <carousel class="carousel" :perPageCustom="[[768, 2], [1024, 5]]" :paginationEnabled="true">
+              <slide class="carousel-cell carousel-item-recensioni">
+                <div class="salmone-bg">
+                  <p class="orange-font">Ottimo servizio</p>
+                  <p class="grey-font">Buongiorno, trovo assolutamente positivo il servizio che Offertasuper.it
+                    fornisce
+                    ai
+                    clienti: risposte
+                    veloci</p>
+                </div>
+              </slide>
 
-          <carousel class="carousel" :perPageCustom="[[768, 2], [1024, 5]]" :paginationEnabled="true">
-            <slide class="carousel-cell carousel-item-recensioni">
-              <div class="salmone-bg">
-                <p class="orange-font">Ottimo servizio</p>
-                <p class="grey-font">Buongiorno, trovo assolutamente positivo il servizio che Offertasuper.it
-                  fornisce
-                  ai
-                  clienti: risposte
-                  veloci</p>
-              </div>
-            </slide>
+              <slide class="carousel-cell carousel-item-recensioni">
+                <div class="salmone-bg">
+                  <p class="orange-font">Ottimo servizio</p>
+                  <p class="grey-font">Buongiorno, trovo assolutamente positivo il servizio che Offertasuper.it
+                    fornisce
+                    ai
+                    clienti: risposte
+                    veloci</p>
+                </div>
+              </slide>
 
-            <slide class="carousel-cell carousel-item-recensioni">
-              <div class="salmone-bg">
-                <p class="orange-font">Ottimo servizio</p>
-                <p class="grey-font">Buongiorno, trovo assolutamente positivo il servizio che Offertasuper.it
-                  fornisce
-                  ai
-                  clienti: risposte
-                  veloci</p>
-              </div>
-            </slide>
+              <slide class="carousel-cell carousel-item-recensioni">
+                <div class="salmone-bg">
+                  <p class="orange-font">Ottimo servizio</p>
+                  <p class="grey-font">Buongiorno, trovo assolutamente positivo il servizio che Offertasuper.it
+                    fornisce
+                    ai
+                    clienti: risposte
+                    veloci</p>
+                </div>
+              </slide>
 
-            <slide class="carousel-cell carousel-item-recensioni">
-              <div class="salmone-bg">
-                <p class="orange-font">Ottimo servizio</p>
-                <p class="grey-font">Buongiorno, trovo assolutamente positivo il servizio che Offertasuper.it
-                  fornisce
-                  ai
-                  clienti: risposte
-                  veloci</p>
-              </div>
-            </slide>
+              <slide class="carousel-cell carousel-item-recensioni">
+                <div class="salmone-bg">
+                  <p class="orange-font">Ottimo servizio</p>
+                  <p class="grey-font">Buongiorno, trovo assolutamente positivo il servizio che Offertasuper.it
+                    fornisce
+                    ai
+                    clienti: risposte
+                    veloci</p>
+                </div>
+              </slide>
 
-            <slide class="carousel-cell carousel-item-recensioni">
-              <div class="salmone-bg">
-                <p class="orange-font">Ottimo servizio</p>
-                <p class="grey-font">Buongiorno, trovo assolutamente positivo il servizio che Offertasuper.it
-                  fornisce
-                  ai
-                  clienti: risposte
-                  veloci</p>
-              </div>
-            </slide>
+              <slide class="carousel-cell carousel-item-recensioni">
+                <div class="salmone-bg">
+                  <p class="orange-font">Ottimo servizio</p>
+                  <p class="grey-font">Buongiorno, trovo assolutamente positivo il servizio che Offertasuper.it
+                    fornisce
+                    ai
+                    clienti: risposte
+                    veloci</p>
+                </div>
+              </slide>
 
-            <slide class="carousel-cell carousel-item-recensioni">
-              <div class="salmone-bg">
-                <p class="orange-font">Ottimo servizio</p>
-                <p class="grey-font">Buongiorno, trovo assolutamente positivo il servizio che Offertasuper.it
-                  fornisce
-                  ai
-                  clienti: risposte
-                  veloci</p>
-              </div>
-            </slide>
-
-            <slide class="carousel-cell carousel-item-recensioni">
-              <div class="salmone-bg">
-                <p class="orange-font">Ottimo servizio</p>
-                <p class="grey-font">Buongiorno, trovo assolutamente positivo il servizio che Offertasuper.it
-                  fornisce
-                  ai
-                  clienti: risposte
-                  veloci</p>
-              </div>
-            </slide>
-          </carousel>
-
+              <slide class="carousel-cell carousel-item-recensioni">
+                <div class="salmone-bg">
+                  <p class="orange-font">Ottimo servizio</p>
+                  <p class="grey-font">Buongiorno, trovo assolutamente positivo il servizio che Offertasuper.it
+                    fornisce
+                    ai
+                    clienti: risposte
+                    veloci</p>
+                </div>
+              </slide>
+            </carousel>
+            </ClientOnly>
         </div>
       </div>
 
@@ -661,9 +662,6 @@ export default {
   width: 100%;
 }
 
-.mobl {
-  display: none;
-}
 
 @media screen and (max-width: 768px) and (min-width: 320px) {
   .VueCarousel-inner {
@@ -777,12 +775,7 @@ export default {
               margin-top: -20px;
       }
     }
-  .mobl {
-    display: block;
-  }
-  .desk {
-    display: none;
-  }
+
   .container-box {
     flex-wrap: wrap;
   }
@@ -791,25 +784,7 @@ export default {
   }
 }
 
- .container-box .item-box {
-  position: relative;
-  @media screen and  (min-width: 768px) {
-      padding-bottom: 76px;
-  }
-  @media screen and (max-width: 1368px) and (min-width: 768px) {
-    padding-bottom: 96px;
-  }
-  .button-pieno {
-    margin-top: 40px;
-    position: absolute;
-    bottom: 0;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
-    text-align: center;
-  }
-}
+ 
 
 .light {
   font-weight: 100;

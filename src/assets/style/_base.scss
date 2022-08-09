@@ -65,6 +65,7 @@ img {
   }
   .container {
     grid-column: 2;
+    margin: auto;
     /* grid-template-columns: 3fr 1fr !important;
       display: grid; */
   
@@ -103,7 +104,23 @@ img {
   border:0;
 }
 
+@media screen and (min-width: 768px) {
+  .mobl {
+    display: none!important;
+  }
+    .desk {
+      display: block;
+    }
+}
+
 @media screen and (max-width: 768px) {
+  .mobl {
+    display: block;
+  }
+
+  .desk {
+    display: none !important;
+  }
   .container {
         padding: 0 15px;
   }

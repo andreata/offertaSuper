@@ -245,110 +245,110 @@
 
                         <div>
                             <g-image class="img-salmone" src="~/assets/images/icon/affidabili.svg" alt="" width="60" />
+                            <div>
+                                <h3 class="orange-font">Affidabilità</h3>
+                                <p class="grey-font">Il nostro servizio è affidabile e gratis, siamo l’unico servizio ad
+                                    affidarti un
+                                    consulente dedicato che potrai contattare SEMPRE! </p>
+                            </div>
+                        </div>
                         <div>
-                        <h3 class="orange-font">Affidabilità</h3>
-                        <p class="grey-font">Il nostro servizio è affidabile e gratis, siamo l’unico servizio ad
-                            affidarti un
-                            consulente dedicato che potrai contattare SEMPRE! </p>
+
+                        </div>
                     </div>
                 </div>
-                <div>
+            </div>
 
+
+
+
+
+            <!-- Carosello recensioni -->
+            <div class="full-container">
+
+                <div class="container recensioni">
+
+                    <h2 class="text-center mb-80">Le recensioni dei clienti che si sono affidati al selezionatore
+                    </h2>
+                    <ClientOnly>
+                        <carousel class="carousel" :perPageCustom="[[768, 2], [1024, 5]]" :paginationEnabled="true">
+                            <slide class="carousel-cell carousel-item-recensioni">
+                                <div class="salmone-bg">
+                                    <p class="orange-font">Ottimo servizio</p>
+                                    <p class="grey-font">Buongiorno, trovo assolutamente positivo il servizio che
+                                        Offertasuper.it fornisce
+                                        ai
+                                        clienti: risposte
+                                        veloci</p>
+                                </div>
+                            </slide>
+
+                            <slide class="carousel-cell carousel-item-recensioni">
+                                <div class="salmone-bg">
+                                    <p class="orange-font">Ottimo servizio</p>
+                                    <p class="grey-font">Buongiorno, trovo assolutamente positivo il servizio che
+                                        Offertasuper.it fornisce
+                                        ai
+                                        clienti: risposte
+                                        veloci</p>
+                                </div>
+                            </slide>
+
+                            <slide class="carousel-cell carousel-item-recensioni">
+                                <div class="salmone-bg">
+                                    <p class="orange-font">Ottimo servizio</p>
+                                    <p class="grey-font">Buongiorno, trovo assolutamente positivo il servizio che
+                                        Offertasuper.it fornisce
+                                        ai
+                                        clienti: risposte
+                                        veloci</p>
+                                </div>
+                            </slide>
+
+                            <slide class="carousel-cell carousel-item-recensioni">
+                                <div class="salmone-bg">
+                                    <p class="orange-font">Ottimo servizio</p>
+                                    <p class="grey-font">Buongiorno, trovo assolutamente positivo il servizio che
+                                        Offertasuper.it fornisce
+                                        ai
+                                        clienti: risposte
+                                        veloci</p>
+                                </div>
+                            </slide>
+
+                            <slide class="carousel-cell carousel-item-recensioni">
+                                <div class="salmone-bg">
+                                    <p class="orange-font">Ottimo servizio</p>
+                                    <p class="grey-font">Buongiorno, trovo assolutamente positivo il servizio che
+                                        Offertasuper.it fornisce
+                                        ai
+                                        clienti: risposte
+                                        veloci</p>
+                                </div>
+                            </slide>
+
+                            <slide class="carousel-cell carousel-item-recensioni">
+                                <div class="salmone-bg">
+                                    <p class="orange-font">Ottimo servizio</p>
+                                    <p class="grey-font">Buongiorno, trovo assolutamente positivo il servizio che
+                                        Offertasuper.it fornisce
+                                        ai
+                                        clienti: risposte
+                                        veloci</p>
+                                </div>
+                            </slide>
+                        </carousel>
+                    </ClientOnly>
                 </div>
             </div>
-        </div>
-        </div>
 
-
-
-
-
-        <!-- Carosello recensioni -->
-        <div class="full-container">
-
-            <div class="container recensioni">
-
-                <h2 class="text-center mb-80">Le recensioni dei clienti che si sono affidati al selezionatore
-                </h2>
-
-                <carousel class="carousel" :perPageCustom="[[768, 2], [1024, 5]]" :paginationEnabled="true">
-                    <slide class="carousel-cell carousel-item-recensioni">
-                        <div class="salmone-bg">
-                            <p class="orange-font">Ottimo servizio</p>
-                            <p class="grey-font">Buongiorno, trovo assolutamente positivo il servizio che
-                                Offertasuper.it fornisce
-                                ai
-                                clienti: risposte
-                                veloci</p>
-                        </div>
-                    </slide>
-
-                    <slide class="carousel-cell carousel-item-recensioni">
-                        <div class="salmone-bg">
-                            <p class="orange-font">Ottimo servizio</p>
-                            <p class="grey-font">Buongiorno, trovo assolutamente positivo il servizio che
-                                Offertasuper.it fornisce
-                                ai
-                                clienti: risposte
-                                veloci</p>
-                        </div>
-                    </slide>
-
-                    <slide class="carousel-cell carousel-item-recensioni">
-                        <div class="salmone-bg">
-                            <p class="orange-font">Ottimo servizio</p>
-                            <p class="grey-font">Buongiorno, trovo assolutamente positivo il servizio che
-                                Offertasuper.it fornisce
-                                ai
-                                clienti: risposte
-                                veloci</p>
-                        </div>
-                    </slide>
-
-                    <slide class="carousel-cell carousel-item-recensioni">
-                        <div class="salmone-bg">
-                            <p class="orange-font">Ottimo servizio</p>
-                            <p class="grey-font">Buongiorno, trovo assolutamente positivo il servizio che
-                                Offertasuper.it fornisce
-                                ai
-                                clienti: risposte
-                                veloci</p>
-                        </div>
-                    </slide>
-
-                    <slide class="carousel-cell carousel-item-recensioni">
-                        <div class="salmone-bg">
-                            <p class="orange-font">Ottimo servizio</p>
-                            <p class="grey-font">Buongiorno, trovo assolutamente positivo il servizio che
-                                Offertasuper.it fornisce
-                                ai
-                                clienti: risposte
-                                veloci</p>
-                        </div>
-                    </slide>
-
-                    <slide class="carousel-cell carousel-item-recensioni">
-                        <div class="salmone-bg">
-                            <p class="orange-font">Ottimo servizio</p>
-                            <p class="grey-font">Buongiorno, trovo assolutamente positivo il servizio che
-                                Offertasuper.it fornisce
-                                ai
-                                clienti: risposte
-                                veloci</p>
-                        </div>
-                    </slide>
-                </carousel>
-
+            <!-- Loghi -->
+            <div class="full-container loghi-area">
+                <div class="container">
+                    <g-image class="desktop-image" src="~/assets/images/icon/loghi.png" alt="" width="1440" />
+                    <g-image class="mobile-image" src="~/assets/images/icon/loghi-mobile.jpg" alt="" width="1440" />
+                </div>
             </div>
-        </div>
-
-        <!-- Loghi -->
-        <div class="full-container loghi-area">
-            <div class="container">
-                <g-image class="desktop-image" src="~/assets/images/icon/loghi.png" alt="" width="1440" />
-                <g-image class="mobile-image" src="~/assets/images/icon/loghi-mobile.jpg" alt="" width="1440" />
-            </div>
-        </div>
 
 
 
@@ -492,9 +492,7 @@ export default {
     width: 100%;
 }
 
-.mobl {
-    display: none;
-}
+
 
 @media screen and (max-width: 768px) {
     .bullet-landing {
@@ -662,13 +660,7 @@ export default {
             line-height: 1.3;
         }
     }
-    .mobl {
-        display: block;
-    }
-
-    .desk {
-        display: none;
-    }
+  
     .container-box {
         flex-wrap: wrap;
     }
@@ -681,26 +673,6 @@ export default {
 .light {
     font-weight: 100;
 }
- .container-box .item-box {
-     position: relative;
 
-     @media screen and (min-width: 768px) {
-         padding-bottom: 76px;
-     }
-
-     @media screen and (max-width: 1368px) and (min-width: 768px) {
-         padding-bottom: 96px;
-     }
-
-     .button-pieno {
-         margin-top: 40px;
-         position: absolute;
-         bottom: 0;
-         margin-left: auto;
-         margin-right: auto;
-         left: 0;
-         right: 0;
-         text-align: center;
-     }
- }
+ 
 </style>

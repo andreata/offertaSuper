@@ -31,6 +31,9 @@
     display: flex;
     justify-content: center;
     width: fit-content;
+    @media screen and (max-width: 768px) {
+        margin: auto;
+    }
 }
 
 

@@ -5,8 +5,8 @@ module.exports = {
     favicon: './src/assets/images/icon/favicon-offerta-super.png',
     touchicon: './src/assets/images/icon/favicon-offerta-super.png'
   },
-  siteUrl: '/',
-  pathPrefix: '/',
+  siteUrl: 'https://andreata.github.io',
+  pathPrefix: '/offertaSuper',
   plugins: [
     
     {

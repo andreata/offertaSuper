@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <div class="">
 
         <div>
             <article>
@@ -180,29 +180,19 @@ export default {
     align-items: center;
 }
 
-.mobl {
-    display: none;
-}
 
-@media screen and (max-width: 768px) {
-    .mobl {
-        display: block;
-    }
-
-    .desk {
-        display: none;
-    }
-}
 
 
 article {
 
     margin: 10px;
     margin: auto;
-    width: calc(100% - 20px);
+    
     max-width: 720px;
     min-height: 380px;
     perspective: 1000px;
+
+    width: 100%;
 
     header {
         border-bottom: 0;

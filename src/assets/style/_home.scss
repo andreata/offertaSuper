@@ -221,8 +221,8 @@
 
 @media screen and (min-width: 768px) {
     .mobile-image {
-            display: none;
-        }
+        display: none;
+    }
  
 }
 @media screen and (max-width: 768px) {
@@ -232,3 +232,27 @@
     }
 }
 
+.container-box .item-box {
+    position: relative;
+    .button-pieno {
+        margin-top: 40px;
+        position: absolute;
+        bottom: 0;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 1368px) and (min-width: 768px) {
+    .container-box .item-box {
+        padding-bottom: 96px!important;
+    }
+}
+@media screen and (min-width: 1368px) {
+    .container-box .item-box {
+        padding-bottom: 76px !important;
+    }
+}

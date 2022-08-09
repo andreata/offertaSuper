@@ -271,7 +271,7 @@
 
                     <h2 class="text-center mb-80">Le recensioni dei clienti che si sono affidati al selezionatore
                     </h2>
-
+                    <ClientOnly>
                     <carousel class="carousel" :perPageCustom="[[768, 2], [1024, 5]]" :paginationEnabled="true">
                         <slide class="carousel-cell carousel-item-recensioni">
                             <div class="salmone-bg">
@@ -339,7 +339,7 @@
                             </div>
                         </slide>
                     </carousel>
-
+                    </ClientOnly>
                 </div>
             </div>
 
@@ -494,9 +494,6 @@ export default {
     width: 100%;
 }
 
-.mobl {
-    display: none;
-}
 
 @media screen and (max-width: 768px) {
     .bullet-landing {
@@ -669,13 +666,7 @@ export default {
         }
     }
 
-    .mobl {
-        display: block;
-    }
-
-    .desk {
-        display: none;
-    }
+  
 
     .container-box {
         flex-wrap: wrap;
@@ -689,26 +680,5 @@ export default {
 .light {
     font-weight: 100;
 }
- .container-box .item-box {
-     position: relative;
-
-     @media screen and (min-width: 768px) {
-         padding-bottom: 76px;
-     }
-
-     @media screen and (max-width: 1368px) and (min-width: 768px) {
-         padding-bottom: 96px;
-     }
-
-     .button-pieno {
-         margin-top: 40px;
-         position: absolute;
-         bottom: 0;
-         margin-left: auto;
-         margin-right: auto;
-         left: 0;
-         right: 0;
-         text-align: center;
-     }
- }
+ 
 </style>

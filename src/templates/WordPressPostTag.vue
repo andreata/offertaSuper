@@ -1,20 +1,20 @@
 <template>
-  <Layout :sidebar="true" class="side">
+  <Layout  class="side">
     <div>
       <div class="post-title">
         <h1>{{ $page.tag.name }} </h1> 
       </div>
 
-        <div class="breadcrumbs">
+        <!-- <div class="breadcrumbs">
           <ul>
               <li v-for="breadcrumb in $page.tag.seo.breadcrumbs" :key="breadcrumb.text" >
                   <g-link :to="breadcrumb.url">{{ breadcrumb.text }}</g-link>
               </li>
             </ul>
-        </div>
+        </div> -->
 
         <div class="content-tag max-width">
-          <PostCardCategory v-for="{ node } in $page.tag.posts.edges" :key="node.id" :post="node"/>
+          <PostCardTag v-for="{ node } in $page.tag.posts.edges" :key="node.id" :post="node"/>
         </div>
       </div>
       <script type="application/ld+json" class="yoast-schema-graph">{{$page.tag.seo.schema.raw}}</script>
@@ -78,14 +78,14 @@ query Tag ($slug: ID!) {
 import { Pager } from 'gridsome'
 import Post from '~/components/Post.vue'
 import SiteSidebar from '~/components/SiteSidebar.vue'
-import PostCardCategory from '~/components/PostCardCategory.vue'
+import PostCardTag from '~/components/PostCardTag.vue'
 
 export default {
   components: {
     Pager,
     Post,
     SiteSidebar,
-    PostCardCategory
+    PostCardTag
   },
   metaInfo () {
     return {
