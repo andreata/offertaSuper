@@ -1,32 +1,43 @@
 <template>
-  <div class="post-card content-box content-box-2">
+  <div class="post-card  ">
     <div class="post-card__header">
-       <g-image alt="Cover image" v-if="post.featuredImage" class="post-card__image" :src="post.featuredImage.node.mediaItemUrl" />
+      <g-image alt="Cover image" v-if="post.featuredImage" class="post-card__image"
+        :src="post.featuredImage.node.mediaItemUrl" />
     </div>
     <div class="post-card__content">
+      <div class="box-cate">
+        <div v-for="node in post.categories.nodes" :key="node.slug">
+          <p>{{ node.name }}</p>
+        </div>
+      </div>
       <div class="flex-meta">
-        <p class="post-card__author" v-html="post.author.node.name" />
-        <formated-date class="post-date date post-card__date" :date="post.date"/>
+
+        <!-- <p class="post-card__author" v-html="post.author.node.name" />
+        <formated-date class="post-date date post-card__date" :date="post.date" /> -->
       </div>
       <h2 class="post-card__title" v-html="post.title" />
-      <div class="post-card__description" v-html="post.excerpt.substring(0,100)+ '...'" />  
-      <g-link class="post-card__link" :to="post.uri">Link</g-link> 
-      <PostMeta class="post-card__meta" :post="post" />
-      <PostTags class="post-card__tags" :post="post" />   
+
+      <div class="post-card__description" v-html="post.excerpt.substring(0,100)+ '...'" />
+      <g-link class="post-card__link button-pieno" :to="post.uri">Leggi tutto</g-link>
+
+
     </div>
   </div>
 </template>
+
+
+
 
 <script>
 import PostMeta from '~/components/PostMeta'
 import PostTags from '~/components/PostTags'
 import FormatedDate from "~/components/FormatedDate.vue"
-
 export default {
   components: {
     PostMeta,
     PostTags,
     FormatedDate
+    
   },
   props: {
     post: {
@@ -34,6 +45,7 @@ export default {
       required: true
     }
   },
+
 }
 </script>
 
@@ -42,18 +54,47 @@ export default {
   .post-card {
     height: 100%;
     margin-bottom: 0;
+    
+    
   }
 }
 .container-box, .content-category {
   .post-card {
     &__header {
-    max-height: 160px;
+ 
     }
   }
 }
+
+.box-cate {
+  background-color: var(--light-orange);
+  border-radius: 5px;
+  padding: 5px 10px;
+  max-width: fit-content;
+  display: flex;
+
+  p {
+    margin-bottom: 0;
+    color: var(--orang-color);
+    font-weight: 800;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    margin-right: 10px;
+  }
+}
 .post-card {
-  margin-bottom: var(--space2);
+  width: calc(100% - 60px);
+  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-column-gap: 30px;
   position: relative;
+  margin-bottom: 30px !important;
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    margin-bottom: 30px !important;
+    grid-template-columns: 1fr;
+  }
   .flex-meta {
     display: flex;
     align-items: center;
@@ -72,14 +113,17 @@ export default {
 			max-width: fit-content;
 			border-radius: var(--radius);	
 		}
-
+  &__content {
+    @media screen and (max-width: 768px) {
+      padding: 9px;
+    }
+  }
   &__header {
-    margin-left: calc(var(--space2) * -1);
-    margin-right: calc(var(--space2) * -1);
-    margin-bottom: calc(var(--space2) / 2);
-    margin-top: calc(var(--space2) * -1);
+    
     overflow: hidden;
-    border-radius: var(--radius) var(--radius) 0 0;
+    @media screen and (min-width: 768px) {
+       padding-right: 30px;
+    }
     @media screen and (max-width: 768px) {
       margin-left: calc(var(--space2) * -0.5);
       margin-right: calc(var(--space2) * -0.5);
@@ -90,32 +134,36 @@ export default {
   }
   &__image {
     min-width: 100%;
+    max-width: 200px;
+    @media screen and (min-width: 768px) {
+     aspect-ratio: 0.8 / 1;
+    }
+    object-fit: cover;
   }
   &__title {
     margin-top: 0;
-    font-size: 95%;
+    font-size: 25px;
   }
-  &:hover {
-    transform: translateY(-5px);
-    box-shadow: 1px 10px 30px 0 rgba(0,0,0,.1);
-  }
+  
   &__tags {
     z-index: 1;
     position: relative;
   }
   &__link {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0.0;
-    overflow: hidden;
-    text-indent: -9999px;
-    z-index: 0;
+    background-color: var(--orang-color);
+    padding: 10px 18px;
+    color: var(--bg-color-rgba);
+    border-radius: 30px;
+    font-size: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    @media screen and (max-width: 768px) {
+      padding: 7px 12px;
+    }
   }
   &__description {
     font-size: 13px;
+    color: var(--grey-body-color);
   }
 }
 </style>

@@ -1,60 +1,80 @@
 <template>
   <div class="layout">
 
-    <vue-cookie-accept-decline
-        :ref="'myPanel1'"
-        :elementId="'myPanel1'"
-        :debug="false"
-        :position="'bottom-left'"
-        :type="'floating'"
-        :disableDecline="false"
-        :transitionName="'slideFromBottom'"
-        :showPostponeButton="false"
-        @status="cookieStatus"
-        @clicked-accept="cookieClickedAccept"
-        @clicked-decline="cookieClickedDecline">
+    <vue-cookie-accept-decline :ref="'myPanel1'" :elementId="'myPanel1'" :debug="false" :position="'bottom-left'"
+      :type="'floating'" :disableDecline="false" :transitionName="'slideFromBottom'" :showPostponeButton="false"
+      @status="cookieStatus" @clicked-accept="cookieClickedAccept" @clicked-decline="cookieClickedDecline">
 
-        <div slot="postponeContent">
-            &times;
-        </div>
+      <div slot="postponeContent">
+        &times;
+      </div>
 
-        <div slot="message">
-            Utilizziamo i Cookie per migliorare la tua esperienza di navigazione. Leggi la <a href="http://localhost:8080/privacy-policy-di-www-appdiincontri-it/" target="_blank">Cookie Policy</a>
-        </div>
- 
-        <div slot="declineContent">
-          Nega
-        </div>
- 
-        <div slot="acceptContent">
-            Ok, acconsento!
-        </div>
+      <div slot="message">
+        Utilizziamo i Cookie per migliorare la tua esperienza di navigazione. Leggi la <a href="#"
+          target="_blank">Cookie Policy</a>
+      </div>
+
+      <div slot="declineContent">
+        Nega
+      </div>
+
+      <div slot="acceptContent">
+        Ok, acconsento!
+      </div>
     </vue-cookie-accept-decline>
 
-    <header class="header">   
-        
+    <header class="header">
+      <div class="header-box">
         <div class="logo">
-          <g-image src="~/assets/images/icon/app-di-incontri.png" alt=""  width="200"/>
-          <g-link class="logo-link"  to="/">link</g-link>
+          <g-image src="~/assets/images/icon/logo_offerta_super.svg" alt="" width="200" />
+          <g-link class="logo-link" to="/">link</g-link>
         </div>
-        
-        <ToggleTheme />     
-        <NavBar /> 
 
-       <SearchWordPress />
-      
+        <div class="header-element">
+          <NavBar />
+          <ToggleTheme />
+          <g-image class="contatti-header" src="~/assets/images/icon/contatti.svg" alt="" width="200" />
+        </div>
+
+
+        <!-- <SearchWordPress />  -->
+      </div>
+
     </header>
 
-    <div class="content">
-        <slot/>
+    <div class="content" v-if="!sidebar && !sidebarblog">
+      <slot />
     </div>
 
-    <div class="sidebar" v-if="sidebar">
-      <site-sidebar/> 
+    <div class="content content-side" v-if="sidebar">
+      <div class="full-container">
+        <div class="container container-sidebar">
+          <slot />
+          <div class="sidebar" v-if="sidebar">
+            <site-sidebar />
+          </div>
+        </div>
+      </div>
     </div>
+
+
+    <div class="content content-side" v-if="sidebarblog">
+      <div class="full-container">
+        <div class="container container-sidebar">
+          <slot />
+          <div class="sidebar" v-if="sidebarblog">
+            <site-sidebar-post />
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
 
     <div class="footer">
-      <site-footer/>
+      <site-footer />
     </div>
 
   </div>
@@ -64,6 +84,7 @@
   import SiteFooter from '~/components/SiteFooter.vue'
   import ToggleTheme from '~/components/ToggleTheme.vue'
   import SiteSidebar from '~/components/SiteSidebar.vue'
+  import SiteSidebarPost from '~/components/SiteSidebarPost.vue'
   import SearchWordPress from '~/components/SearchWordPress.vue'
   import NavBar from '~/components/NavBar.vue'
 
@@ -72,10 +93,11 @@
       SiteFooter,
       ToggleTheme,
       SiteSidebar,
+      SiteSidebarPost,
       NavBar,
       SearchWordPress
     },
-    props: ['sidebar'],
+  props: ['sidebar', 'sidebarblog'],
     methods: {
     cookieStatus(status) {
       this.status = status;
@@ -97,7 +119,22 @@
 </script>
 
 <style lang="scss">
+@media screen and (max-width: 768px) {
+  .contatti-header {
+    display: none;
+  }
+  
+}
 
+.content-side {
+  .container {
+      grid-template-columns: 3fr 1fr !important;
+      display: grid;
+      @media screen and (max-width: 768px) {
+        grid-template-columns: 1fr !important;
+      }
+    }
+}
 .logo {
   position: relative;
 
@@ -114,6 +151,19 @@
   }
 }
 
+.header-box {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  
+  position: -webkit-sticky;
+  position: sticky;
+  width: 100%;
+  z-index: 3;
+  top: 0;
+  grid-column: 2;
+}
+
 .header__right {
     display: flex;
     align-items: center;
@@ -122,6 +172,9 @@
 .main {
   margin: 0 auto;
   padding: 1.5vw 15px 0;
+}
+.sidebar {
+  margin-top: 116px;
 }
 
 header {
@@ -133,11 +186,9 @@ header {
 }
 
 .footer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+ 
   padding: calc(var(--space) / 2);
-  text-align: center;
+ 
   font-size: .8em;
   > span {
     margin: 0 .35em;

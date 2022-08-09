@@ -4,7 +4,7 @@ import DefaultLayout from '~/layouts/Default.vue'
 import Vue from 'vue'
 import VueDisqus from 'vue-disqus'
 
-import "@fontsource/poppins"
+import "@fontsource/lexend";
 import VueCookieAcceptDecline from 'vue-cookie-accept-decline';
 
 
@@ -12,6 +12,8 @@ import 'vue-cookie-accept-decline/dist/vue-cookie-accept-decline.css'
 
 
 export default function (Vue, { head, isClient }) {
+
+  
 
   // Add attributes to HTML tag
   head.htmlAttrs = { lang: 'it' }
@@ -40,6 +42,8 @@ export default function (Vue, { head, isClient }) {
 
   
   if (process.isClient) {
+
+
 
     const VueProgressiveImage = require('vue-progressive-image').default;
     

@@ -3,13 +3,11 @@
 /* header */
 
 .header {
-
-  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
   position: sticky;
   width: 100%;
   z-index: 3;
   top: 0;
-  background-color: var(--bg-color-rgba);
+  background-color: white;
 }
 
 .header ul {
@@ -22,7 +20,12 @@
   }
 }
 
+.header-element {
+  display: flex;
+}
+
 .header li a {
+  color: var(--title-color);
   font-size: 16px;
   display: block;
   padding: 5px 10px;
@@ -109,6 +112,9 @@
 
 .header .menu-btn:checked ~ .menu {
   max-height: 440px;
+  @media screen and (max-width: 768px) {
+    max-height: 100vh;
+  }
 }
 
 .header .menu-btn:checked ~ .menu-icon .navicon {
@@ -148,12 +154,11 @@
 
   }
   .header {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
   }
-  .header :nth-child(2) { order: 3; }
-  .header :nth-child(3) { order: 2; }
+  /* .header :nth-child(2) { order: 3; }
+  .header :nth-child(3) { order: 2; } */
 
   .header .logo {
     max-width: 100%;
@@ -202,6 +207,29 @@
 }
 
 @media screen and (max-width: 768px) {
+  .menu {
+      position: absolute;
+      left: 0;
+      background: white;
+          width: 100%;
+      height: 100vh;
+      max-height: 100vh;
+      z-index: 9;
+      top: 58px;
+  
+      li {
+        border-top: 1px solid #D0D3D6;
+        padding: 5px 0;
+  
+        &:last-child {
+          border-bottom: 1px solid #D0D3D6;
+        }
+      }
+    }
+  
+    .menu-icon {
+      z-index: 999;
+    }
   .sub-menu {
    
       margin: 0 10px !important;
@@ -212,7 +240,18 @@
         }
       }
   }
+    .contatti-menu {
+      position: absolute;
+      bottom: 100px;
+      left: 10%;
+      width: 80%;
+      display: block !important;
+    }
 }
+.contatti-menu {
+  display: none;
+}
+
 
 
 .menu:not(.toggled) li:hover>.sub-menu, .dropdown-hover .menu:not(.toggled) ul li.sfHover>ul {
@@ -244,4 +283,8 @@
     text-align: right;
     background: transparent;
     z-index: 9999;
+}
+
+.toggle-theme {
+  margin: auto 20px;
 }

@@ -1,18 +1,18 @@
 module.exports = {
-  siteName: 'App di Incontri',
-  siteDescription: 'Raggiungi il successo con le App di Incontri',
+  siteName: 'Offerta Super',
+  siteDescription: '',
   icon: {
-    favicon: './src/assets/images/icon/appdiincontrilogo.png',
-    touchicon: './src/assets/images/icon/appdiincontrilogo.png'
+    favicon: './src/assets/images/icon/favicon-offerta-super.png',
+    touchicon: './src/assets/images/icon/favicon-offerta-super.png'
   },
-  siteUrl: 'https://www.appdiincontri.it/',
+  siteUrl: '/',
   pathPrefix: '/',
   plugins: [
     
     {
       use: 'gridsome-source-graphql',
       options: {
-        url: 'https://cdn.appdiincontri.it/graphql/',
+        url: 'http://localhost:8888/offertasuper_wordpress/graphql',
         fieldName: 'wp',
         typeName: 'WordPress',   
         headers: {
@@ -47,7 +47,7 @@ module.exports = {
     {
       use: 'gridsome-plugin-gtm',
       options: {
-        id: 'GTM-W6W3VJB',
+        id: '#',
         enabled: true,
         debug: true
       }

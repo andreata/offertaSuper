@@ -1,9 +1,9 @@
 <template>
   <aside class="mb-5">
-    <h2 class="mb-3 font-family-sans-serif h4">Tag</h2>
+    <p class="title-sidebar">Tag</p>
     <ul class="list-inline">
       <li class="list-inline-item mb-2" v-for="{ node } in $static.tags.edges" :key="node.slug">
-        <g-link :to="node.uri">{{ node.name }} ({{ node.count }})</g-link> 
+        <g-link :to="node.uri">{{ node.name }} ({{ node.count }})</g-link>
       </li>
     </ul>
   </aside>
@@ -27,6 +27,11 @@ query GetTagNodes {
 </static-query>
 
 <style lang="scss" scoped>
+.title-sidebar {
+  color: var(--orang-color);
+  font-size: 18px;
+  font-weight: 800;
+}
 .list-inline {
   grid-row-gap: 32px;
   li {
@@ -47,15 +52,17 @@ query GetTagNodes {
     box-flex: 1;
     flex-grow: 1;
     a {
+      color: black;
       max-width: 100%;
       overflow: hidden;
       text-overflow: ellipsis;
-      border: 1px solid var(--border-color);
-      border-radius: var(--radius);
-      padding: 3px;
+      background-color: var(--light-orange);
+      border-radius: 10px;
+      padding: 3px 8px;
       font-size: 13px;
+      margin-top: 5px;
       white-space: nowrap;
-      background-color: var(--bg-content-color);
+      
     }
   }
 }
