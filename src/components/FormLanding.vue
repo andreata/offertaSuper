@@ -182,7 +182,14 @@ export default {
 }
 
 
-
+input, textarea {
+    border: 1.5px solid #8989a28c;
+    padding: 5px;
+}
+input:focus,
+textarea:focus {
+border: 1.5px solid #f58600 !important;
+}
 article {
    
     margin: 10px;
@@ -282,6 +289,9 @@ article {
             color: var(--orang-color);
             margin: 0;
             padding: 10px;
+            @media screen and (max-width: 768px) {
+                font-size: 16px;
+            }
         }
 
         .input-fields {
@@ -303,7 +313,7 @@ article {
                     top: 0px;
                     left: 0px;
                     font-size: 17px;
-                    font-weight: normal;
+                    font-weight: 800;
                     color: #232D36;
                     line-height: 1.3;
                     text-align: center;
@@ -352,6 +362,12 @@ article {
             margin: 0;
             width: 100%;
             padding: 0 40px;
+            @media screen and (min-width: 768px) {
+
+                padding: 0px 20px 20px 20px;
+                width: calc(100% - 40px);
+                max-width: 550px;
+            }
             button {
                 width: 100%;
                 margin-bottom: 30px !important;

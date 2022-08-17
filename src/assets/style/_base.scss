@@ -114,6 +114,9 @@ img {
 }
 
 @media screen and (max-width: 768px) {
+  .VueCarousel-wrapper {
+    overflow: visible !important;
+  }
   .mobl {
     display: block;
   }
@@ -139,3 +142,4 @@ img {
 figure, video, iframe {
   max-width: 100%;
 }
+

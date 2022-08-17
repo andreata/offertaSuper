@@ -272,9 +272,10 @@
                     <h2 class="text-center mb-80">Le recensioni dei clienti che si sono affidati al selezionatore
                     </h2>
                     <ClientOnly>
-                    <carousel class="carousel" :perPageCustom="[[768, 2], [1024, 5]]" :paginationEnabled="true">
+                    <carousel class="carousel" :perPageCustom="[[768, 1], [1024, 5]]" :paginationEnabled="true">
                         <slide class="carousel-cell carousel-item-recensioni">
                             <div class="salmone-bg">
+                                <div class="Stars" style="--rating: 4.5;" aria-label="Rating of this product is 2.3 out of 5."></div>
                                 <p class="orange-font">Ottimo servizio</p>
                                 <p class="grey-font">Buongiorno, trovo assolutamente positivo il servizio che
                                     Offertasuper.it fornisce
@@ -286,6 +287,7 @@
 
                         <slide class="carousel-cell carousel-item-recensioni">
                             <div class="salmone-bg">
+                                <div class="Stars" style="--rating: 4.5;" aria-label="Rating of this product is 2.3 out of 5."></div>
                                 <p class="orange-font">Ottimo servizio</p>
                                 <p class="grey-font">Buongiorno, trovo assolutamente positivo il servizio che
                                     Offertasuper.it fornisce
@@ -297,6 +299,7 @@
 
                         <slide class="carousel-cell carousel-item-recensioni">
                             <div class="salmone-bg">
+                                <div class="Stars" style="--rating: 4.5;" aria-label="Rating of this product is 2.3 out of 5."></div>
                                 <p class="orange-font">Ottimo servizio</p>
                                 <p class="grey-font">Buongiorno, trovo assolutamente positivo il servizio che
                                     Offertasuper.it fornisce
@@ -308,6 +311,7 @@
 
                         <slide class="carousel-cell carousel-item-recensioni">
                             <div class="salmone-bg">
+                                <div class="Stars" style="--rating: 4.5;" aria-label="Rating of this product is 2.3 out of 5."></div>
                                 <p class="orange-font">Ottimo servizio</p>
                                 <p class="grey-font">Buongiorno, trovo assolutamente positivo il servizio che
                                     Offertasuper.it fornisce
@@ -319,6 +323,7 @@
 
                         <slide class="carousel-cell carousel-item-recensioni">
                             <div class="salmone-bg">
+                                <div class="Stars" style="--rating: 4.5;" aria-label="Rating of this product is 2.3 out of 5."></div>
                                 <p class="orange-font">Ottimo servizio</p>
                                 <p class="grey-font">Buongiorno, trovo assolutamente positivo il servizio che
                                     Offertasuper.it fornisce
@@ -330,6 +335,7 @@
 
                         <slide class="carousel-cell carousel-item-recensioni">
                             <div class="salmone-bg">
+                                <div class="Stars" style="--rating: 4.5;" aria-label="Rating of this product is 2.3 out of 5."></div>
                                 <p class="orange-font">Ottimo servizio</p>
                                 <p class="grey-font">Buongiorno, trovo assolutamente positivo il servizio che
                                     Offertasuper.it fornisce
@@ -425,6 +431,22 @@ export default {
 </script>
 
 <style lang="scss" soped>
+
+.Stars {
+    --percent: calc(var(--rating) / 5 * 100%);
+    display: inline-block;
+    font-size: var(--star-size);
+    font-family: Times;
+    line-height: 1
+}
+
+.Stars::before {
+    content: "★★★★★";
+    letter-spacing: 3px;
+    background: linear-gradient(90deg, var(--star-background) var(--percent), var(--star-color) var(--percent));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: #ffcc00
+}
 @media screen and (min-width: 1850px) {
     .bg-cielo .VueCarousel-wrapper {
         margin-left: calc((100% - 1440px) / 2);
@@ -504,7 +526,7 @@ export default {
         p {
             margin-bottom: 0;
             margin-left: 10px;
-            font-size: 21px;
+            font-size: 19px;
             font-weight: 800;
             color: var(--orang-color);
         }
@@ -681,4 +703,9 @@ export default {
     font-weight: 100;
 }
  
+ @media screen and (max-width: 768px) and (min-width: 320px) {
+     .VueCarousel-inner {
+         flex-basis: 230px !important;
+     }
+ }
 </style>

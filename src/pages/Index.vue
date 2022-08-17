@@ -257,7 +257,7 @@
               <g-image class="img-salmone" src="~/assets/images/icon/icon-risparmio.svg" alt="" width="60" />
               <div>
                 <h3 class="orange-font">Risparmio</h3>
-                <p class="grey-font">Con la nostra soluzione risparmierai fino a 240€/anno </p>
+                <p class="grey-font">Con la nostra soluzione risparmierai fino a240€/anno </p>
               </div>
             </div>
 
@@ -276,7 +276,7 @@
               <div>
                 <h3 class="orange-font">Affidabilità</h3>
                 <p class="grey-font">Il nostro servizio è affidabile e gratis, siamo l’unico servizio ad affidarti un
-                  consulente dedicato che potrai contattare SEMPRE!   </p>
+                  consulente dedicato che potrai contattare SEMPRE! </p>
               </div>
             </div>
             <div>
@@ -295,6 +295,7 @@
             <carousel class="carousel" :perPageCustom="[[768, 2], [1024, 5]]" :paginationEnabled="true">
               <slide class="carousel-cell carousel-item-home">
                 <div class="salmone-bg">
+
                   <h3>Offerta fibra ottica</h3>
                   <p class="sal-1">Provincia di Firenze</p>
                 </div>
@@ -307,6 +308,7 @@
 
               <slide class="carousel-cell carousel-item-home">
                 <div class="salmone-bg">
+
                   <h3>Offerta fibra ottica</h3>
                   <p class="sal-1">Provincia di Firenze</p>
                 </div>
@@ -319,6 +321,7 @@
 
               <slide class="carousel-cell carousel-item-home">
                 <div class="salmone-bg">
+
                   <h3>Offerta fibra ottica</h3>
                   <p class="sal-1">Provincia di Firenze</p>
                 </div>
@@ -331,6 +334,7 @@
 
               <slide class="carousel-cell carousel-item-home">
                 <div class="salmone-bg">
+
                   <h3>Offerta fibra ottica</h3>
                   <p class="sal-1">Provincia di Firenze</p>
                 </div>
@@ -343,6 +347,7 @@
 
               <slide class="carousel-cell carousel-item-home">
                 <div class="salmone-bg">
+
                   <h3>Offerta fibra ottica</h3>
                   <p class="sal-1">Provincia di Firenze</p>
                 </div>
@@ -355,6 +360,7 @@
 
               <slide class="carousel-cell carousel-item-home">
                 <div class="salmone-bg">
+
                   <h3>Offerta fibra ottica</h3>
                   <p class="sal-1">Provincia di Firenze</p>
                 </div>
@@ -376,9 +382,10 @@
 
           <h2 class="text-center mb-80">Le recensioni dei clienti che si sono affidati al selezionatore</h2>
           <ClientOnly>
-            <carousel class="carousel" :perPageCustom="[[768, 2], [1024, 5]]" :paginationEnabled="true">
+            <carousel class="carousel" :perPageCustom="[[768, 1], [1024, 5]]" :paginationEnabled="true">
               <slide class="carousel-cell carousel-item-recensioni">
                 <div class="salmone-bg">
+                  <div class="Stars" style="--rating: 4.5;" aria-label="Rating of this product is 2.3 out of 5."></div>
                   <p class="orange-font">Ottimo servizio</p>
                   <p class="grey-font">Buongiorno, trovo assolutamente positivo il servizio che Offertasuper.it
                     fornisce
@@ -390,6 +397,7 @@
 
               <slide class="carousel-cell carousel-item-recensioni">
                 <div class="salmone-bg">
+                  <div class="Stars" style="--rating: 4.5;" aria-label="Rating of this product is 2.3 out of 5."></div>
                   <p class="orange-font">Ottimo servizio</p>
                   <p class="grey-font">Buongiorno, trovo assolutamente positivo il servizio che Offertasuper.it
                     fornisce
@@ -401,6 +409,7 @@
 
               <slide class="carousel-cell carousel-item-recensioni">
                 <div class="salmone-bg">
+                  <div class="Stars" style="--rating: 4.5;" aria-label="Rating of this product is 2.3 out of 5."></div>
                   <p class="orange-font">Ottimo servizio</p>
                   <p class="grey-font">Buongiorno, trovo assolutamente positivo il servizio che Offertasuper.it
                     fornisce
@@ -412,6 +421,7 @@
 
               <slide class="carousel-cell carousel-item-recensioni">
                 <div class="salmone-bg">
+                  <div class="Stars" style="--rating: 4.5;" aria-label="Rating of this product is 2.3 out of 5."></div>
                   <p class="orange-font">Ottimo servizio</p>
                   <p class="grey-font">Buongiorno, trovo assolutamente positivo il servizio che Offertasuper.it
                     fornisce
@@ -423,6 +433,7 @@
 
               <slide class="carousel-cell carousel-item-recensioni">
                 <div class="salmone-bg">
+                  <div class="Stars" style="--rating: 4.5;" aria-label="Rating of this product is 2.3 out of 5."></div>
                   <p class="orange-font">Ottimo servizio</p>
                   <p class="grey-font">Buongiorno, trovo assolutamente positivo il servizio che Offertasuper.it
                     fornisce
@@ -434,6 +445,7 @@
 
               <slide class="carousel-cell carousel-item-recensioni">
                 <div class="salmone-bg">
+                  <div class="Stars" style="--rating: 4.5;" aria-label="Rating of this product is 2.3 out of 5."></div>
                   <p class="orange-font">Ottimo servizio</p>
                   <p class="grey-font">Buongiorno, trovo assolutamente positivo il servizio che Offertasuper.it
                     fornisce
@@ -443,7 +455,7 @@
                 </div>
               </slide>
             </carousel>
-            </ClientOnly>
+          </ClientOnly>
         </div>
       </div>
 
@@ -599,6 +611,22 @@ export default {
 </script>
 
 <style lang="scss" soped>
+
+.Stars {
+  --percent: calc(var(--rating) / 5 * 100%);
+  display: inline-block;
+  font-size: var(--star-size);
+  font-family: Times;
+  line-height: 1
+}
+
+.Stars::before {
+  content: "★★★★★";
+  letter-spacing: 3px;
+  background: linear-gradient(90deg, var(--star-background) var(--percent), var(--star-color) var(--percent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: #ffcc00
+}
 
 @media screen and (min-width: 1850px) {
   .bg-cielo .VueCarousel-wrapper {
@@ -757,6 +785,7 @@ export default {
       display: grid;
       grid-template-columns: 1fr 3fr;
       align-items: center;
+      margin-top: -15px;
       .h2-promo {
         
         font-size: 20px;

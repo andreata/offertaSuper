@@ -9,31 +9,31 @@ const c8 = () => import(/* webpackChunkName: "page--src--pages--index-vue" */ "/
 
 export default [
   {
-    path: "/offertasuper_wordpress/tag/telefonia/",
+    path: "/tag/telefonia/",
     component: c1
   },
   {
-    path: "/offertasuper_wordpress/tag/mondo/",
+    path: "/tag/mondo/",
     component: c1
   },
   {
-    path: "/offertasuper_wordpress/tag/fibra/",
+    path: "/tag/fibra/",
     component: c1
   },
   {
-    path: "/offertasuper_wordpress/category/senza-categoria/",
+    path: "/category/senza-categoria/",
     component: c2
   },
   {
-    path: "/offertasuper_wordpress/tag/adsl/",
+    path: "/tag/adsl/",
     component: c1
   },
   {
-    path: "/offertasuper_wordpress/category/consigli-per-risparmiare/",
+    path: "/category/consigli-per-risparmiare/",
     component: c2
   },
   {
-    path: "/offertasuper_wordpress/category/blog/",
+    path: "/category/blog/",
     component: c2
   },
   {

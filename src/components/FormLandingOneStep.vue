@@ -184,15 +184,15 @@ export default {
 
 
 article {
-
     margin: 10px;
     margin: auto;
-    
     max-width: 720px;
     min-height: 380px;
     perspective: 1000px;
-
     width: 100%;
+    @media screen and (max-width: 768px) {
+        min-height: 30px;
+    }
 
     header {
         border-bottom: 0;
@@ -364,6 +364,12 @@ article {
             margin: 0;
             width: 100%;
             padding: 0 40px;
+            @media screen and (min-width: 768px) {
+            
+                    padding: 0px 20px 20px 20px;
+                    width: calc(100% - 40px);
+                    max-width: 550px;
+                }
 
             button {
                 width: 100%;

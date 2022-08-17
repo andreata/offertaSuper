@@ -25,16 +25,19 @@
 
     <header class="header">
       <div class="header-box">
-        <div class="logo">
+        <div class="logo order-2">
           <g-image src="~/assets/images/icon/logo_offerta_super.svg" alt="" width="200" />
           <g-link class="logo-link" to="/">link</g-link>
         </div>
 
-        <div class="header-element">
+        <div class="header-element order-1">
           <NavBar />
-          <ToggleTheme />
+          <!-- <ToggleTheme /> -->
+
           <g-image class="contatti-header" src="~/assets/images/icon/contatti.svg" alt="" width="200" />
         </div>
+
+        <g-image class="contatti-header-mob order-3" src="~/assets/images/icon/domande.svg" alt="" width="200" />
 
 
         <!-- <SearchWordPress />  -->
@@ -123,8 +126,30 @@
   .contatti-header {
     display: none;
   }
+  .order-3 {
+    order: 3;
+    margin-left: 28px;
+  }
+  .order-2 {
+    order: 2;
+  }
+  .order-1 {
+    order: 1;
+  }
+    .header .menu-icon {
+      padding-left: 0 !important;
+    }
   
 }
+
+@media screen and (min-width: 768px) {
+  .contatti-header-mob {
+    display: none;
+  }
+
+}
+
+
 
 .content-side {
   .container {

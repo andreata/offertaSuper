@@ -12,7 +12,7 @@ module.exports = {
     {
       use: 'gridsome-source-graphql',
       options: {
-        url: 'http://localhost:8888/offertasuper_wordpress/graphql',
+        url: 'https://jovial-einstein.34-116-235-233.plesk.page/graphql',
         fieldName: 'wp',
         typeName: 'WordPress',   
         headers: {
