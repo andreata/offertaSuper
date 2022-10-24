@@ -32,7 +32,7 @@
 
         <div class="header-element order-1">
           <NavBar />
-          <!-- <ToggleTheme /> -->
+          <ToggleTheme />
 
           <g-image class="contatti-header" src="~/assets/images/icon/contatti.svg" alt="" width="200" />
         </div>

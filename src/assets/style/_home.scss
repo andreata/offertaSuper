@@ -1,37 +1,43 @@
-
-.bg-home {
-    background-image: url('../images/icon/bg-home.svg');
-    background-size: cover;
-    background-position: right;
-    @media screen and (max-width: 768px) {
-        background-position: center;
-        background-image: url('../images/icon/base-mobile.svg');
-    }
-}
-.bg-home-2 {
-    background-image: url('../images/icon/offerta_super_landing-erore.svg');
-    background-size: cover;
-    background-position: right;
-    @media screen and (max-width: 768px) {
-        background-position: center;
-        background-image: url('../images/icon/base-mobile.svg');
-    }
-}
-.bg-home-3 {
-    background-image: url('../images/icon/bg-chi-siamo.svg');
-    background-size: cover;
-    background-position: right;
-}
-
-.bg-home-4 {
-    background-image: url('../images/icon/offerta_super_landing-erore-2.svg');
+body[data-theme="light"] {
+    .bg-home {
+        background-image: url('../images/icon/bg-home.svg');
         background-size: cover;
         background-position: right;
+
         @media screen and (max-width: 768px) {
             background-position: center;
             background-image: url('../images/icon/base-mobile.svg');
         }
-    
+    }
+
+    .bg-home-2 {
+        background-image: url('../images/icon/bg-home.svg');
+        background-size: cover;
+        background-position: right;
+
+        @media screen and (max-width: 768px) {
+            background-position: center;
+            background-image: url('../images/icon/base-mobile.svg');
+        }
+    }
+
+    .bg-home-3 {
+        background-image: url('../images/icon/bg-chi-siamo.svg');
+        background-size: cover;
+        background-position: right;
+    }
+
+    .bg-home-4 {
+        background-image: url('../images/icon/offerta_super_landing-erore-2.svg');
+        background-size: cover;
+        background-position: right;
+
+        @media screen and (max-width: 768px) {
+            background-position: center;
+            background-image: url('../images/icon/base-mobile.svg');
+        }
+
+    }
 }
 
 .container-image-bg {
@@ -147,11 +153,15 @@
     }
 }
 
-
+body[data-theme="light"] {
+    .bg-cielo {
+        background-image: url('../images/icon/bg-cielo.svg');
+        background-size: cover;
+        background-position: right;
+    }
+}
 .bg-cielo {
-    background-image: url('../images/icon/bg-cielo.svg');
-    background-size: cover;
-    background-position: right;
+   
     padding-top: 70px;
     .carousel {
         margin-top: 80px;

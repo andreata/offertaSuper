@@ -1,19 +1,17 @@
 <template>
-<Layout :sidebar="true" class="side">
-  <div>
-    <div class="post-title">
-      <h1 class="post-title__text" v-html="$page.page.title"/>
-    </div>
+<Layout >
+  <div class="full-container">
+    <div class="container">
 
-    <div class="breadcrumbs">
+    <!-- <div class="breadcrumbs">
       <ul>
           <li v-for="breadcrumb in $page.page.seo.breadcrumbs" :key="breadcrumb.text" >
               <g-link :to="breadcrumb.url">{{ breadcrumb.text }}</g-link>
           </li>
         </ul>
-    </div>
+    </div> -->
 
-    <div class="post content-box">
+    <div>
       <div class="post__header">
         <img
               v-if="$page.page.featuredImage"
@@ -23,31 +21,52 @@
             />
       </div>
 
-      <div v-html="$page.page.content"/>
-
-      <template v-if="$page.page.categories.length">
-          <h4>Posted in</h4>
-          <ul class="list categories">
-            <li v-for="category in $page.page.categories" :key="category.id" >
-              <g-link :to="category.link">{{ category.name }}</g-link>
-            </li>
-          </ul>
-        </template>
-        <template v-if="$page.page.tags.edges.length">
-          <h4>Tags</h4>
-          <ul class="list tags">
-            <li v-for="edge in $page.page.tags.edges" :key="edge.node" >
-              <g-link :to="edge.node.link">{{ edge.node.name }}</g-link>
-            </li>
-          </ul>
-        </template> 
-        
-      <div class="post__footer">
-        <PostTags :post="$post" /> 
+      <div class="post-title">
+        <h1 class="post-title__text" v-html="$page.page.title" />
       </div>
-    </div>
 
-    <script type="application/ld+json" class="yoast-schema-graph">{{$page.page.seo.schema.raw}}</script>
+      <p v-html="$page.page.pagina.primoParagrafoLanding"/>
+
+
+      <!-- Loghi -->
+      <div class="">
+        <p class="partner-fibra-font">I nostri partner per la fibra ottica</p>
+        <div class="loghi-partner">
+          <g-image class="image-fibra" src="~/assets/images/icon/partner/tim.png" alt="" width="440" />
+          <g-image class="image-fibra" src="~/assets/images/icon/partner/fastweb.png" alt="" width="440" />
+          <g-image class="image-fibra" src="~/assets/images/icon/partner/wind.png" alt="" width="440" />
+          <g-image class="image-fibra" src="~/assets/images/icon/partner/eolo.png" alt="" width="440" />
+          <g-image class="image-fibra" src="~/assets/images/icon/partner/linkem.png" alt="" width="440" />
+          
+         <!--  <g-image class="mobile-image" src="~/assets/images/icon/loghi-mobile.jpg" alt="" width="1440" /> -->
+        </div>
+      </div>
+
+      <div class="page-layout-grid">
+        <div class="grid-p-1">
+
+          <h2 v-html="$page.page.pagina.titoloPrimaCta" />
+          <p v-html="$page.page.pagina.paragrafoPrimaCta" />
+
+          <form-landing-dinamica />
+
+
+          <div v-html="$page.page.content"/>
+        </div>
+
+        <div class="grid-p-2">
+          <div class="stiky">
+           
+            <form-landing-dinamica />
+          </div>
+        </div>
+
+      </div>
+
+    
+    </div> 
+    </div>
+    <!--<script type="application/ld+json" class="yoast-schema-graph">{{$page.page.seo.schema.raw}}</script>-->
 
     </div>
   </Layout>
@@ -56,7 +75,7 @@
 <page-query>
 
 query Page ($slug: String) {
-  page: postBy(slug: $slug) {
+  page: pageBy(uri: $slug) {
     title
     slug
     link
@@ -70,31 +89,16 @@ query Page ($slug: String) {
           }
       }
     }
-    excerpt
+    pagina {
+      primoParagrafoLanding
+      paragrafoPrimaCta
+      titoloPrimaCta
+    }
+    
     date
-    author {
-      node {
-        name
-      }
-    }
+    
     content
-    categories {
-      nodes {
-        name
-        id
-        link
-      }
-    }
-    tags {      
-      edges {
-        node {
-          databaseId
-          id
-          link
-          name
-        }
-      }
-    }
+    
     seo {
       breadcrumbs {
         text
@@ -112,6 +116,10 @@ query Page ($slug: String) {
       focuskw
       metaRobotsNofollow
       metaRobotsNoindex
+      opengraphDescription
+      opengraphImage {
+        mediaItemUrl
+      }
     }
     
   }
@@ -120,22 +128,22 @@ query Page ($slug: String) {
 </page-query>
 
 <script>
-import SiteSidebar from '~/components/SiteSidebar.vue'
+import FormLandingDinamica from '~/components/FormLandingDinamica.vue'
 
 export default {
   components: {
-    SiteSidebar,
+    FormLandingDinamica,
   },
   metaInfo () {
-    return {
+   /*  return {
       title: this.$page.page.seo.title,
       meta: [
         {
           description: this.$page.page.seo.metaDesc,
           key: this.$page.page.seo.metaKeywords,
         }
-    ],
-    }
+      ],
+    } */
   }
   
 }
@@ -144,11 +152,26 @@ export default {
 </script>
 
 <style lang="scss">
+.page-layout-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 15px;
+  @media screen and (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+  .grid-p-2 {
+    .stiky {
+      position: sticky;
+      top: 60px;
+    }
+  }
+}
 
 .post-title {
     padding: calc(var(--space) / 2) 0 0 0;
-    max-width: var(--content-width);
+    //max-width: var(--content-width);
     margin: 0 auto;
+    padding-left: 0 !important;
 }
 
 .post {
@@ -200,6 +223,25 @@ export default {
   .post-title, .breadcrumbs {
       padding: 0 var(--space);
   }
+}
+
+.loghi-partner {
+  .image-fibra {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin: 6px;
+    padding: 8px;
+    &:first-child {
+      margin-left: 0px;
+    }
+  }
+  
+}
+.partner-fibra-font {
+  font-family: "Lexend";
+  font-weight: 600;
+  line-height: 1.15;
+  font-size: 1.6em;
 }
 </style>
 

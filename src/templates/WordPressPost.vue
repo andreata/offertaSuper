@@ -179,6 +179,7 @@ export default {
       {
         description: this.$page.post.seo.metaDesc,
         key: this.$page.post.seo.metaKeywords,
+        canonical: this.$page.post.seo.canonical,
       },
       {
         key: 'og:title',

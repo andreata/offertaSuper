@@ -126,6 +126,7 @@ module.exports = function (api) {
                             title
                             slug
                             id
+                            
                         }
                     }
                 }       
@@ -139,7 +140,8 @@ module.exports = function (api) {
                 context: {
                     id: node.id,
                     slug: node.slug,
-                    title: node.title
+                    title: node.title,
+                  
                 }
             })
         })
