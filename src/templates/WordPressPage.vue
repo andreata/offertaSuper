@@ -463,7 +463,7 @@ export default {
   .grid-p-2 {
     .stiky {
       position: sticky;
-      top: 60px;
+      top: 80px;
     }
   }
 }
