@@ -54,7 +54,7 @@
     transform: translateX(10px);
 }
 
-.button-vuoto:after {
+.button-vuoto:after, .wp-block-button__link:after {
     content: url('data:image/svg+xml, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16.571 12"><path fill="%23F58600" d="M16.356,5.429,11.785.286A.877.877,0,0,0,10.568.209a.879.879,0,0,0-.059,1.219l3.3,3.714H.857a.857.857,0,1,0,0,1.714H13.812l-3.3,3.714a.878.878,0,0,0,.068,1.218.867.867,0,0,0,1.209-.076l4.571-5.143a.866.866,0,0,0,0-1.143Z" transform="translate(0 0)" /></svg>');
     font-size: 80%;
     margin-left: 10px;
@@ -63,6 +63,6 @@
     transition: all .3s ease 10ms;
 }
 
-.button-vuoto:hover:after {
+.button-vuoto:hover:after, .wp-block-button__link:hover:after {
     transform: translateX(10px);
 }

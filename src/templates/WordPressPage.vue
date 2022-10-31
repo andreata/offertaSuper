@@ -23,35 +23,32 @@
       <div class="full-container bg-home-3">
         <div class="container">
           <h1 class="title-home">{{ $page.page.title }}</h1>
-          <p class="p-home">Noi di Offerta Super crediamo che nessuno dovrebbe spendere troppo tempo e troppi
-            soldi per internet, telefono, luce e gas.</p>
-          <p class="orange-home font-bold">Per questo ci impegniamo ogni giorno per selezionare le migliori
-            offerte online con soluzioni smart e innovative.</p>
+          <p class="text-center max-700" v-html="$page.page.pagina.primoParagrafoLanding" />
       
       
       
         </div>
       </div>
 
-      <div class="full-container m-t-60">
+      <div class="full-container m-t-60 loghi">
         <div class="container">
 
       <!-- <div class="post-title">
         <h1 class="post-title__text" v-html="$page.page.title" />
       </div> -->
 
-        <p v-html="$page.page.pagina.primoParagrafoLanding"/>
+       
 
 
         <!-- Loghi -->
         <div class="">
           <p class="partner-fibra-font">I nostri partner per la fibra ottica</p>
           <div class="loghi-partner">
-            <g-image class="image-fibra" src="~/assets/images/icon/partner/tim.png" alt="" width="440" />
-            <g-image class="image-fibra" src="~/assets/images/icon/partner/fastweb.png" alt="" width="440" />
-            <g-image class="image-fibra" src="~/assets/images/icon/partner/wind.png" alt="" width="440" />
-            <g-image class="image-fibra" src="~/assets/images/icon/partner/eolo.png" alt="" width="440" />
-            <g-image class="image-fibra" src="~/assets/images/icon/partner/linkem.png" alt="" width="440" />
+            <g-link to="/home-landing-one-step/"><g-image class="image-fibra" src="~/assets/images/icon/partner/tim.png" alt="" width="440" /></g-link>
+            <g-link to="/home-landing-one-step/"><g-image class="image-fibra" src="~/assets/images/icon/partner/fastweb.png" alt="" width="440" /></g-link>
+            <g-link to="/home-landing-one-step/"><g-image class="image-fibra" src="~/assets/images/icon/partner/wind.png" alt="" width="440" /></g-link>
+            <g-link to="/home-landing-one-step/"><g-image class="image-fibra" src="~/assets/images/icon/partner/eolo.png" alt="" width="440" /></g-link>
+            <g-link to="/home-landing-one-step/"><g-image class="image-fibra" src="~/assets/images/icon/partner/linkem.png" alt="" width="440" /></g-link>
             
           <!--  <g-image class="mobile-image" src="~/assets/images/icon/loghi-mobile.jpg" alt="" width="1440" /> -->
           </div>
@@ -95,6 +92,10 @@
     </div>
     <!--<script type="application/ld+json" class="yoast-schema-graph">{{$page.page.seo.schema.raw}}</script>-->
 
+  
+
+    <div v-if="$page.page.pagina.visibilitaBloccoAccordion" />
+
   <div class="full-container m-t-60 m-b-60">
     <div class="container margin-nonoauto">
       <p class="h2">Domande Frequenti Fibra Ottica</p>
@@ -103,7 +104,7 @@
 
           <app-accordion class="mb-4">
             <template v-slot:title>
-              <span class="font-semibold text-xl">Lorem ipsum dolor sit amet</span>
+              <h5 class="accordion-h5"><span class="font-semibold text-xl">H5 - Lorem ipsum dolor sit amet</span></h5>
             </template>
             <template v-slot:content>
               <p>
@@ -117,7 +118,7 @@
 
           <app-accordion class="mb-4">
             <template v-slot:title>
-              <span class="font-semibold text-xl">Lorem ipsum dolor sit amet</span>
+              <h5 class="accordion-h5"><span class="font-semibold text-xl">H5 - Lorem ipsum dolor sit amet</span></h5>
             </template>
             <template v-slot:content>
               <p>
@@ -134,7 +135,7 @@
 
           <app-accordion class="mb-4">
             <template v-slot:title>
-              <span class="font-semibold text-xl">Lorem ipsum dolor sit amet</span>
+              <h5 class="accordion-h5"><span class="font-semibold text-xl">H5 - Lorem ipsum dolor sit amet</span></h5>
             </template>
             <template v-slot:content>
               <p>
@@ -148,7 +149,7 @@
 
           <app-accordion class="mb-4">
             <template v-slot:title>
-              <span class="font-semibold text-xl">Lorem ipsum dolor sit amet</span>
+              <h5 class="accordion-h5"><span class="font-semibold text-xl">H5 -Lorem ipsum dolor sit amet</span></h5>
             </template>
             <template v-slot:content>
               <p>
@@ -170,7 +171,7 @@
 
       <!-- Box Salmone con 5 icone -->
       
-      <div class="full-container container-salmone">
+      <!-- <div class="full-container container-salmone">
         <div class="container">
           <h2 class="text-center mb-80">
             Perché affidarsi al primo selezionatore di offerte in Italia
@@ -225,13 +226,13 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
 
 
 
         <!-- Box Salmone con 5 icone -->
         
-        <div class="full-container ">
+       <!--  <div class="full-container ">
           <div class="container">
             <h2 class="text-center mb-80">
               I nostri valori
@@ -265,7 +266,7 @@
         
             </div>
           </div>
-        </div>
+        </div> -->
 
     </div>
   </Layout>
@@ -292,6 +293,7 @@ query Page ($slug: String) {
       primoParagrafoLanding
       paragrafoPrimaCta
       titoloPrimaCta
+      visibilitaBloccoAccordion
     }
     
     date
@@ -362,6 +364,23 @@ export default {
   font-weight: 700;
 }
 
+.wp-block-button__link {
+      padding: 15px;
+        border: 1px solid var(--orang-color);
+        border-radius: 30px;
+        background-color: var(--salmone);
+        color: var(--orang-color);
+        font-size: 16px;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
+        width: fit-content;
+}
+
+
+
 .grid-five-column-1 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -389,6 +408,10 @@ export default {
   .bg-home-3 {
         padding-bottom: 28px;
   }
+}
+
+.accordion-h5 {
+  margin: 0 !important;
 }
 
 .grid-four-column {
@@ -538,7 +561,14 @@ export default {
   }
 }
 
+.loghi {
+  .container {
+        width: 100%;
+  }
+}
+
 .loghi-partner {
+  min-width: 100%;
   .image-fibra {
     border: 1px solid #ccc;
     border-radius: 8px;
@@ -549,6 +579,9 @@ export default {
     }
   }
   
+}
+.max-700 {
+  max-width: 1200px;
 }
 .partner-fibra-font {
   font-family: "Lexend";
