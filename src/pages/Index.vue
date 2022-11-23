@@ -4,9 +4,7 @@
       <div class="full-container bg-home">
         <div class="container">
           <h1 class="title-home desk">Selezioniamo le migliori offerte per te</h1>
-          <p class="p-home desk">Offerta Super è il primo selezionatore della migliore offerta del mese per internet,
-            telefono,
-            luce e gas.</p>
+          <p class="p-home desk">Facciamo tutto noi, Se vuoi risparmiare con noi ottieni il massimo ed hai anche il massimo del servizio e della velocità</p>
 
           <div class="mobl">
             <div class="home-layout-mobile">
@@ -96,7 +94,7 @@
 
             <div class="item-box">
               <p class="promo">Promo del mese</p>
-              <g-image class="img-promo" src="~/assets/images/icon/offerte.svg" alt="" width="66" />
+              <g-image class="img-promo" src="~/assets/images/icon/offerte.svg" alt="" width="66" height="62" />
               <h2 class="h2-promo">Scopri tutte le offerte</h2>
               <h3 class="h3-promo">Qui trovi tutte le migliori offerte telefonia fissa</h3>
               <p class="p-promo-standard"> <span>Selezionate da Offerta Super in esclusiva per te!</span></p>
@@ -109,7 +107,7 @@
 
             <div class="item-box">
               <p class="promo">Consulenza</p>
-              <g-image class="img-promo" src="~/assets/images/icon/risparmio.svg" alt="" width="66" />
+              <g-image class="img-promo" src="~/assets/images/icon/risparmio.svg" alt="" width="66" height="62" />
               <h2 class="h2-promo">Richiedi un'analisi delle tue spese</h2>
               <h3 class="h3-promo">Risparmia 500€ l'anno</h3>
               <p class="li-promo"><svg xmlns="http://www.w3.org/2000/svg" width="17.001" height="16.999"
@@ -146,7 +144,7 @@
               <div class="item-box">
                 <p class="promo">Promo del mese</p>
                 <div class="flex-homeland">
-                  <g-image class="img-promo" src="~/assets/images/icon/internet-casa.svg" alt="" width="66" />
+                  <g-image class="img-promo" src="~/assets/images/icon/internet-casa.svg" alt="" width="66" height="62" />
                   <div>
                     <h2 class="h2-promo">Internet Casa</h2>
                     <h3 class="h3-promo">Risparmia 200€ l'anno</h3>
@@ -160,7 +158,7 @@
               <div class="item-box">
                 <p class="promo">Promo del mese</p>
                 <div class="flex-homeland">
-                  <g-image class="img-promo" src="~/assets/images/icon/luce.svg" alt="" width="66" />
+                  <g-image class="img-promo" src="~/assets/images/icon/luce.svg" alt="" width="66" height="62" />
                   <div>
                     <h2 class="h2-promo">Luce e gas</h2>
                     <h3 class="h3-promo">Risparmia 240€ l'anno</h3>
@@ -173,7 +171,7 @@
               <div class="item-box">
                 <p class="promo">Offerte</p>
                 <div class="flex-homeland">
-                  <g-image class="img-promo" src="~/assets/images/icon/offerte.svg" alt="" width="66" />
+                  <g-image class="img-promo" src="~/assets/images/icon/offerte.svg" alt="" width="66" height="62" />
                   <div>
                     <h2 class="h2-promo">Scopri le offerte</h2>
                     <h3 class="h3-promo">Telefonia fissa</h3>
@@ -186,7 +184,7 @@
               <div class="item-box">
                 <p class="promo">Consulenza</p>
                 <div class="flex-homeland">
-                  <g-image class="img-promo" src="~/assets/images/icon/risparmio.svg" alt="" width="66" />
+                  <g-image class="img-promo" src="~/assets/images/icon/risparmio.svg" alt="" width="66" height="62" />
                   <div>
                     <h2 class="h2-promo">Richiedi un'analisi</h2>
                     <h3 class="h3-promo">Risparmia 500€ l'anno</h3>
@@ -213,7 +211,14 @@
             <div class="flex-content-copy">
               <div>
                 <h2>Abbiamo analizzato per te più di 50 offerte internet, luce e gas</h2>
-                <p>Il nostro selezionatore è in grado di trovare con estrema precisione la migliore offerta per TE.
+                <p>Perché se vuoi risparmiare con noi trovi le offerte più convenienti, ma ti offriamo anche:
+                <span class="bull1">La certezza di trovare le migliori soluzioni, ovvero le migliori tecnologie (per esempio se un utente cerca la miglior
+                connessione per lo streaming o il gaming o lo smart working, non è detto che cerchi il prezzo migliore, è disponibile a
+                pagare di più se trova la connessione</span>
+                <span class="bull1">Poi offriamo: Miglior prezzo, qualità e assistenza.</span>
+                Poi offriamo velocità e facilità, cioè facciamo tutto noi (zero burocrazia) e facciamo tutto velocemente (non potrai
+                <span class="bull1">avere le nuove utenze ecc nel miglior tempo possibile</span>
+
                 </p>
                 <p class="content-2">Che abbia il miglio prezzo, chiaro e trasparente.Che possa fornirti un servizio
                   di
@@ -611,13 +616,16 @@ export default {
 </script>
 
 <style lang="scss" soped>
-
 .Stars {
   --percent: calc(var(--rating) / 5 * 100%);
   display: inline-block;
   font-size: var(--star-size);
   font-family: Times;
   line-height: 1
+}
+
+.bull1 {
+  display: block;
 }
 
 .Stars::before {
@@ -821,5 +829,4 @@ export default {
 .light {
   font-weight: 100;
 }
-
 </style>

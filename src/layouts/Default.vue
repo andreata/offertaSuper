@@ -1,7 +1,7 @@
 <template>
   <div class="layout">
 
-    <vue-cookie-accept-decline :ref="'myPanel1'" :elementId="'myPanel1'" :debug="false" :position="'bottom-left'"
+    <!-- <vue-cookie-accept-decline :ref="'myPanel1'" :elementId="'myPanel1'" :debug="false" :position="'bottom-left'"
       :type="'floating'" :disableDecline="false" :transitionName="'slideFromBottom'" :showPostponeButton="false"
       @status="cookieStatus" @clicked-accept="cookieClickedAccept" @clicked-decline="cookieClickedDecline">
 
@@ -21,12 +21,12 @@
       <div slot="acceptContent">
         Ok, acconsento!
       </div>
-    </vue-cookie-accept-decline>
+    </vue-cookie-accept-decline> -->
 
     <header class="header">
       <div class="header-box">
         <div class="logo order-2">
-          <g-image src="~/assets/images/icon/logo_offerta_super.svg" alt="" width="200" />
+          <g-image src="~/assets/images/icon/logo_offerta_super.svg" alt="" width="200" height="37" />
           <g-link class="logo-link" to="/">link</g-link>
         </div>
 
@@ -34,10 +34,10 @@
           <NavBar />
           <ToggleTheme />
 
-          <g-image class="contatti-header" src="~/assets/images/icon/contatti.svg" alt="" width="200" />
+          <g-image class="contatti-header" src="~/assets/images/icon/contatti.svg" alt="" width="238" height="48" />
         </div>
 
-        <g-image class="contatti-header-mob order-3" src="~/assets/images/icon/domande.svg" alt="" width="200" />
+        <g-image class="contatti-header-mob order-3" src="~/assets/images/icon/domande.svg" alt="" width="31" height="31" />
 
 
         <!-- <SearchWordPress />  -->
@@ -102,7 +102,7 @@
     },
   props: ['sidebar', 'sidebarblog'],
     methods: {
-    cookieStatus(status) {
+    /* cookieStatus(status) {
       this.status = status;
     },
     cookieClickedAccept() {
@@ -111,12 +111,12 @@
     },
     cookieClickedDecline() {
       this.status = 'decline';
-    }
+    } */
   },
   computed: {
-    statusText() {
+   /*  statusText() {
       return this.status || 'No cookie set';
-    }
+    } */
   }
   }
 </script>

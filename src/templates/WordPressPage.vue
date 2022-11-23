@@ -468,7 +468,7 @@ export default {
   }
 }
 .bg-home-3 .container {
-  margin-bottom: 200px;
+  margin-bottom: 50px;
 }
 
 @media screen and (max-width: 768px) {
@@ -501,6 +501,7 @@ export default {
 
 
 .title-home {
+  margin-top: 40px;
   text-align: center;
 }
 .post-title {

@@ -4,8 +4,7 @@
             <div class="full-container bg-home-3">
                 <div class="container">
                     <h1 class="title-home">Chi siamo</h1>
-                    <p class="p-home">Noi di Offerta Super crediamo che nessuno dovrebbe spendere troppo tempo e troppi
-                        soldi per internet, telefono, luce e gas.</p>
+                    <p class="p-home">Analizziamo le offerte di luce e gas, fibra, ADSL e telefonia per trovare quella più conveniente per te.</p>
                     <p class="orange-home font-bold">Per questo ci impegniamo ogni giorno per selezionare le migliori
                         offerte online con soluzioni smart e innovative.</p>
 

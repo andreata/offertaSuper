@@ -15,6 +15,12 @@ module.exports = function (api) {
         }
         `)    
 
+        // quando mettiamo online noidex nofollow
+        // permalink articolo -> blog(categoriablog)/nome_categoria/nome_articolo
+        // permalink categoria -> blog(categoriablog)/nome_categoria/
+        // dal sito non dobbiamo arrivare alle landing noidex
+        // Inserire dati strutturati sia di Yoast sia di un custom field in cui sarà inserito un <script type="application/ld+json" class="yoast-schema-graph">
+    
         data.posts.nodes.forEach(function(node, index){
             createPage({
                 path: `/${node.slug}`,
@@ -24,6 +30,7 @@ module.exports = function (api) {
                     postId: node.postId,
                     slug: node.slug,
                     title: node.title,
+                
                 }
             })
         })
