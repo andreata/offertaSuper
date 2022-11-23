@@ -31,6 +31,7 @@
     "vue-progressive-image": "^3.2.0"
   },
   "devDependencies": {
+    "gridsome-plugin-service-worker": "^0.2.8",
     "node-sass": "^5.0.0",
     "postcss-import": "^14.0.0",
     "postcss-preset-env": "^6.7.0",

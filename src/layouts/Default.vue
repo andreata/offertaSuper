@@ -26,7 +26,7 @@
     <header class="header">
       <div class="header-box">
         <div class="logo order-2">
-          <g-image src="~/assets/images/icon/logo_offerta_super.svg" alt="" width="200" height="37" />
+          <img src="../assets/images/icon/logo_offerta_super.svg" alt="logo" width="200" height="37" fit="contain" quality="90"  />
           <g-link class="logo-link" to="/">link</g-link>
         </div>
 

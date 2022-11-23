@@ -51,6 +51,17 @@ module.exports = {
         enabled: true,
         debug: true
       }
-    }
+    },
+
+     {
+      use: "gridsome-plugin-service-worker",
+      options: {
+        precachedRoutes: ["/", "/chi-siamo", "/home-landing", "/home-landing-one-step", "/category/blog", "/pagina-landing-dinamica"],
+        cacheOnly: {
+          cacheName: "co-v1",
+          routes: ["/", "/chi-siamo", "/home-landing", "/home-landing-one-step", "/category/blog", "/pagina-landing-dinamica"],
+        },
+      },
+    },
   ],
 }
