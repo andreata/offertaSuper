@@ -5,17 +5,17 @@ export default {
   "touchicons": [
     {
       "width": 76,
-      "src": "/assets/static/src/assets/images/icon/favicon-offerta-super.png?width=76&key=08af292"
+      "src": "/offertaSuper/assets/static/favicon-offerta-super.f22e9f3.add42d1974ba260b35b85db89018acbe.png"
     }
   ],
   "favicons": [
     {
       "width": 16,
-      "src": "/assets/static/src/assets/images/icon/favicon-offerta-super.png?width=16&key=30f5c3b"
+      "src": "/offertaSuper/assets/static/favicon-offerta-super.ce0531f.add42d1974ba260b35b85db89018acbe.png"
     },
     {
       "width": 32,
-      "src": "/assets/static/src/assets/images/icon/favicon-offerta-super.png?width=32&key=30f5c3b"
+      "src": "/offertaSuper/assets/static/favicon-offerta-super.ac8d93a.add42d1974ba260b35b85db89018acbe.png"
     }
   ]
 }

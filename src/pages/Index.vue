@@ -823,10 +823,4 @@ export default {
     width: 100%;
   }
 }
-
- 
-
-.light {
-  font-weight: 100;
-}
 </style>

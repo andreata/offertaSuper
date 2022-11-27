@@ -1,3 +1,4 @@
+
 module.exports = {
   siteName: 'Offerta Super',
   siteDescription: '',
@@ -7,6 +8,31 @@ module.exports = {
   },
   siteUrl: 'https://andreata.github.io',
   pathPrefix: '/offertaSuper',
+  transpileDependencies: ['@vue/reactivity'],
+
+   chainWebpack: (config, { isProd, isClient }) => {
+      // ...
+    if (isProd && isClient) {
+      config.optimization.splitChunks({
+        chunks: "initial",
+        maxInitialRequests: Infinity,
+        cacheGroups: {
+          vueVendor: {
+            test: /[\\/]node_modules[\\/](vue|vuex|vue-router)[\\/]/,
+            name: "vue-vendors",
+          },
+          gridsome: {
+            test: /[\\/]node_modules[\\/](gridsome|vue-meta)[\\/]/,
+            name: "gridsome-vendors",
+          },
+          polyfill: {
+            test: /[\\/]node_modules[\\/]core-js[\\/]/,
+            name: "core-js",
+          },
+        },
+      });
+    }
+  },
   plugins: [
     
     {
@@ -44,24 +70,15 @@ module.exports = {
       }
     }, 
     
-    {
+    /* {
       use: 'gridsome-plugin-gtm',
       options: {
         id: '#',
         enabled: true,
         debug: true
       }
-    },
+    }, */
 
-     {
-      use: "gridsome-plugin-service-worker",
-      options: {
-        precachedRoutes: ["/", "/chi-siamo", "/home-landing", "/home-landing-one-step", "/category/blog", "/pagina-landing-dinamica"],
-        cacheOnly: {
-          cacheName: "co-v1",
-          routes: ["/", "/chi-siamo", "/home-landing", "/home-landing-one-step", "/category/blog", "/pagina-landing-dinamica"],
-        },
-      },
-    },
+    
   ],
 }

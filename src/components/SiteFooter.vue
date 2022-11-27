@@ -4,7 +4,7 @@
       <div class="container">
         <div class="grid-footer">
           <div>
-            <g-image src="~/assets/images/icon/logo-footer.png" alt="" width="600" />
+            <g-image immediate="false" src="~/assets/images/icon/logo-footer.png" alt="" width="150" />
             <p>SALES PERFORMANCE SRLP.IVA IT03539390835</p>
             <p><a href="#">Privacy Policy </a> | <a href="#">Cookie Policy </a></p>
           </div>
