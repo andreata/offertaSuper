@@ -8,6 +8,9 @@ module.exports = {
   },
   siteUrl: 'https://andreata.github.io',
   pathPrefix: '/offertaSuper',
+  output: {
+        hashFunction: "xxhash64"
+    },
   transpileDependencies: ['@vue/reactivity'],
 
    chainWebpack: (config, { isProd, isClient }) => {
