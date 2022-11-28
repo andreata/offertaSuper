@@ -21,7 +21,7 @@
                 <div class="container">
                     <div class="grid-two-column">
                         <div class="block-content-img">
-                            <g-image class="img-promo" src="~/assets/images/icon/eroe-lente.svg" alt="" width="400" />
+                            <g-image class="img-promo" src="~/assets/images/icon/eroe-lente.svg" alt="" height="50px" width="200px" />
                         </div>
                         <div class="flex-content-copy">
                             <div>
@@ -148,22 +148,13 @@
 </page-query>
 
 <script>
-import { Pager } from 'gridsome'
-import FormLanding from '~/components/FormLanding.vue'
+
 
 export default {
     components: {
-        Pager,
-        FormLanding,
+     
+      
 
-        Carousel: () =>
-            import('vue-carousel')
-                .then(m => m.Carousel)
-                .catch(),
-        Slide: () =>
-            import('vue-carousel')
-                .then(m => m.Slide)
-                .catch(),
     },
 
 
