@@ -9,12 +9,12 @@ module.exports = {
   siteUrl: 'https://andreata.github.io',
   pathPrefix: '/',
   output: {
-        hashFunction: "xxhash64"
-    },
+    hashFunction: "xxhash64"
+  },
   transpileDependencies: ['@vue/reactivity'],
-
-   chainWebpack: (config, { isProd, isClient }) => {
-      // ...
+  
+  chainWebpack: (config, { isProd, isClient }) => {
+    // ...
     if (isProd && isClient) {
       config.optimization.splitChunks({
         chunks: "initial",
@@ -49,7 +49,7 @@ module.exports = {
         },  
       }, 
     },
-
+    
     {
       use: '@gridsome/plugin-critical',
       options: {
@@ -58,7 +58,7 @@ module.exports = {
         height: 900
       }
     },
-
+    
     {
       use: 'gridsome-plugin-flexsearch',
       options: {
@@ -81,8 +81,8 @@ module.exports = {
         debug: true
       }
     }, */
-
-    {
+    
+    /* {
       use: "gridsome-plugin-service-worker",
       options: {
         networkFirst: {
@@ -90,8 +90,8 @@ module.exports = {
           fileTypes: ["document", "script", "style", "image"],
         },
       },
-    },
-
+    }, */
+    
     
   ],
 }
