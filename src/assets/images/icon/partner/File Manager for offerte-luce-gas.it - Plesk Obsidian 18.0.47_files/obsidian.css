@@ -1,0 +1,320 @@
+.plesk-ext-notifier-container {
+    position: relative;
+}
+
+.plesk-ext-notifier-container + .plesk-ext-notifier-container {
+    border-top: 1px solid #f3ce8c;
+    position: relative;
+}
+
+.plesk-ext-notifier-alert {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4px 12px;
+    line-height: 20px;
+    color: #222;
+    background-color: #ffeed4;
+}
+
+.plesk-ext-notifier-alert__message {
+    display: flex;
+    margin: 6px 4px;
+}
+
+.plesk-ext-notifier-alert__actions {
+    margin: 2px 4px;
+    display: inline-flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+[dir="ltr"] .plesk-ext-notifier__actions-link {
+    text-align: right;
+}
+
+[dir="rtl"] .plesk-ext-notifier__actions-link {
+    text-align: left;
+}
+
+.plesk-ext-notifier-alert__icon {
+    width: 16px;
+    height: 16px;
+    flex: none;
+    margin: 2px 6px 2px 0;
+}
+
+[dir="rtl"] .plesk-ext-notifier-alert__icon {
+    margin: 2px 0 2px 6px;
+}
+
+.plesk-ext-notifier-button__icon {
+    width: 12px;
+    height: 12px;
+    flex: none;
+    margin: 2px 4px 2px -6px;
+}
+
+[dir="rtl"] .plesk-ext-notifier-button__icon {
+    margin: 2px -6px 2px 4px;
+}
+
+.plesk-ext-notifier-button__icon > svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    fill: currentColor;
+    pointer-events: none;
+}
+
+.plesk-ext-notifier-button {
+    display: inline-flex;
+    justify-content: center;
+    overflow: visible;
+    box-sizing: border-box;
+    min-height: 28px;
+    min-width: 70px;
+    margin: 0;
+    padding: 6px 16px;
+    cursor: pointer;
+    text-align: center;
+    vertical-align: baseline;
+    white-space: nowrap;
+    text-decoration: none;
+    text-transform: none;
+    border: none;
+    border-radius: 2px;
+    font: inherit;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16px;
+    color: #fff;
+    background-color: #28aade;
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.18);
+    transition: background-color 0.18s;
+}
+
+.plesk-ext-notifier-button:hover,
+.plesk-ext-notifier-button:focus {
+    text-decoration: none;
+    color: #fff;
+    background-color: #259ccc;
+}
+
+.plesk-ext-notifier-button:active {
+    text-decoration: none;
+    color: #fff;
+    background-color: #2089b2;
+}
+
+.plesk-ext-notifier-button--loading,
+.plesk-ext-notifier-alert--loading {
+    opacity: 0.47;
+}
+
+.plesk-ext-notifier-button--loading:before {
+    content: "";
+    float: left;
+    width: 12px;
+    height: 12px;
+    margin: 1px 6px 0 -6px;
+    box-sizing: border-box;
+    border: 2px solid;
+    border-color: transparent #fff #fff;
+    border-radius: 50%;
+    -webkit-animation: plesk-ext-notifier-animation-rotate 1s linear infinite;
+    animation: plesk-ext-notifier-animation-rotate 1s linear infinite;
+}
+
+[dir="rtl"] .plesk-ext-notifier-button--loading:before {
+    float: right;
+    margin: 1px -6px 0 6px;
+}
+
+@-webkit-keyframes plesk-ext-notifier-animation-rotate {
+    to { transform: rotate(360deg); }
+}
+
+@keyframes plesk-ext-notifier-animation-rotate {
+    to { transform: rotate(360deg); }
+}
+
+@media (max-width: 769px) {
+    .plesk-ext-notifier-notification--juicyPotato .plesk-ext-notifier-alert {
+        display: block;
+        padding-bottom: 8px;
+    }
+
+    [dir="ltr"] .plesk-ext-notifier-notification--juicyPotato .plesk-ext-notifier-alert__actions {
+        padding-left: 22px;
+    }
+
+    [dir="rtl"] .plesk-ext-notifier-notification--juicyPotato .plesk-ext-notifier-alert__actions {
+        padding-right: 22px;
+    }
+}
+
+.plesk-ext-notifier-popover {
+    position: relative;
+    margin-top: 14px;
+    background-color: #d6f3ff;
+    border: 1px solid #dedede;
+    border-radius: 2px;
+    color: #222;
+    font-size: 14px;
+    line-height: 1.429;
+    box-shadow: 0 4px 8px rgba(60, 64, 67, 0.08), 0 1px 3px rgba(60, 64, 67, 0.16);
+}
+
+@media (min-width: 768px) {
+    .plesk-ext-notifier-popover {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1035;
+        max-width: 560px;
+    }
+}
+
+.plesk-ext-notifier-popover__inner {
+    display: flex;
+    padding: 12px 12px 16px;
+}
+
+[dir="ltr"] .plesk-ext-notifier-popover__close + .plesk-ext-notifier-popover__inner {
+    padding-right: 24px;
+}
+
+[dir="rtl"] .plesk-ext-notifier-popover__close + .plesk-ext-notifier-popover__inner {
+    padding-left: 24px;
+}
+
+.plesk-ext-notifier-popover__icon {
+    width: 64px;
+    height: 64px;
+    flex: none;
+    margin-right: 12px;
+}
+
+[dir="rtl"] .plesk-ext-notifier-popover__icon {
+    margin: 0 0 0 12px;
+}
+
+.plesk-ext-notifier-popover__arrow {
+    position: absolute;
+    top: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 28px;
+    height: 14px;
+    overflow: hidden;
+    border: none;
+    box-shadow: 0 1px 0 #d6f3ff;
+}
+
+.plesk-ext-notifier-popover__arrow::after {
+    position: absolute;
+    content: "";
+    top: 6px;
+    left: 4px;
+    margin: 0;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #dedede;
+    border-radius: 2px;
+    background-color: #d6f3ff;
+    box-shadow: 0 0 1px rgba(60, 64, 67, 0.16);
+    transform: rotate(45deg) skew(-6deg, -6deg);
+    transform-origin: center;
+}
+
+.plesk-ext-notifier-popover__close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    min-height: 18px;
+    min-width: 18px;
+    margin: 4px 4px 4px 0;
+    padding: 3px;
+    line-height: 12px;
+    border-radius: 2px;
+    box-sizing: border-box;
+    font-size: 12px;
+    cursor: pointer;
+    color: #737373;
+    text-align: center;
+}
+
+[dir="rtl"] .plesk-ext-notifier-popover__close {
+    right: auto;
+    left: 0;
+    margin: 4px 0 4px 4px;
+}
+
+.plesk-ext-notifier-popover__close:hover {
+    color: #222;
+    background-color: rgba(34, 34, 34, 0.05);
+}
+
+.plesk-ext-notifier-popover__close:after {
+    content: "\2715";
+}
+
+.plesk-ext-notifier__status-message {
+    margin-bottom: 16px;
+    border-radius: 2px;
+    margin-top: 16px;
+    padding: 10px 16px 10px 40px;
+    background-color: #ffeed4;
+}
+
+[dir="rtl"] .plesk-ext-notifier__status-message {
+    padding: 10px 40px 10px 16px;
+}
+
+.plesk-ext-notifier__status-message__close {
+    text-shadow: none;
+    float: right;
+    line-height: 18px;
+    margin-left: 10px;
+    text-align: center;
+    cursor: pointer;
+    color: #28aade;
+    text-decoration: none;
+}
+
+[dir="rtl"] .plesk-ext-notifier__status-message__close {
+    float: left;
+    margin-left: auto;
+    margin-right: 10px;
+}
+
+.plesk-ext-notifier__status-message__close:hover {
+    color: #259ccc;
+    text-decoration: none;
+}
+
+.plesk-ext-notifier__status-message__close::before {
+    content: "\2715";
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.plesk-ext-notifier__status-message__icon {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    vertical-align: -3px;
+    float: left;
+    margin-top: 2px;
+    margin-left: -24px;
+}
+
+[dir="rtl"] .plesk-ext-notifier__status-message__icon {
+    float: right;
+    margin-left: auto;
+    margin-right: -24px;
+}

@@ -7,7 +7,7 @@ module.exports = {
     touchicon: './src/assets/images/icon/favicon-offerta-super.png'
   },
   siteUrl: 'https://andreata.github.io',
-  pathPrefix: '/offertaSuper',
+  pathPrefix: '/',
   output: {
         hashFunction: "xxhash64"
     },
