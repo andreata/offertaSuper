@@ -69,6 +69,8 @@ export default {
 </script>
 
 <style scoped>
-
+.menu:not(.toggled) li:hover>.sub-menu {
+    background: white;
+}
 </style>
 

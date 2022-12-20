@@ -34,7 +34,7 @@
           <NavBar />
           <ToggleTheme />
 
-          <g-image class="contatti-header" src="~/assets/images/icon/contatti.svg" alt="" width="238" height="48" />
+          <g-image class="contatti-header" src="~/assets/images/icon/contatti.svg" alt="" width="168" height="48" />
         </div>
 
         <g-image class="contatti-header-mob order-3" src="~/assets/images/icon/domande.svg" alt="" width="31" height="31" />

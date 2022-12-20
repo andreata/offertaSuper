@@ -46,7 +46,7 @@
 
              
 
-              <g-link to="/home-landing/" class="button-pieno">Maggiori informazioni</g-link>
+              <g-link to="/fibra-la-migliore-offerta-per-il-mercato-italiano/" class="button-pieno">Maggiori informazioni</g-link>
 
             </div>
 
@@ -54,36 +54,31 @@
               <p class="promo">Promo del mese</p>
               <g-image class="img-promo" src="~/assets/images/icon/luce.svg" alt="" width="66" />
               <h2 class="h2-promo">Luce e gas</h2>
-              <h3 class="h3-promo">Risparmia 240€ l'anno</h3>
+              <h3 class="h3-promo">per non avere costi eccessivi in bolletta</h3>
               <p class="li-promo"><svg xmlns="http://www.w3.org/2000/svg" width="17.001" height="16.999"
                   viewBox="0 0 17.001 16.999">
                   <path id="Tracciato_760" data-name="Tracciato 760"
                     d="M8.5,17c-.087,0-.175,0-.262,0A8.5,8.5,0,0,1,7.716.034C7.967.012,8.223,0,8.475,0a8.524,8.524,0,0,1,8.491,9.283A8.5,8.5,0,0,1,8.5,17ZM4.49,7.343a.806.806,0,0,0-.225.032A.811.811,0,0,0,3.929,8.74L6.9,11.575a.81.81,0,0,0,1.129,0L13.066,6.59h.005a.809.809,0,0,0-1.138-1.151L7.449,9.869l-2.4-2.3A.808.808,0,0,0,4.49,7.343Z"
                     transform="translate(0 0)" fill="#f9b666" />
-                </svg> <span>Bullet</span></p>
+                </svg> <span>prezzi bloccati</span></p>
 
               <p class="li-promo"><svg xmlns="http://www.w3.org/2000/svg" width="17.001" height="16.999"
                   viewBox="0 0 17.001 16.999">
                   <path id="Tracciato_760" data-name="Tracciato 760"
                     d="M8.5,17c-.087,0-.175,0-.262,0A8.5,8.5,0,0,1,7.716.034C7.967.012,8.223,0,8.475,0a8.524,8.524,0,0,1,8.491,9.283A8.5,8.5,0,0,1,8.5,17ZM4.49,7.343a.806.806,0,0,0-.225.032A.811.811,0,0,0,3.929,8.74L6.9,11.575a.81.81,0,0,0,1.129,0L13.066,6.59h.005a.809.809,0,0,0-1.138-1.151L7.449,9.869l-2.4-2.3A.808.808,0,0,0,4.49,7.343Z"
                     transform="translate(0 0)" fill="#f9b666" />
-                </svg> <span>Bullet</span></p>
+                </svg> <span>contratti chiari</span></p>
 
               <p class="li-promo"><svg xmlns="http://www.w3.org/2000/svg" width="17.001" height="16.999"
                   viewBox="0 0 17.001 16.999">
                   <path id="Tracciato_760" data-name="Tracciato 760"
                     d="M8.5,17c-.087,0-.175,0-.262,0A8.5,8.5,0,0,1,7.716.034C7.967.012,8.223,0,8.475,0a8.524,8.524,0,0,1,8.491,9.283A8.5,8.5,0,0,1,8.5,17ZM4.49,7.343a.806.806,0,0,0-.225.032A.811.811,0,0,0,3.929,8.74L6.9,11.575a.81.81,0,0,0,1.129,0L13.066,6.59h.005a.809.809,0,0,0-1.138-1.151L7.449,9.869l-2.4-2.3A.808.808,0,0,0,4.49,7.343Z"
                     transform="translate(0 0)" fill="#f9b666" />
-                </svg> <span>Bullet</span></p>
+                </svg> <span>attivazione online</span></p>
 
-              <p class="li-promo"><svg xmlns="http://www.w3.org/2000/svg" width="17.001" height="16.999"
-                  viewBox="0 0 17.001 16.999">
-                  <path id="Tracciato_760" data-name="Tracciato 760"
-                    d="M8.5,17c-.087,0-.175,0-.262,0A8.5,8.5,0,0,1,7.716.034C7.967.012,8.223,0,8.475,0a8.524,8.524,0,0,1,8.491,9.283A8.5,8.5,0,0,1,8.5,17ZM4.49,7.343a.806.806,0,0,0-.225.032A.811.811,0,0,0,3.929,8.74L6.9,11.575a.81.81,0,0,0,1.129,0L13.066,6.59h.005a.809.809,0,0,0-1.138-1.151L7.449,9.869l-2.4-2.3A.808.808,0,0,0,4.49,7.343Z"
-                    transform="translate(0 0)" fill="#f9b666" />
-                </svg> <span>Bullet</span></p>
+              
 
-              <g-link to="/home-landing/" class="button-pieno">Clicca e scopri subito</g-link>
+              <g-link to="/offerte-luce-e-gas/" class="button-pieno">Risparmia subito</g-link>
 
             </div>
 
@@ -103,79 +98,79 @@
             <div class="item-box">
               <p class="promo">Consulenza</p>
               <g-image class="img-promo" src="~/assets/images/icon/risparmio.svg" alt="" width="66" height="62" />
-              <h2 class="h2-promo">Richiedi un'analisi delle tue spese</h2>
-              <h3 class="h3-promo">Risparmia 500€ l'anno</h3>
+              <h2 class="h2-promo">IL SELEZIONATORE</h2>
+              <h3 class="h3-promo">per conoscere tutte le offerte più vantaggiose oggi</h3>
               <p class="li-promo"><svg xmlns="http://www.w3.org/2000/svg" width="17.001" height="16.999"
                   viewBox="0 0 17.001 16.999">
                   <path id="Tracciato_760" data-name="Tracciato 760"
                     d="M8.5,17c-.087,0-.175,0-.262,0A8.5,8.5,0,0,1,7.716.034C7.967.012,8.223,0,8.475,0a8.524,8.524,0,0,1,8.491,9.283A8.5,8.5,0,0,1,8.5,17ZM4.49,7.343a.806.806,0,0,0-.225.032A.811.811,0,0,0,3.929,8.74L6.9,11.575a.81.81,0,0,0,1.129,0L13.066,6.59h.005a.809.809,0,0,0-1.138-1.151L7.449,9.869l-2.4-2.3A.808.808,0,0,0,4.49,7.343Z"
                     transform="translate(0 0)" fill="#f9b666" />
-                </svg> <span>Bullet</span></p>
-
-              <p class="li-promo"><svg xmlns="http://www.w3.org/2000/svg" width="17.001" height="16.999"
-                  viewBox="0 0 17.001 16.999">
-                  <path id="Tracciato_760" data-name="Tracciato 760"
-                    d="M8.5,17c-.087,0-.175,0-.262,0A8.5,8.5,0,0,1,7.716.034C7.967.012,8.223,0,8.475,0a8.524,8.524,0,0,1,8.491,9.283A8.5,8.5,0,0,1,8.5,17ZM4.49,7.343a.806.806,0,0,0-.225.032A.811.811,0,0,0,3.929,8.74L6.9,11.575a.81.81,0,0,0,1.129,0L13.066,6.59h.005a.809.809,0,0,0-1.138-1.151L7.449,9.869l-2.4-2.3A.808.808,0,0,0,4.49,7.343Z"
-                    transform="translate(0 0)" fill="#f9b666" />
-                </svg> <span>Bullet</span></p>
-
-
+                </svg> <span>Ti ascoltiamo per capire le tue esigenze</span></p>
 
               <p class="li-promo"><svg xmlns="http://www.w3.org/2000/svg" width="17.001" height="16.999"
                   viewBox="0 0 17.001 16.999">
                   <path id="Tracciato_760" data-name="Tracciato 760"
                     d="M8.5,17c-.087,0-.175,0-.262,0A8.5,8.5,0,0,1,7.716.034C7.967.012,8.223,0,8.475,0a8.524,8.524,0,0,1,8.491,9.283A8.5,8.5,0,0,1,8.5,17ZM4.49,7.343a.806.806,0,0,0-.225.032A.811.811,0,0,0,3.929,8.74L6.9,11.575a.81.81,0,0,0,1.129,0L13.066,6.59h.005a.809.809,0,0,0-1.138-1.151L7.449,9.869l-2.4-2.3A.808.808,0,0,0,4.49,7.343Z"
                     transform="translate(0 0)" fill="#f9b666" />
-                </svg> <span>Bullet</span></p>
+                </svg> <span>Cerchiamo le soluzioni più convenienti</span></p>
 
-              <g-link to="/home-landing/" class="button-pieno">Clicca e scopri subito</g-link>
+
+
+              <p class="li-promo"><svg xmlns="http://www.w3.org/2000/svg" width="17.001" height="16.999"
+                  viewBox="0 0 17.001 16.999">
+                  <path id="Tracciato_760" data-name="Tracciato 760"
+                    d="M8.5,17c-.087,0-.175,0-.262,0A8.5,8.5,0,0,1,7.716.034C7.967.012,8.223,0,8.475,0a8.524,8.524,0,0,1,8.491,9.283A8.5,8.5,0,0,1,8.5,17ZM4.49,7.343a.806.806,0,0,0-.225.032A.811.811,0,0,0,3.929,8.74L6.9,11.575a.81.81,0,0,0,1.129,0L13.066,6.59h.005a.809.809,0,0,0-1.138-1.151L7.449,9.869l-2.4-2.3A.808.808,0,0,0,4.49,7.343Z"
+                    transform="translate(0 0)" fill="#f9b666" />
+                </svg> <span>Selezioniamo i pacchetti più in linea conte</span></p>
+
+              <g-link to="/il-selezionatore" class="button-pieno">Clicca qui</g-link>
 
             </div>
           </div>
 
 
           <div class="container-box mobl">
-            <g-link to="/home-landing/" class="link-no-deco">
+            <g-link to="/fibra-la-migliore-offerta-per-il-mercato-italiano/" class="link-no-deco">
               <div class="item-box">
                 <p class="promo">Promo del mese</p>
                 <div class="flex-homeland">
                   <g-image class="img-promo" src="~/assets/images/icon/internet-casa.svg" alt="" width="66" height="62" />
                   <div>
                     <h2 class="h2-promo">Internet Casa</h2>
-                    <h3 class="h3-promo">Risparmia 200€ l'anno</h3>
+                    <h3 class="h3-promo">risparmi 200€ l’anno</h3>
                   </div>
                 </div>
 
               </div>
             </g-link>
 
-            <g-link to="/home-landing/" class="link-no-deco">
+            <g-link to="/offerte-luce-e-gas/" class="link-no-deco">
               <div class="item-box">
                 <p class="promo">Promo del mese</p>
                 <div class="flex-homeland">
                   <g-image class="img-promo" src="~/assets/images/icon/luce.svg" alt="" width="66" height="62" />
                   <div>
                     <h2 class="h2-promo">Luce e gas</h2>
-                    <h3 class="h3-promo">Risparmia 240€ l'anno</h3>
+                    <h3 class="h3-promo">prezzi bloccati</h3>
                   </div>
                 </div>
               </div>
             </g-link>
 
-            <g-link to="/home-landing/" class="link-no-deco">
+            <g-link to="/il-selezionatore/" class="link-no-deco">
               <div class="item-box">
                 <p class="promo">Offerte</p>
                 <div class="flex-homeland">
                   <g-image class="img-promo" src="~/assets/images/icon/offerte.svg" alt="" width="66" height="62" />
                   <div>
-                    <h2 class="h2-promo">Scopri le offerte</h2>
-                    <h3 class="h3-promo">Telefonia fissa</h3>
+                    <h2 class="h2-promo">Il selezionatore</h2>
+                    <h3 class="h3-promo">Ti ascoltiamo per capire le tue esigenze</h3>
                   </div>
                 </div>
               </div>
             </g-link>
 
-            <g-link to="/home-landing/" class="link-no-deco">
+            <!--<g-link to="/home-landing/" class="link-no-deco">
               <div class="item-box">
                 <p class="promo">Consulenza</p>
                 <div class="flex-homeland">
@@ -186,7 +181,7 @@
                   </div>
                 </div>
               </div>
-            </g-link>
+            </g-link>-->
           </div>
 
 
@@ -222,7 +217,7 @@
                   qualità e senza
                   vincoli.</p>
 
-                <g-link to="/home-landing/" class="button-vuoto">Scopri tutte le offerte</g-link>
+                <g-link to="/chi-siamo/" class="button-vuoto">Vieni a conoscerci!</g-link>
               </div>
             </div>
           </div>
@@ -234,32 +229,35 @@
       <div class="full-container container-salmone">
         <div class="container">
           <h2 class="text-center mb-80">
-            Perché affidarsi al primo selezionatore di offerte in Italia
+            Perché scegliere Offerta Super?
           </h2>
           <div class="grid-five-column">
-            <div>
+
+            <!-- <div>
               <g-image class="img-salmone" src="~/assets/images/icon/analisi.svg" alt="" width="60" />
               <div>
                 <h3 class="orange-font">Analisi</h3>
                 <p class="grey-font">Nulla vitae elit libero, a pharetra augue. Aenean eu leo quam. Nulla vitae elit
                   libero, a pharetra augue. </p>
               </div>
-            </div>
+            </div> -->
 
             <div>
               <g-image class="img-salmone" src="~/assets/images/icon/confronto.svg" alt="" width="60" />
               <div>
                 <h3 class="orange-font">Confronto</h3>
-                <p class="grey-font">Abbiamo selezionato le migliori soluzioni per la tua casa e ti garantiamo l’offerta
-                  al miglior prezzo </p>
+                <p class="grey-font">Analizziamo più di 100 offerte di partner diversi e selezioniamo la soluzione giusta per la tua
+                  casa, assicurandoti il
+                  miglior prezzo.</p>
               </div>
-            </div>
+            </div>        
 
             <div>
               <g-image class="img-salmone" src="~/assets/images/icon/icon-risparmio.svg" alt="" width="60" />
               <div>
                 <h3 class="orange-font">Risparmio</h3>
-                <p class="grey-font">Con la nostra soluzione risparmierai fino a240€/anno </p>
+                <p class="grey-font">Il nostro servizio è gratuito, senza commissioni da parte tua. Ti suggeriamo le stesse tariffe che le aziende ti
+                propongono, ma con noi avrai una scelta più consapevole e un risparmio assicurato. </p>
               </div>
             </div>
 
@@ -267,18 +265,16 @@
               <g-image class="img-salmone" src="~/assets/images/icon/sicurezza.svg" alt="" width="60" />
               <div>
                 <h3 class="orange-font">Sicurezza</h3>
-                <p class="grey-font">Ti garantiamo la miglior assistenza sulla tua offerta e potrai sempre contattarci
-                  per
-                  qualsiasi esigenza </p>
+                <p class="grey-font">I tuoi dati sono al sicuro con noi. Tratterremo i tuoi dati sensibili secondo le norme vigenti, non vendendoli a terzi.</p>
               </div>
             </div>
 
             <div>
               <g-image class="img-salmone" src="~/assets/images/icon/affidabili.svg" alt="" width="60" />
               <div>
-                <h3 class="orange-font">Affidabilità</h3>
-                <p class="grey-font">Il nostro servizio è affidabile e gratis, siamo l’unico servizio ad affidarti un
-                  consulente dedicato che potrai contattare SEMPRE! </p>
+                <h3 class="orange-font">Sostegno</h3>
+                <p class="grey-font">Ti verrà affidato un consulente da poter contattare tutte le volte che ne hai bisogno e un team di assistenza sempre a
+                tua disposizione. </p>
               </div>
             </div>
             <div>
@@ -292,7 +288,8 @@
       <div class="bg-cielo">
         <div class="">
 
-          <h2 class="text-center mb-80">Scopri la migliore offerta selezionata per la tua provincia</h2>
+          <h2 class="text-center mb-80">Non è importante dove abiti, possiamo aiutarti in qualsiasi città!
+          (purché sia in Italia)</h2>
           <ClientOnly>
             <carousel class="carousel" :perPageCustom="[[768, 2], [1024, 5]]" :paginationEnabled="true">
               <slide class="carousel-cell carousel-item-home">
@@ -660,7 +657,7 @@ export default {
 }
 .grid-five-column {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-column-gap: 40px;
   @media screen and (max-width: 768px) {
       grid-template-columns: 1fr 1fr;
@@ -778,12 +775,12 @@ export default {
       grid-template-columns: 2fr 1fr;
       .title-home-mobile {
         margin-top: 80px;
-        font-size: 30px;
+        font-size: 25px;
         color: var(--title-color);
       }
       .p-home-mobile {
         color: var(--grey-body-color);
-        font-size: 24px;
+        font-size: 15px;
       }
   }
   .flex-homeland {

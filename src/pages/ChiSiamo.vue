@@ -1,7 +1,7 @@
 <template>
     <Layout>
         <div>
-            <div class="full-container bg-home-3">
+            <!-- <div class="full-container bg-home-3">
                 <div class="container">
                     <h1 class="title-home">Chi siamo</h1>
                     <p class="p-home">Analizziamo le offerte di luce e gas, fibra, ADSL e telefonia per trovare quella più conveniente per te.</p>
@@ -11,7 +11,7 @@
 
 
                 </div>
-            </div>
+            </div> -->
 
 
             <!-- Copy e Immagine -->
@@ -24,17 +24,12 @@
                         </div>
                         <div class="flex-content-copy">
                             <div>
-                                <h2>Risparmio garantito su internet, telefono, luce e gas. </h2>
-                                <p class="orange-home-2">Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-                                    Cras mattis consectetur</p>
-                                <p class="content-2">Integer posuere erat a ante venenatis dapibus posuere velit
-                                    aliquet. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Morbi
-                                    leo risus, porta ac consectetur ac, vestibulum at eros. Sed posuere consectetur est
-                                    at lobortis.
-                                    Nullam id dolor id nibh ultricies vehicula ut id elit. Maecenas faucibus mollis
-                                    interdum. Vestibulum id ligula porta felis euismod semper. Vestibulum id ligula
-                                    porta felis euismod semper. Vivamus sagittis lacus vel augue laoreet rutrum faucibus
-                                    dolor auctor. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+                                <h2>Analizziamo le offerte di luce e gas, fibra, ADSL e telefonia per trovare quella più conveniente per te. </h2>
+                                <p class="orange-home-2">Offerta Super mette a confronto le tariffe di diverse compagnie telefoniche e di utenza domestica, che si trovano sul
+                                mercato nel momento in cui ci leggi, per selezionare le offerte più in linea con le tue esigenze.</p>
+                                <p class="content-2">Ogni giorno ci impegniamo a trovare la migliore soluzione per la tua casa, analizzando le centinaia di offerte che le
+                                aziende fornitrici offrono. Per fare questo ascoltiamo le tue esigenze, comprendiamo i tuoi problemi e cerchiamo la
+                                tariffa migliore per i tuoi bisogni in base alla tua zona.</p>
 
 
                             </div>
@@ -48,34 +43,34 @@
             <div class="full-container container-salmone">
                 <div class="container">
                     <h2 class="text-center mb-80">
-                        I nostri valori
+                        La nostra mission in 3 pilastri
                     </h2>
                     <div class="grid-four-column">
                         <div>
                             <g-image class="img-salmone" src="~/assets/images/icon/affidabili.svg" alt="" width="60" />
-                            <h3 class="orange-font">Affidabilità</h3>
-                            <p class="grey-font">Il nostro servizio è affidabile e gratis, siamo l’unico servizio ad
-                                affidarti un consulente dedicato che potrai contattare SEMPRE!</p>
+                            <h3 class="orange-font">SEMPRE A TUA DISPOSIZIONE</h3>
+                            <p class="grey-font">Via chat, e-mail o telefono, il nostro staff sarà sempre al tuo fianco, per fornirti il supporto tecnico ed emotivo di
+                            cui hai bisogno.</p>
                         </div>
                         <div>
                             <g-image class="img-salmone" src="~/assets/images/icon/affidabili.svg" alt="" width="60" />
-                            <h3 class="orange-font">Affidabilità</h3>
-                            <p class="grey-font">Il nostro servizio è affidabile e gratis, siamo l’unico servizio ad
-                                affidarti un consulente dedicato che potrai contattare SEMPRE!</p>
+                            <h3 class="orange-font">AL POSTO TUO</h3>
+                            <p class="grey-font">Con soluzioni smart e innovative ti aiutiamo nella scelta della tariffa casa e mobile più adatta a te e alla tua
+                            famiglia. Per noi è importante farti risparmiare tempo e denaro!</p>
                         </div>
                         <div>
                             <g-image class="img-salmone" src="~/assets/images/icon/affidabili.svg" alt="" width="60" />
-                            <h3 class="orange-font">Affidabilità</h3>
-                            <p class="grey-font">Il nostro servizio è affidabile e gratis, siamo l’unico servizio ad
-                                affidarti un consulente dedicato che potrai contattare SEMPRE!</p>
+                            <h3 class="orange-font">FACILE E VELOCE</h3>
+                            <p class="grey-font">Il nostro servizio è alla portata di tutti, e per tutti. Semplice ed intuitivo, dovrai solo compilare il questionario
+                            con i tuoi dati dati e le tue esigenze. A trovare le offerte ci pensiamo noi.</p>
                         </div>
 
-                        <div>
+                        <!-- <div>
                             <g-image class="img-salmone" src="~/assets/images/icon/affidabili.svg" alt="" width="60" />
                             <h3 class="orange-font">Affidabilità</h3>
                             <p class="grey-font">Il nostro servizio è affidabile e gratis, siamo l’unico servizio ad
                                 affidarti un consulente dedicato che potrai contattare SEMPRE!</p>
-                        </div>
+                        </div>-->
 
                     </div>
                 </div>
@@ -123,10 +118,9 @@
             <div class="full-container partner">
                 <div class="container">
                     <h2 class="text-center mb-80">
-                        I nostri partner
+                        Ecco chi sono i nostri partner
                     </h2>
-                    <p class="p-home">Offerta Super seleziona per te le migliori offerte del mercato.
-                        Ecco chi sono i nostri partner:</p>
+                    <p class="p-home">Per te le migliori offerte del mercato</p>
                     <g-image class="img-salmone" src="~/assets/images/icon/icone-fornitori.png" alt="" width="" />
                     <g-image class="img-salmone" src="~/assets/images/icon/icone-fornitori.png" alt="" width="" />
                     <g-image class="img-salmone" src="~/assets/images/icon/icone-fornitori.png" alt="" width="" />
@@ -266,12 +260,17 @@ export default {
 
 .grid-four-column {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 20px;
     @media screen and (max-width: 768px) {
-        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 10px;
+        grid-template-columns: 50% 50%;
         &>div {
+            padding: 34px 0px;
             margin-bottom: 20px;
+        }
+        .orange-font {
+            font-size: 18px;
         }
     }
     &>div {

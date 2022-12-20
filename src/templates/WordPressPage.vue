@@ -94,79 +94,111 @@
 
   
 
-    <div v-if="$page.page.pagina.visibilitaBloccoAccordion" />
+  <div v-if="$page.page.pagina.visibilitaBloccoAccordion == true" >
 
-  <div class="full-container m-t-60 m-b-60">
-    <div class="container margin-nonoauto">
-      <p class="h2">Domande Frequenti Fibra Ottica</p>
-      <div class="grid-two-column">
-        <div class="grid-col">
+    <div class="full-container m-t-60 m-b-60">
+      <div class="container margin-nonoauto">
+        <p class="h2">Domande Frequenti Fibra Ottica</p>
+        <div class="grid-two-column">
+          <div class="grid-col">
 
-          <app-accordion class="mb-4">
-            <template v-slot:title>
-              <h5 class="accordion-h5"><span class="font-semibold text-xl">H5 - Lorem ipsum dolor sit amet</span></h5>
-            </template>
-            <template v-slot:content>
-              <p>
-                <b>Lorem</b>, ipsum dolor sit amet consectetur adipisicing elit. Quia,
-                porro. Non a excepturi, voluptatibus ipsam magnam, eligendi,
-                accusantium ipsa quae quis praesentium voluptate saepe ullam sint ea
-                itaque consectetur impedit?
-              </p>
-            </template>
-          </app-accordion>
+            <app-accordion v-if="$page.page.pagina.titoloPrimaFaq" class="mb-4">
+              <template v-slot:title>
+                <h5 class="accordion-h5"><span class="font-semibold text-xl">{{$page.page.pagina.titoloPrimaFaq}}</span></h5>
+              </template>
+              <template v-slot:content>
+                {{ $page.page.pagina.testoPrimaFaq }}
+              </template>
+            </app-accordion>
 
-          <app-accordion class="mb-4">
-            <template v-slot:title>
-              <h5 class="accordion-h5"><span class="font-semibold text-xl">H5 - Lorem ipsum dolor sit amet</span></h5>
-            </template>
-            <template v-slot:content>
-              <p>
-                <b>Lorem</b>, ipsum dolor sit amet consectetur adipisicing elit. Quia,
-                porro. Non a excepturi, voluptatibus ipsam magnam, eligendi,
-                accusantium ipsa quae quis praesentium voluptate saepe ullam sint ea
-                itaque consectetur impedit?
-              </p>
-            </template>
-          </app-accordion>
+            <app-accordion v-if="$page.page.pagina.titoloSecondaFaq" class="mb-4">
+              <template v-slot:title>
+                <h5 class="accordion-h5"><span class="font-semibold text-xl">{{ $page.page.pagina.titoloSecondaFaq }}</span></h5>
+              </template>
+              <template v-slot:content>
+                {{ $page.page.pagina.testoSecondaFaq }}
+              </template>
+            </app-accordion>
+
+          </div>
+          <div class="grid-col">
+
+            <app-accordion v-if="$page.page.pagina.titoloTerzaFaq" class="mb-4">
+              <template v-slot:title>
+                <h5 class="accordion-h5"><span class="font-semibold text-xl">{{ $page.page.pagina.titoloTerzaFaq }}</span></h5>
+              </template>
+              <template v-slot:content>
+                {{ $page.page.pagina.testoTerzaFaq }}
+              </template>
+            </app-accordion>
+
+            <app-accordion v-if="$page.page.pagina.titoloQuartaFaq" class="mb-4">
+              <template v-slot:title>
+                <h5 class="accordion-h5"><span class="font-semibold text-xl">{{ $page.page.pagina.titoloQuartaFaq }}</span></h5>
+              </template>
+              <template v-slot:content>
+                <p>
+                  {{ $page.page.pagina.testoQuartaFaq }}
+                </p>
+              </template>
+            </app-accordion>
+          
+          </div>
+
+          <div class="grid-col">
+          
+            <app-accordion v-if="$page.page.pagina.titoloQuintaFaq" class="mb-4">
+              <template v-slot:title>
+                <h5 class="accordion-h5"><span class="font-semibold text-xl">{{ $page.page.pagina.titoloQuintaFaq }}</span></h5>
+              </template>
+              <template v-slot:content>
+                {{ $page.page.pagina.testoQuintaFaq }}
+              </template>
+            </app-accordion>
+          
+            <app-accordion v-if="$page.page.pagina.titoloSestaFaq" class="mb-4">
+              <template v-slot:title>
+                <h5 class="accordion-h5"><span class="font-semibold text-xl">{{ $page.page.pagina.titoloSestaFaq }}</span></h5>
+              </template>
+              <template v-slot:content>
+                <p>
+                  {{ $page.page.pagina.testoSestaFaq }}
+                </p>
+              </template>
+            </app-accordion>
+          
+          </div>
+
+          <div class="grid-col">
+          
+            <app-accordion v-if="$page.page.pagina.titoloSettimaFaq" class="mb-4">
+              <template v-slot:title>
+                <h5 class="accordion-h5"><span class="font-semibold text-xl">{{ $page.page.pagina.titoloSettimaFaq }}</span></h5>
+              </template>
+              <template v-slot:content>
+                {{ $page.page.pagina.testoSettimaFaq }}
+              </template>
+            </app-accordion>
+          
+            <app-accordion v-if="$page.page.pagina.titoloOttavaFaq" class="mb-4">
+              <template v-slot:title>
+                <h5 class="accordion-h5"><span class="font-semibold text-xl">{{ $page.page.pagina.titoloOttavaFaq }}</span></h5>
+              </template>
+              <template v-slot:content>
+                <p>
+                  {{ $page.page.pagina.testoOttavaFaq }}
+                </p>
+              </template>
+            </app-accordion>
+          
+          </div>
 
         </div>
-        <div class="grid-col">
-
-          <app-accordion class="mb-4">
-            <template v-slot:title>
-              <h5 class="accordion-h5"><span class="font-semibold text-xl">H5 - Lorem ipsum dolor sit amet</span></h5>
-            </template>
-            <template v-slot:content>
-              <p>
-                <b>Lorem</b>, ipsum dolor sit amet consectetur adipisicing elit. Quia,
-                porro. Non a excepturi, voluptatibus ipsam magnam, eligendi,
-                accusantium ipsa quae quis praesentium voluptate saepe ullam sint ea
-                itaque consectetur impedit?
-              </p>
-            </template>
-          </app-accordion>
-
-          <app-accordion class="mb-4">
-            <template v-slot:title>
-              <h5 class="accordion-h5"><span class="font-semibold text-xl">H5 -Lorem ipsum dolor sit amet</span></h5>
-            </template>
-            <template v-slot:content>
-              <p>
-                <b>Lorem</b>, ipsum dolor sit amet consectetur adipisicing elit. Quia,
-                porro. Non a excepturi, voluptatibus ipsam magnam, eligendi,
-                accusantium ipsa quae quis praesentium voluptate saepe ullam sint ea
-                itaque consectetur impedit?
-              </p>
-            </template>
-          </app-accordion>
-        
-        </div>
-      </div>
       
+      </div>
+    </div>
 
-      </div>
-      </div>
+  </div>
 
 
       <!-- Box Salmone con 5 icone -->
@@ -294,6 +326,23 @@ query Page ($slug: String) {
       paragrafoPrimaCta
       titoloPrimaCta
       visibilitaBloccoAccordion
+      titoloPrimaFaq
+      testoPrimaFaq
+      titoloSecondaFaq
+      testoSecondaFaq
+      titoloTerzaFaq
+      testoTerzaFaq
+      titoloQuartaFaq
+      testoQuartaFaq
+      titoloQuintaFaq
+      testoQuintaFaq
+      titoloSestaFaq
+      testoSestaFaq
+      titoloSettimaFaq
+      testoSettimaFaq
+      titoloOttavaFaq
+      testoOttavaFaq
+
     }
     
     date
