@@ -61,6 +61,10 @@ export default [
     component: c5
   },
   {
+    path: "/offerte-luce-e-gas/",
+    component: c4
+  },
+  {
     path: "/pagina-landing-dinamica/",
     component: c4
   },

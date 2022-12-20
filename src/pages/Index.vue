@@ -3,14 +3,14 @@
     <div>
       <div class="full-container bg-home">
         <div class="container">
-          <h1 class="title-home desk">Selezioniamo le migliori offerte per te</h1>
-          <p class="p-home desk">Facciamo tutto noi, Se vuoi risparmiare con noi ottieni il massimo ed hai anche il massimo del servizio e della velocità</p>
+          <h1 class="title-home desk">Scegli i nostri servizi e risparmia sui costi</h1>
+          <p class="p-home desk">Ti bastano solo 5 minuti per trovare l’offerta giusta per le tue esigenze con il selezionatore di OffertaSuper.it</p>
 
           <div class="mobl">
             <div class="home-layout-mobile">
               <div>
-                <h1 class="title-home-mobile mobl">Selezioniamo le migliori offerte</h1>
-                <p class="p-home-mobile mobl">Per internet, telefono, luce e gas. </p>
+                <h1 class="title-home-mobile mobl">Scegli i nostri servizi e risparmia sui costi</h1>
+                <p class="p-home-mobile mobl">Ti bastano solo 5 minuti per trovare l’offerta giusta per le tue esigenze con il selezionatore di OffertaSuper.it</p>
               </div>
               <g-image class="img-hero" src="~/assets/images/icon/hero-mobile.svg" alt="" width="300" />
 
@@ -21,37 +21,32 @@
             <div class="item-box">
               <p class="promo">Promo del mese</p>
               <g-image class="img-promo" src="~/assets/images/icon/internet-casa.svg" alt="" width="66" />
-              <h2 class="h2-promo">Internet Casa</h2>
-              <h3 class="h3-promo">Risparmia 200€ l'anno</h3>
+              <h2 class="h2-promo">INTERNET CASA</h2>
+              <h3 class="h3-promo">per una connessione internet casa super veloce</h3>
               <p class="li-promo"><svg xmlns="http://www.w3.org/2000/svg" width="17.001" height="16.999"
                   viewBox="0 0 17.001 16.999">
                   <path id="Tracciato_760" data-name="Tracciato 760"
                     d="M8.5,17c-.087,0-.175,0-.262,0A8.5,8.5,0,0,1,7.716.034C7.967.012,8.223,0,8.475,0a8.524,8.524,0,0,1,8.491,9.283A8.5,8.5,0,0,1,8.5,17ZM4.49,7.343a.806.806,0,0,0-.225.032A.811.811,0,0,0,3.929,8.74L6.9,11.575a.81.81,0,0,0,1.129,0L13.066,6.59h.005a.809.809,0,0,0-1.138-1.151L7.449,9.869l-2.4-2.3A.808.808,0,0,0,4.49,7.343Z"
                     transform="translate(0 0)" fill="#f9b666" />
-                </svg> <span>Modem</span></p>
+                </svg> <span>risparmi 200€ l’anno</span></p>
 
               <p class="li-promo"><svg xmlns="http://www.w3.org/2000/svg" width="17.001" height="16.999"
                   viewBox="0 0 17.001 16.999">
                   <path id="Tracciato_760" data-name="Tracciato 760"
                     d="M8.5,17c-.087,0-.175,0-.262,0A8.5,8.5,0,0,1,7.716.034C7.967.012,8.223,0,8.475,0a8.524,8.524,0,0,1,8.491,9.283A8.5,8.5,0,0,1,8.5,17ZM4.49,7.343a.806.806,0,0,0-.225.032A.811.811,0,0,0,3.929,8.74L6.9,11.575a.81.81,0,0,0,1.129,0L13.066,6.59h.005a.809.809,0,0,0-1.138-1.151L7.449,9.869l-2.4-2.3A.808.808,0,0,0,4.49,7.343Z"
                     transform="translate(0 0)" fill="#f9b666" />
-                </svg> <span>Internet</span></p>
+                </svg> <span>offerte senza vincoli</span></p>
 
               <p class="li-promo"><svg xmlns="http://www.w3.org/2000/svg" width="17.001" height="16.999"
                   viewBox="0 0 17.001 16.999">
                   <path id="Tracciato_760" data-name="Tracciato 760"
                     d="M8.5,17c-.087,0-.175,0-.262,0A8.5,8.5,0,0,1,7.716.034C7.967.012,8.223,0,8.475,0a8.524,8.524,0,0,1,8.491,9.283A8.5,8.5,0,0,1,8.5,17ZM4.49,7.343a.806.806,0,0,0-.225.032A.811.811,0,0,0,3.929,8.74L6.9,11.575a.81.81,0,0,0,1.129,0L13.066,6.59h.005a.809.809,0,0,0-1.138-1.151L7.449,9.869l-2.4-2.3A.808.808,0,0,0,4.49,7.343Z"
                     transform="translate(0 0)" fill="#f9b666" />
-                </svg> <span>Telefono</span></p>
+                </svg> <span>attivazione online</span></p>
 
-              <p class="li-promo"><svg xmlns="http://www.w3.org/2000/svg" width="17.001" height="16.999"
-                  viewBox="0 0 17.001 16.999">
-                  <path id="Tracciato_760" data-name="Tracciato 760"
-                    d="M8.5,17c-.087,0-.175,0-.262,0A8.5,8.5,0,0,1,7.716.034C7.967.012,8.223,0,8.475,0a8.524,8.524,0,0,1,8.491,9.283A8.5,8.5,0,0,1,8.5,17ZM4.49,7.343a.806.806,0,0,0-.225.032A.811.811,0,0,0,3.929,8.74L6.9,11.575a.81.81,0,0,0,1.129,0L13.066,6.59h.005a.809.809,0,0,0-1.138-1.151L7.449,9.869l-2.4-2.3A.808.808,0,0,0,4.49,7.343Z"
-                    transform="translate(0 0)" fill="#f9b666" />
-                </svg> <span>Attivazione</span></p>
+             
 
-              <g-link to="/home-landing/" class="button-pieno">Clicca e scopri subito</g-link>
+              <g-link to="/home-landing/" class="button-pieno">Maggiori informazioni</g-link>
 
             </div>
 
@@ -92,7 +87,7 @@
 
             </div>
 
-            <div class="item-box">
+            <!--<div class="item-box">
               <p class="promo">Promo del mese</p>
               <g-image class="img-promo" src="~/assets/images/icon/offerte.svg" alt="" width="66" height="62" />
               <h2 class="h2-promo">Scopri tutte le offerte</h2>
@@ -103,7 +98,7 @@
 
               <g-link to="/home-landing/" class="button-pieno">Clicca e scopri subito</g-link>
 
-            </div>
+            </div>-->
 
             <div class="item-box">
               <p class="promo">Consulenza</p>
@@ -210,14 +205,16 @@
             </div>
             <div class="flex-content-copy">
               <div>
-                <h2>Abbiamo analizzato per te più di 50 offerte internet, luce e gas</h2>
-                <p>Perché se vuoi risparmiare con noi trovi le offerte più convenienti, ma ti offriamo anche:
-                <span class="bull1">La certezza di trovare le migliori soluzioni, ovvero le migliori tecnologie (per esempio se un utente cerca la miglior
-                connessione per lo streaming o il gaming o lo smart working, non è detto che cerchi il prezzo migliore, è disponibile a
-                pagare di più se trova la connessione</span>
-                <span class="bull1">Poi offriamo: Miglior prezzo, qualità e assistenza.</span>
-                Poi offriamo velocità e facilità, cioè facciamo tutto noi (zero burocrazia) e facciamo tutto velocemente (non potrai
-                <span class="bull1">avere le nuove utenze ecc nel miglior tempo possibile</span>
+                <h2>Offertasuper.it seleziona al posto tuo tutte le tariffe delle nostre aziende partner per trovare quella più vantaggiosa
+                per te sul mercato.</h2>
+                <p>Con noi risparmi tempo e denaro, trovando la tariffa più conveniente per te e la tua famiglia in pochi click. Qui potrai
+                mettere a paragone ciò che offrono le diverse aziende partner per assicurarti i prodotti e servizi meno cari.<br>
+                
+                Invia la tua richiesta per scoprire l’offerta che ti farà pagare meno in bolletta, riducendo così le spese quotidiane.
+                Da noi potrai tenerti aggiornato sulle tariffe fibra casa e ufficio, la migliore offerta per il mobile e tanto altro.<br>
+                
+                Chiari, senza vincoli e di qualità.
+
 
                 </p>
                 <p class="content-2">Che abbia il miglio prezzo, chiaro e trasparente.Che possa fornirti un servizio
@@ -691,7 +688,7 @@ export default {
   }
   @media screen and (min-width: 768px) {
     margin-top: 140px;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
   }
   .item-box {
       padding: 3px;
