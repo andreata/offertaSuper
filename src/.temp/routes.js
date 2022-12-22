@@ -54,6 +54,10 @@ export default [
     component: c3
   },
   {
+    path: "/offerte-fibra-senza-vincoli-di-contratto/",
+    component: c4
+  },
+  {
     path: "/le-migliori-offerte-per-la-fibra-ottica-tim/",
     component: c4
   },
