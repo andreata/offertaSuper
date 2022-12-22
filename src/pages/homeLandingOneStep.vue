@@ -352,7 +352,7 @@
             <!-- Loghi -->
             <div class="full-container loghi-area">
                 <div class="container">
-                    <g-image class="desktop-image" src="~/assets/images/icon/loghi.png" alt="" width="1440" />
+                    <g-image class="desktop-image" src="~/assets/images/icon/loghi.jpg" alt="" width="1440" />
                     <g-image class="mobile-image" src="~/assets/images/icon/loghi-mobile.jpg" alt="" width="1440" />
                 </div>
             </div>

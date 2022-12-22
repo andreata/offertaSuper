@@ -121,9 +121,10 @@
                         Ecco chi sono i nostri partner
                     </h2>
                     <p class="p-home">Per te le migliori offerte del mercato</p>
-                    <g-image class="img-salmone" src="~/assets/images/icon/icone-fornitori.png" alt="" width="" />
-                    <g-image class="img-salmone" src="~/assets/images/icon/icone-fornitori.png" alt="" width="" />
-                    <g-image class="img-salmone" src="~/assets/images/icon/icone-fornitori.png" alt="" width="" />
+                    
+                            <g-image class="desktop-image" src="~/assets/images/icon/loghi.jpg" alt="" width="1440" />
+                            <g-image class="mobile-image" src="~/assets/images/icon/loghi-mobile.jpg" alt="" width="1440" />
+                       
                 </div>
             </div>
 

@@ -51,7 +51,7 @@
             </div>
 
             <div class="item-box">
-              <p class="promo">Promo del mese</p>
+              <p class="promo">Risparmia ora</p>
               <g-image class="img-promo" src="~/assets/images/icon/luce.svg" alt="" width="66" />
               <h2 class="h2-promo">Luce e gas</h2>
               <h3 class="h3-promo">per non avere costi eccessivi in bolletta</h3>
@@ -123,7 +123,7 @@
                     transform="translate(0 0)" fill="#f9b666" />
                 </svg> <span>Selezioniamo i pacchetti più in linea conte</span></p>
 
-              <g-link to="/il-selezionatore" class="button-pieno">Clicca qui</g-link>
+              <g-link to="/selezionatore" class="button-pieno">Clicca qui</g-link>
 
             </div>
           </div>
@@ -146,7 +146,7 @@
 
             <g-link to="/offerte-luce-e-gas/" class="link-no-deco">
               <div class="item-box">
-                <p class="promo">Promo del mese</p>
+                <p class="promo">Risparmia ora</p>
                 <div class="flex-homeland">
                   <g-image class="img-promo" src="~/assets/images/icon/luce.svg" alt="" width="66" height="62" />
                   <div>
@@ -157,9 +157,9 @@
               </div>
             </g-link>
 
-            <g-link to="/il-selezionatore/" class="link-no-deco">
+            <g-link to="/selezionatore/" class="link-no-deco">
               <div class="item-box">
-                <p class="promo">Offerte</p>
+                <p class="promo">Consulenza</p>
                 <div class="flex-homeland">
                   <g-image class="img-promo" src="~/assets/images/icon/offerte.svg" alt="" width="66" height="62" />
                   <div>
@@ -298,11 +298,11 @@
                   <h3>Offerta fibra ottica</h3>
                   <p class="sal-1">Provincia di Firenze</p>
                 </div>
-                <g-image class="sal-img" src="~/assets/images/icon/fastweb.svg" alt="" width="200" />
+                <g-image class="sal-img" src="~/assets/images/icon/logotim.svg" alt="" width="200" />
                 <p class="sal-2">Prezzo/mese</p>
-                <p class="sal-3">€ 25,<span>90</span></p>
+                <p class="sal-3">€ 24,<span>90</span></p>
                 <p class="sal-4">Prezzo fisso</p>
-                <g-link to="/home-landing/" class="button button-pieno sal-5">DETTAGLIO OFFERTA</g-link>
+                <g-link to="/le-migliori-offerte-per-la-fibra-ottica-tim/" class="button button-pieno sal-5">DETTAGLIO OFFERTA</g-link>
               </slide>
 
               <slide class="carousel-cell carousel-item-home">
@@ -374,7 +374,7 @@
         </div>
       </div>
 
-      <!-- Carosello recensioni -->
+      <!-- Carosello recensioni 
       <div class="full-container">
 
         <div class="container recensioni">
@@ -456,12 +456,12 @@
             </carousel>
           </ClientOnly>
         </div>
-      </div>
+      </div> -->
 
       <!-- Loghi -->
       <div class="full-container loghi-area">
         <div class="container">
-          <g-image class="desktop-image" src="~/assets/images/icon/loghi.png" alt="" width="1440" />
+          <g-image class="desktop-image" src="~/assets/images/icon/loghi.jpg" alt="" width="1440" />
           <g-image class="mobile-image" src="~/assets/images/icon/loghi-mobile.jpg" alt="" width="1440" />
         </div>
       </div>

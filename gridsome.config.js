@@ -8,7 +8,7 @@ module.exports = {
   },
   siteUrl: 'https://andreata.github.io',
   pathPrefix: '/',
-  output: {
+  /* output: {
     hashFunction: "xxhash64"
   },
   transpileDependencies: ['@vue/reactivity'],
@@ -35,7 +35,7 @@ module.exports = {
         },
       });
     }
-  },
+  }, */
   plugins: [
     
     {

@@ -11,30 +11,31 @@
 
           <div>
             <p>Offerte</p>
-            <p><a href="#">INTERNET CASA </a></p>
-            <p><a href="#">LUCE E GAS </a></p>
-            <p><a href="#">TELEFONIA </a></p>
+            <p><g-link to="/fibra-la-migliore-offerta-per-il-mercato-italiano/">INTERNET CASA </g-link></p>
+            <p><g-link to="/offerte-luce-e-gas/">LUCE E GAS </g-link></p>
+            <p><g-link to="/selezionatore/">SELEZIONATORE </g-link></p>
           </div>
 
           <div>
             <p>Azienda</p>
-            <p><a href="#">Chi siamo </a></p>
-            <p><a href="#">Contatti </a></p>
-            <p><a href="#">Termini e Condizioni </a></p>
+            <p><g-link to="/chi-siamo/">Chi siamo </g-link></p>
+            <p><g-link to="/contatti/">Contatti </g-link></p>
+            <p><g-link to="/">Termini e Condizioni </g-link></p>
           </div>
 
           <div>
             <p>Seguici su</p>
-            <p><a href="#">Chi siamo </a></p>
-            <p><a href="#">Contatti </a></p>
-            <p><a href="#">Termini e Condizioni </a></p>
+            <p><a target="_blank" href="https://facebook.com/offertasuper">Facebook</a></p>
+            <p><a href="#">Instagram</a></p>
+            <p><a href="#">Linkedin </a></p>
           </div>
 
           <div>
-            <p>Iscritti alla newsletter</p>
-            <p><a href="#">Chi siamo </a></p>
-            <p><a href="#">Contatti </a></p>
-            <p><a href="#">Termini e Condizioni </a></p>
+            <p>Le migliori offerte</p>
+            <p><g-link to="/le-migliori-offerte-per-la-fibra-ottica-tim/">Offerte TIM </g-link></p>
+            <p><a href="#">Offerte Vodafone </a></p>
+            <p><a href="#">Offerte WINDTRE </a></p>
+            <p><a href="#">Offerte Fastweb </a></p>
           </div>
         </div>
 
