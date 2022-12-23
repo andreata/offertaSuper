@@ -207,7 +207,7 @@
                     <h2 class="text-center mb-80">
                         Perché scegliere Offerta Super?
                     </h2>
-                    <div class="grid-five-column">
+                    <div class="grid-five-column-selezionatore">
             
                         <!-- <div>
                           <g-image class="img-salmone" src="~/assets/images/icon/analisi.svg" alt="" width="60" />
@@ -434,8 +434,8 @@ export default {
 
 </script>
 
-<style lang="scss" soped>
-.Stars {
+<style lang="scss" scoped>
+/* .Stars {
     --percent: calc(var(--rating) / 5 * 100%);
     display: inline-block;
     font-size: var(--star-size);
@@ -449,7 +449,7 @@ export default {
     background: linear-gradient(90deg, var(--star-background) var(--percent), var(--star-color) var(--percent));
     -webkit-background-clip: text;
     -webkit-text-fill-color: #ffcc00
-}
+} */
 
 @media screen and (min-width: 1850px) {
     .bg-cielo .VueCarousel-wrapper {
@@ -476,9 +476,9 @@ export default {
     text-align: center;
 }
 
-.grid-five-column {
+.grid-five-column-selezionatore {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-column-gap: 40px;
     @media screen and (max-width: 768px) {
         grid-template-columns: 1fr 1fr;
@@ -578,7 +578,7 @@ export default {
            text-align: left;
        }
 
-       .grid-five-column {
+       .grid-five-column-selezionatore {
            grid-template-columns: 1fr;
 
            &>div {

@@ -203,7 +203,7 @@ export default {
 
 </script>
 
-<style lang="scss" soped>
+<style lang="scss" scoped>
 @media screen and (min-width: 1850px) {
     .bg-cielo .VueCarousel-wrapper {
         margin-left: calc((100% - 1440px) / 2);
@@ -310,20 +310,7 @@ export default {
     align-content: center;
 }
 
-.container-box {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: 20px;
 
-    @media screen and (min-width: 768px) {
-        margin-top: 40px;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-    }
-
-    .item-box {
-        padding: 3px;
-    }
-}
 
 .carousel-cell {
     width: 100%;

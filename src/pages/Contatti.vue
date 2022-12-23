@@ -24,7 +24,7 @@
                     <div class="container-box desk">
                         <div class="item-box">
                             <p class="promo">Chiamaci</p>
-                            <g-image class="img-promo" src="~/assets/images/icon/internet-casa.svg" alt="" width="66" />
+                            <!-- <g-image class="img-promo" src="~/assets/images/icon/internet-casa.svg" alt="" width="66" /> -->
                             <h2 class="h2-promo">NUMERO VERDE</h2>
                             <h3 class="h3-promo">Chiamaci al numero verde gratuito</h3>
                             <p class="item-par">Se vuoi metterti in contatto con noi o uno dei nostri consulenti perché hai bisogno di supporto?
@@ -38,7 +38,7 @@
                     
                         <div class="item-box">
                             <p class="promo">Scrivici</p>
-                            <g-image class="img-promo" src="~/assets/images/icon/luce.svg" alt="" width="66" />
+                            <!-- <g-image class="img-promo" src="~/assets/images/icon/luce.svg" alt="" width="66" /> -->
                             <h2 class="h2-promo">Email</h2>
                             <h3 class="h3-promo">Inviaci un messaggio</h3>
                             <p class="item-par">Se invece preferisci scrivere una email, puoi contattarci all’indirizzo: <g-link to="mailto:info@offertasuper.it">info@offertasuper.it</g-link>
@@ -54,7 +54,7 @@
                     
                         <div class="item-box">
                             <p class="promo">Chatta</p>
-                            <g-image class="img-promo" src="~/assets/images/icon/risparmio.svg" alt="" width="66" height="62" />
+                           <!--  <g-image class="img-promo" src="~/assets/images/icon/risparmio.svg" alt="" width="66" height="62" /> -->
                             <h2 class="h2-promo">Messaggio</h2>
                             <h3 class="h3-promo">Scrivici qui in chat</h3>
                             <p class="item-par"></p>
@@ -177,7 +177,7 @@ export default {
 
 </script>
 
-<style lang="scss" soped>
+<style lang="scss" scoped>
 .title-home {
     text-align: center;
 }

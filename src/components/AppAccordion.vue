@@ -45,16 +45,15 @@ export default {
     padding: 10px;
     width: 100%;
     .collaps {
-            border: 1px solid #ccc;
-                border-radius: 0px 0px 5px 5px;
-                padding: 10px;
-                margin-top: -11px;
-                padding-top: 21px;
-                border-top: 0;
+        border: 1px solid #ccc;
+        border-radius: 0px 0px 5px 5px;
+        padding: 10px;
+        margin-top: -11px;
+        padding-top: 21px;
+        border-top: 0;
     }
     button {
-        
-            justify-content: space-between;
+        justify-content: space-between;
         margin-left: 0;
         width: 100%;
         border: 1px solid #ccc;

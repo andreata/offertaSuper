@@ -3,14 +3,13 @@ const c2 = () => import(/* webpackChunkName: "page--src--templates--word-press-p
 const c3 = () => import(/* webpackChunkName: "page--src--templates--word-press-post-vue" */ "/Applications/MAMP/htdocs/offertasuper/src/templates/WordPressPost.vue")
 const c4 = () => import(/* webpackChunkName: "page--src--templates--word-press-page-vue" */ "/Applications/MAMP/htdocs/offertasuper/src/templates/WordPressPage.vue")
 const c5 = () => import(/* webpackChunkName: "page--src--pages--selezionatore-vue" */ "/Applications/MAMP/htdocs/offertasuper/src/pages/Selezionatore.vue")
-const c6 = () => import(/* webpackChunkName: "page--src--pages--speed-vue" */ "/Applications/MAMP/htdocs/offertasuper/src/pages/speed.vue")
-const c7 = () => import(/* webpackChunkName: "page--src--pages--home-landing-one-step-vue" */ "/Applications/MAMP/htdocs/offertasuper/src/pages/homeLandingOneStep.vue")
-const c8 = () => import(/* webpackChunkName: "page--src--pages--home-old-vue" */ "/Applications/MAMP/htdocs/offertasuper/src/pages/HomeOld.vue")
-const c9 = () => import(/* webpackChunkName: "page--src--pages--chi-siamo-old-vue" */ "/Applications/MAMP/htdocs/offertasuper/src/pages/ChiSiamoOld.vue")
-const c10 = () => import(/* webpackChunkName: "page--src--pages--chi-siamo-vue" */ "/Applications/MAMP/htdocs/offertasuper/src/pages/ChiSiamo.vue")
-const c11 = () => import(/* webpackChunkName: "page--src--pages--contatti-vue" */ "/Applications/MAMP/htdocs/offertasuper/src/pages/Contatti.vue")
-const c12 = () => import(/* webpackChunkName: "page--node-modules--gridsome--app--pages--404-vue" */ "/Applications/MAMP/htdocs/offertasuper/node_modules/gridsome/app/pages/404.vue")
-const c13 = () => import(/* webpackChunkName: "page--src--pages--index-vue" */ "/Applications/MAMP/htdocs/offertasuper/src/pages/Index.vue")
+const c6 = () => import(/* webpackChunkName: "page--src--pages--home-landing-one-step-vue" */ "/Applications/MAMP/htdocs/offertasuper/src/pages/homeLandingOneStep.vue")
+const c7 = () => import(/* webpackChunkName: "page--src--pages--home-old-vue" */ "/Applications/MAMP/htdocs/offertasuper/src/pages/HomeOld.vue")
+const c8 = () => import(/* webpackChunkName: "page--src--pages--chi-siamo-old-vue" */ "/Applications/MAMP/htdocs/offertasuper/src/pages/ChiSiamoOld.vue")
+const c9 = () => import(/* webpackChunkName: "page--src--pages--chi-siamo-vue" */ "/Applications/MAMP/htdocs/offertasuper/src/pages/ChiSiamo.vue")
+const c10 = () => import(/* webpackChunkName: "page--src--pages--contatti-vue" */ "/Applications/MAMP/htdocs/offertasuper/src/pages/Contatti.vue")
+const c11 = () => import(/* webpackChunkName: "page--node-modules--gridsome--app--pages--404-vue" */ "/Applications/MAMP/htdocs/offertasuper/node_modules/gridsome/app/pages/404.vue")
+const c12 = () => import(/* webpackChunkName: "page--src--pages--index-vue" */ "/Applications/MAMP/htdocs/offertasuper/src/pages/Index.vue")
 
 export default [
   {
@@ -66,10 +65,6 @@ export default [
     component: c5
   },
   {
-    path: "/speed/",
-    component: c6
-  },
-  {
     path: "/offerte-luce-e-gas/",
     component: c4
   },
@@ -83,19 +78,19 @@ export default [
   },
   {
     path: "/home-landing-one-step/",
-    component: c7
+    component: c6
   },
   {
     path: "/home-old/",
-    component: c8
+    component: c7
   },
   {
     path: "/chi-siamo-old/",
-    component: c9
+    component: c8
   },
   {
     path: "/chi-siamo/",
-    component: c10
+    component: c9
   },
   {
     path: "/ciao-mondo/",
@@ -107,7 +102,7 @@ export default [
   },
   {
     path: "/contatti/",
-    component: c11
+    component: c10
   },
   {
     path: "/articolo-test/",
@@ -116,16 +111,16 @@ export default [
   {
     name: "404",
     path: "/404/",
-    component: c12
+    component: c11
   },
   {
     name: "home",
     path: "/",
-    component: c13
+    component: c12
   },
   {
     name: "*",
     path: "*",
-    component: c12
+    component: c11
   }
 ]

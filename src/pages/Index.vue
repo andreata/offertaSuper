@@ -313,9 +313,9 @@
                 </div>
                 <g-image class="sal-img" src="~/assets/images/icon/fastweb.svg" alt="" width="200" />
                 <p class="sal-2">Prezzo/mese</p>
-                <p class="sal-3">€ 25,<span>90</span></p>
+                <p class="sal-3">€ 19,<span>95</span></p>
                 <p class="sal-4">Prezzo fisso</p>
-                <g-link to="/home-landing/" class="button button-pieno sal-5">DETTAGLIO OFFERTA</g-link>
+                <g-link target="_blank" to="https://attivaofferte.it/" class="button button-pieno sal-5">DETTAGLIO OFFERTA</g-link>
               </slide>
 
               <slide class="carousel-cell carousel-item-home">
@@ -324,11 +324,11 @@
                   <h3>Offerta fibra ottica</h3>
                   <p class="sal-1">Provincia di Firenze</p>
                 </div>
-                <g-image class="sal-img" src="~/assets/images/icon/fastweb.svg" alt="" width="200" />
+                <g-image class="sal-img" src="~/assets/images/icon/vodafone-logo.png" alt="" width="200" />
                 <p class="sal-2">Prezzo/mese</p>
-                <p class="sal-3">€ 25,<span>90</span></p>
-                <p class="sal-4">Prezzo fisso</p>
-                <g-link to="/home-landing/" class="button button-pieno sal-5">DETTAGLIO OFFERTA</g-link>
+                <p class="sal-3">€ 22,<span>90</span></p>
+                <p class="sal-4">Incluso Now</p>
+                <g-link target="_blank" to="https://offertevodafonecasa.it/" class="button button-pieno sal-5">DETTAGLIO OFFERTA</g-link>
               </slide>
 
               <slide class="carousel-cell carousel-item-home">
@@ -337,11 +337,11 @@
                   <h3>Offerta fibra ottica</h3>
                   <p class="sal-1">Provincia di Firenze</p>
                 </div>
-                <g-image class="sal-img" src="~/assets/images/icon/fastweb.svg" alt="" width="200" />
+                <g-image class="sal-img" src="~/assets/images/icon/eolo.png" alt="" width="200" />
                 <p class="sal-2">Prezzo/mese</p>
-                <p class="sal-3">€ 25,<span>90</span></p>
+                <p class="sal-3">€ 19,<span>90</span></p>
                 <p class="sal-4">Prezzo fisso</p>
-                <g-link to="/home-landing/" class="button button-pieno sal-5">DETTAGLIO OFFERTA</g-link>
+                <g-link target="_blank" to="https://superoffertaeolo.it/" class="button button-pieno sal-5">DETTAGLIO OFFERTA</g-link>
               </slide>
 
               <slide class="carousel-cell carousel-item-home">
@@ -350,11 +350,11 @@
                   <h3>Offerta fibra ottica</h3>
                   <p class="sal-1">Provincia di Firenze</p>
                 </div>
-                <g-image class="sal-img" src="~/assets/images/icon/fastweb.svg" alt="" width="200" />
+                <g-image class="sal-img" src="~/assets/images/icon/logotim.svg" alt="" width="200" />
                 <p class="sal-2">Prezzo/mese</p>
-                <p class="sal-3">€ 25,<span>90</span></p>
+                <p class="sal-3">€ 21,<span>90</span></p>
                 <p class="sal-4">Prezzo fisso</p>
-                <g-link to="/home-landing/" class="button button-pieno sal-5">DETTAGLIO OFFERTA</g-link>
+                <g-link target="_blank" to="https://offertetimcasa.it/timpromonew/" class="button button-pieno sal-5">DETTAGLIO OFFERTA</g-link>
               </slide>
 
               <slide class="carousel-cell carousel-item-home">
@@ -363,11 +363,11 @@
                   <h3>Offerta fibra ottica</h3>
                   <p class="sal-1">Provincia di Firenze</p>
                 </div>
-                <g-image class="sal-img" src="~/assets/images/icon/fastweb.svg" alt="" width="200" />
+                <g-image class="sal-img" src="~/assets/images/icon/wind.png" alt="" width="200" />
                 <p class="sal-2">Prezzo/mese</p>
-                <p class="sal-3">€ 25,<span>90</span></p>
+                <p class="sal-3">€ 22,<span>90</span></p>
                 <p class="sal-4">Prezzo fisso</p>
-                <g-link to="/home-landing/" class="button button-pieno sal-5">DETTAGLIO OFFERTA</g-link>
+                <g-link target="_blank" to="https://offertewindtrecasa.it/" class="button button-pieno sal-5">DETTAGLIO OFFERTA</g-link>
               </slide>
             </carousel>
           </ClientOnly>
@@ -609,8 +609,8 @@ export default {
 
 </script>
 
-<style lang="scss" soped>
-.Stars {
+<style lang="scss" scoped>
+/* .Stars {
   --percent: calc(var(--rating) / 5 * 100%);
   display: inline-block;
   font-size: var(--star-size);
@@ -628,7 +628,7 @@ export default {
   background: linear-gradient(90deg, var(--star-background) var(--percent), var(--star-color) var(--percent));
   -webkit-background-clip: text;
   -webkit-text-fill-color: #ffcc00
-}
+} */
 
 @media screen and (min-width: 1850px) {
   .bg-cielo .VueCarousel-wrapper {
@@ -691,16 +691,12 @@ export default {
       padding: 3px;
   }
 }
-.carousel-cell {
+/* .carousel-cell {
   width: 100%;
-}
+} */
 
 
-@media screen and (max-width: 768px) and (min-width: 320px) {
-  .VueCarousel-inner {
-    flex-basis: 230px !important;
-  }
-}
+
 @media screen and (max-width: 768px) {
   .recensioni {
     margin-top: 30px;
@@ -813,8 +809,6 @@ export default {
   .container-box {
     flex-wrap: wrap;
   }
-  .carousel-cell {
-    width: 100%;
-  }
+  
 }
 </style>

@@ -6,9 +6,9 @@ module.exports = {
     favicon: './src/assets/images/icon/favicon-offerta-super.png',
     touchicon: './src/assets/images/icon/favicon-offerta-super.png'
   },
-  siteUrl: 'https://andreata.github.io',
+  siteUrl: 'https://mellifluous-lebkuchen-334ca0.netlify.app',
   pathPrefix: '/',
-  /* output: {
+  output: {
     hashFunction: "xxhash64"
   },
   transpileDependencies: ['@vue/reactivity'],
@@ -35,7 +35,7 @@ module.exports = {
         },
       });
     }
-  }, */
+  }, 
   plugins: [
     
     {

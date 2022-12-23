@@ -209,7 +209,7 @@ export default {
 
 </script>
 
-<style lang="scss" soped>
+<style lang="scss" scoped>
 @media screen and (min-width: 1850px) {
     .bg-cielo .VueCarousel-wrapper {
         margin-left: calc((100% - 1440px) / 2);

@@ -430,7 +430,7 @@ export default {
 
 </script>
 
-<style lang="scss" soped>
+<style lang="scss" scoped>
 
 .Stars {
     --percent: calc(var(--rating) / 5 * 100%);
