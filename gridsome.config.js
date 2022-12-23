@@ -6,8 +6,8 @@ module.exports = {
     favicon: './src/assets/images/icon/favicon-offerta-super.png',
     touchicon: './src/assets/images/icon/favicon-offerta-super.png'
   },
-  siteUrl: 'https://mellifluous-lebkuchen-334ca0.netlify.app',
-  pathPrefix: '/',
+  siteUrl: 'https://andreata.github.io',
+  pathPrefix: '/offertaSuper',
   output: {
     hashFunction: "xxhash64"
   },

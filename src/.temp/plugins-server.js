@@ -3,6 +3,6 @@ import plugin_gridsome_plugin_flexsearch_7 from "/Applications/MAMP/htdocs/offer
 export default [
   {
     run: plugin_gridsome_plugin_flexsearch_7,
-    options: {"pathPrefix":"/offertaSuper","siteUrl":"https://andreata.github.io","searchFields":["title","excerpt"],"collections":[{"indexName":"Product","query":"{ posts { edges { node { id, title, excerpt, slug, featuredImage { node { altText, mediaItemUrl } } } } } }","path":"posts.edges.node"}],"chunk":false,"compress":false,"autoFetch":true,"autoSetup":true,"flexsearch":{"profile":"default"}}
+    options: {"pathPrefix":"","siteUrl":"https://mellifluous-lebkuchen-334ca0.netlify.app","searchFields":["title","excerpt"],"collections":[{"indexName":"Product","query":"{ posts { edges { node { id, title, excerpt, slug, featuredImage { node { altText, mediaItemUrl } } } } } }","path":"posts.edges.node"}],"chunk":false,"compress":false,"autoFetch":true,"autoSetup":true,"flexsearch":{"profile":"default"}}
   }
 ]
