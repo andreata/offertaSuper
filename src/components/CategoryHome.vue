@@ -51,6 +51,24 @@ export default {
 
 
 <style scoped>
+.cat-home h2 {
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+  padding: 10px;
+  font-size: 17px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  background-color: var(--bg-content-color);
+  color: var(--link-color);
+  margin: 0;
+
+  &:hover {
+    transition-duration: 0.3s;
+    transform: translateY(-5px);
+    box-shadow: 1px 10px 30px 0 rgba(0, 0, 0, .1);
+  }
+}
 .flik2 .carousel-cell {
   width: 200px;
 }
@@ -71,5 +89,4 @@ export default {
     margin-right: calc( -100vw / 2 + 100% / 2 );
     max-width: 100vw;
 }
-
 </style>

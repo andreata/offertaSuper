@@ -25,7 +25,7 @@
         <div v-html="$page.post.content" />
 
         <g-image v-if="$page.post.author.node.avatar.url" :src="$page.post.author.node.avatar.url"
-          class="author-image" />
+          class="author-image" quality="75" width="30" height="30" />
         <p>{{$page.post.author.node.name}}</p>
         <p v-if="$page.post.author.node.description">{{$page.post.author.node.description}}</p>
 
@@ -62,7 +62,7 @@
           </ul>
         </template>
 
-        <!-- <Disqus shortname="" :identifier="$page.post.title" /> -->
+     
 
       </div>
 
@@ -163,13 +163,13 @@ query Post ($slug: String) {
 
 <script>
 import SiteSidebarPost from '~/components/SiteSidebarPost'
-import VueDisqus from 'vue-disqus'
+
 
 export default {
   
   components: {
     SiteSidebarPost,
-    VueDisqus
+    
   },
   
   metaInfo () {
@@ -228,7 +228,6 @@ export default {
 }
 .post {
   .author-image {
-    max-width: 40px;
     border-radius: 50%;
   }
   &__header {

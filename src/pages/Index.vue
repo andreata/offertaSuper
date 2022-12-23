@@ -12,7 +12,7 @@
                 <h1 class="title-home-mobile mobl">Scegli i nostri servizi e risparmia sui costi</h1>
                 <p class="p-home-mobile mobl">Ti bastano solo 5 minuti per trovare l’offerta giusta per le tue esigenze con il selezionatore di OffertaSuper.it</p>
               </div>
-              <g-image class="img-hero" src="~/assets/images/icon/hero-mobile.svg" alt="" width="300" />
+              <g-image class="img-hero" src="~/assets/images/icon/hero-mobile.svg" alt="" width="300" height="150" quality="75" />
 
             </div>
           </div>
@@ -20,7 +20,7 @@
           <div class="container-box desk">
             <div class="item-box">
               <p class="promo">Promo del mese</p>
-              <g-image class="img-promo" src="~/assets/images/icon/internet-casa.svg" alt="" width="66" />
+              <g-image class="img-promo" src="~/assets/images/icon/internet-casa.svg" alt="" width="66" height="61" quality="75" />
               <h2 class="h2-promo">INTERNET CASA</h2>
               <h3 class="h3-promo">per una connessione internet casa super veloce</h3>
               <p class="li-promo"><svg xmlns="http://www.w3.org/2000/svg" width="17.001" height="16.999"
@@ -52,7 +52,7 @@
 
             <div class="item-box">
               <p class="promo">Risparmia ora</p>
-              <g-image class="img-promo" src="~/assets/images/icon/luce.svg" alt="" width="66" />
+              <g-image class="img-promo" src="~/assets/images/icon/luce.svg" alt="" width="66" height="61" quality="75" />
               <h2 class="h2-promo">Luce e gas</h2>
               <h3 class="h3-promo">per non avere costi eccessivi in bolletta</h3>
               <p class="li-promo"><svg xmlns="http://www.w3.org/2000/svg" width="17.001" height="16.999"
@@ -97,7 +97,7 @@
 
             <div class="item-box">
               <p class="promo">Consulenza</p>
-              <g-image class="img-promo" src="~/assets/images/icon/risparmio.svg" alt="" width="66" height="62" />
+              <g-image class="img-promo" src="~/assets/images/icon/risparmio.svg" alt="" width="66" height="61" quality="75" />
               <h2 class="h2-promo">IL SELEZIONATORE</h2>
               <h3 class="h3-promo">per conoscere tutte le offerte più vantaggiose oggi</h3>
               <p class="li-promo"><svg xmlns="http://www.w3.org/2000/svg" width="17.001" height="16.999"
@@ -134,7 +134,7 @@
               <div class="item-box">
                 <p class="promo">Promo del mese</p>
                 <div class="flex-homeland">
-                  <g-image class="img-promo" src="~/assets/images/icon/internet-casa.svg" alt="" width="66" height="62" />
+                  <g-image class="img-promo" src="~/assets/images/icon/internet-casa.svg" alt="" width="66" height="61" quality="75" />
                   <div>
                     <h2 class="h2-promo">Internet Casa</h2>
                     <h3 class="h3-promo">risparmi 200€ l’anno</h3>
@@ -148,7 +148,7 @@
               <div class="item-box">
                 <p class="promo">Risparmia ora</p>
                 <div class="flex-homeland">
-                  <g-image class="img-promo" src="~/assets/images/icon/luce.svg" alt="" width="66" height="62" />
+                  <g-image class="img-promo" src="~/assets/images/icon/luce.svg" alt="" width="66" height="61" quality="75" />
                   <div>
                     <h2 class="h2-promo">Luce e gas</h2>
                     <h3 class="h3-promo">prezzi bloccati</h3>
@@ -161,7 +161,7 @@
               <div class="item-box">
                 <p class="promo">Consulenza</p>
                 <div class="flex-homeland">
-                  <g-image class="img-promo" src="~/assets/images/icon/offerte.svg" alt="" width="66" height="62" />
+                  <g-image class="img-promo" src="~/assets/images/icon/offerte.svg" alt="" width="66" height="61" quality="75" />
                   <div>
                     <h2 class="h2-promo">Il selezionatore</h2>
                     <h3 class="h3-promo">Ti ascoltiamo per capire le tue esigenze</h3>
@@ -174,7 +174,7 @@
               <div class="item-box">
                 <p class="promo">Consulenza</p>
                 <div class="flex-homeland">
-                  <g-image class="img-promo" src="~/assets/images/icon/risparmio.svg" alt="" width="66" height="62" />
+                  <g-image class="img-promo" src="~/assets/images/icon/risparmio.svg" alt="" width="66" height="61" quality="75" />
                   <div>
                     <h2 class="h2-promo">Richiedi un'analisi</h2>
                     <h3 class="h3-promo">Risparmia 500€ l'anno</h3>
@@ -196,7 +196,7 @@
         <div class="container">
           <div class="grid-two-column">
             <div class="block-content-img">
-              <g-image class="img-promo" src="~/assets/images/icon/supereroe.svg" alt="" width="400" />
+              <g-image class="img-promo" src="~/assets/images/icon/supereroe.svg" alt="" width="400" height="505" quality="75" />
             </div>
             <div class="flex-content-copy">
               <div>
@@ -234,7 +234,7 @@
           <div class="grid-five-column">
 
             <!-- <div>
-              <g-image class="img-salmone" src="~/assets/images/icon/analisi.svg" alt="" width="60" />
+              <g-image class="img-salmone" src="~/assets/images/icon/analisi.svg" alt="" width="47" height="47" quality="75" />
               <div>
                 <h3 class="orange-font">Analisi</h3>
                 <p class="grey-font">Nulla vitae elit libero, a pharetra augue. Aenean eu leo quam. Nulla vitae elit
@@ -243,7 +243,7 @@
             </div> -->
 
             <div>
-              <g-image class="img-salmone" src="~/assets/images/icon/confronto.svg" alt="" width="60" />
+              <g-image class="img-salmone" src="~/assets/images/icon/confronto.svg" alt="" width="47" height="47" quality="75" />
               <div>
                 <h3 class="orange-font">Confronto</h3>
                 <p class="grey-font">Analizziamo più di 100 offerte di partner diversi e selezioniamo la soluzione giusta per la tua
@@ -253,7 +253,7 @@
             </div>        
 
             <div>
-              <g-image class="img-salmone" src="~/assets/images/icon/icon-risparmio.svg" alt="" width="60" />
+              <g-image class="img-salmone" src="~/assets/images/icon/icon-risparmio.svg" alt="" width="47" height="47" quality="75" />
               <div>
                 <h3 class="orange-font">Risparmio</h3>
                 <p class="grey-font">Il nostro servizio è gratuito, senza commissioni da parte tua. Ti suggeriamo le stesse tariffe che le aziende ti
@@ -262,7 +262,7 @@
             </div>
 
             <div>
-              <g-image class="img-salmone" src="~/assets/images/icon/sicurezza.svg" alt="" width="60" />
+              <g-image class="img-salmone" src="~/assets/images/icon/sicurezza.svg" alt="" width="47" height="47" quality="75" />
               <div>
                 <h3 class="orange-font">Sicurezza</h3>
                 <p class="grey-font">I tuoi dati sono al sicuro con noi. Tratterremo i tuoi dati sensibili secondo le norme vigenti, non vendendoli a terzi.</p>
@@ -270,7 +270,7 @@
             </div>
 
             <div>
-              <g-image class="img-salmone" src="~/assets/images/icon/affidabili.svg" alt="" width="60" />
+              <g-image class="img-salmone" src="~/assets/images/icon/affidabili.svg" alt="" width="47" height="47" quality="75" />
               <div>
                 <h3 class="orange-font">Sostegno</h3>
                 <p class="grey-font">Ti verrà affidato un consulente da poter contattare tutte le volte che ne hai bisogno e un team di assistenza sempre a
@@ -298,7 +298,7 @@
                   <h3>Offerta fibra ottica</h3>
                   <p class="sal-1">Provincia di Firenze</p>
                 </div>
-                <g-image class="sal-img" src="~/assets/images/icon/logotim.svg" alt="" width="200" />
+                <g-image class="sal-img" src="~/assets/images/icon/logotim.svg" alt="" width="150" height="75" quality="75" />
                 <p class="sal-2">Prezzo/mese</p>
                 <p class="sal-3">€ 24,<span>90</span></p>
                 <p class="sal-4">Prezzo fisso</p>
@@ -311,7 +311,7 @@
                   <h3>Offerta fibra ottica</h3>
                   <p class="sal-1">Provincia di Firenze</p>
                 </div>
-                <g-image class="sal-img" src="~/assets/images/icon/fastweb.svg" alt="" width="200" />
+                <g-image class="sal-img" src="~/assets/images/icon/fastweb.svg" alt="" width="150" height="75" quality="75" />
                 <p class="sal-2">Prezzo/mese</p>
                 <p class="sal-3">€ 19,<span>95</span></p>
                 <p class="sal-4">Prezzo fisso</p>
@@ -324,7 +324,7 @@
                   <h3>Offerta fibra ottica</h3>
                   <p class="sal-1">Provincia di Firenze</p>
                 </div>
-                <g-image class="sal-img" src="~/assets/images/icon/vodafone-logo.png" alt="" width="200" />
+                <g-image class="sal-img" src="~/assets/images/icon/vodafone-logo.png" alt="" width="150" height="75" quality="75" />
                 <p class="sal-2">Prezzo/mese</p>
                 <p class="sal-3">€ 22,<span>90</span></p>
                 <p class="sal-4">Incluso Now</p>
@@ -337,7 +337,7 @@
                   <h3>Offerta fibra ottica</h3>
                   <p class="sal-1">Provincia di Firenze</p>
                 </div>
-                <g-image class="sal-img" src="~/assets/images/icon/eolo.png" alt="" width="200" />
+                <g-image class="sal-img" src="~/assets/images/icon/eolo.png" alt="" width="150" height="75" quality="75" />
                 <p class="sal-2">Prezzo/mese</p>
                 <p class="sal-3">€ 19,<span>90</span></p>
                 <p class="sal-4">Prezzo fisso</p>
@@ -350,7 +350,7 @@
                   <h3>Offerta fibra ottica</h3>
                   <p class="sal-1">Provincia di Firenze</p>
                 </div>
-                <g-image class="sal-img" src="~/assets/images/icon/logotim.svg" alt="" width="200" />
+                <g-image class="sal-img" src="~/assets/images/icon/logotim.svg" alt="" width="150" height="75" quality="75" />
                 <p class="sal-2">Prezzo/mese</p>
                 <p class="sal-3">€ 21,<span>90</span></p>
                 <p class="sal-4">Prezzo fisso</p>
@@ -363,7 +363,7 @@
                   <h3>Offerta fibra ottica</h3>
                   <p class="sal-1">Provincia di Firenze</p>
                 </div>
-                <g-image class="sal-img" src="~/assets/images/icon/wind.png" alt="" width="200" />
+                <g-image class="sal-img" src="~/assets/images/icon/wind.png" alt="" width="150" height="75" quality="75" />
                 <p class="sal-2">Prezzo/mese</p>
                 <p class="sal-3">€ 22,<span>90</span></p>
                 <p class="sal-4">Prezzo fisso</p>
@@ -461,8 +461,8 @@
       <!-- Loghi -->
       <div class="full-container loghi-area">
         <div class="container">
-          <g-image class="desktop-image" src="~/assets/images/icon/loghi.jpg" alt="" width="1440" />
-          <g-image class="mobile-image" src="~/assets/images/icon/loghi-mobile.jpg" alt="" width="1440" />
+          <g-image class="desktop-image" src="~/assets/images/icon/loghi.jpg" alt="" width="1275" height="85" quality="75" />
+          <g-image class="mobile-image" src="~/assets/images/icon/loghi-mobile.jpg" alt="" width="1275" height="85" quality="75" />
         </div>
       </div>
 
@@ -539,25 +539,11 @@ query  {
 </page-query>
 
 <script>
-import { Pager } from 'gridsome'
-import Post from '~/components/Post.vue'
-import PostBox from '~/components/PostBox.vue'
-import PostCard from '~/components/PostCard.vue'
-import CategoryQuery from '~/components/CategoryQuery.vue'
-import Pagination from '~/components/Pagination.vue'
-import CategoryHome from '~/components/CategoryHome.vue'
-import PostCardCategory from '~/components/PostCardCategory.vue'
+
+
 
 export default {
   components: {
-    Pager,
-    Post,
-    PostBox,
-    PostCard,
-    CategoryQuery,
-    Pagination,
-    CategoryHome,
-    PostCardCategory,
       Carousel: () =>
         import('vue-carousel')
           .then(m => m.Carousel)
@@ -574,7 +560,7 @@ export default {
       title: 'Offerta Super | Selezioniamo le migliori offerte per te',
       meta: [ 
       {
-          description: 'Offerta Super è un selezionatore online, in grado di selezionare le migliori offerte per te',
+        description: 'Offerta Super è un selezionatore online, in grado di selezionare le migliori offerte per te',
         key: 'Offerta Super',
       },
       {

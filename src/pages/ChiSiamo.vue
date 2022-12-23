@@ -20,7 +20,7 @@
                 <div class="container">
                     <div class="grid-two-column">
                         <div class="block-content-img">
-                            <g-image class="img-promo" src="~/assets/images/icon/eroe-lente.svg" alt="" width="400" />
+                            <g-image class="img-promo" src="~/assets/images/icon/eroe-lente.svg" alt="" width="400" height="513" quality="75" />
                         </div>
                         <div class="flex-content-copy">
                             <div>
@@ -47,37 +47,30 @@
                     </h2>
                     <div class="grid-four-column">
                         <div>
-                            <g-image class="img-salmone" src="~/assets/images/icon/affidabili.svg" alt="" width="60" />
+                            <g-image class="img-salmone" src="~/assets/images/icon/affidabili.svg" alt="" width="48" height="40" quality="75" />
                             <h3 class="orange-font">SEMPRE A TUA DISPOSIZIONE</h3>
                             <p class="grey-font">Via chat, e-mail o telefono, il nostro staff sarà sempre al tuo fianco, per fornirti il supporto tecnico ed emotivo di
                             cui hai bisogno.</p>
                         </div>
                         <div>
-                            <g-image class="img-salmone" src="~/assets/images/icon/affidabili.svg" alt="" width="60" />
+                            <g-image class="img-salmone" src="~/assets/images/icon/affidabili.svg" alt="" width="48" height="40" quality="75" />
                             <h3 class="orange-font">AL POSTO TUO</h3>
                             <p class="grey-font">Con soluzioni smart e innovative ti aiutiamo nella scelta della tariffa casa e mobile più adatta a te e alla tua
                             famiglia. Per noi è importante farti risparmiare tempo e denaro!</p>
                         </div>
                         <div>
-                            <g-image class="img-salmone" src="~/assets/images/icon/affidabili.svg" alt="" width="60" />
+                            <g-image class="img-salmone" src="~/assets/images/icon/affidabili.svg" alt="" width="48" height="40" quality="75" />
                             <h3 class="orange-font">FACILE E VELOCE</h3>
                             <p class="grey-font">Il nostro servizio è alla portata di tutti, e per tutti. Semplice ed intuitivo, dovrai solo compilare il questionario
                             con i tuoi dati dati e le tue esigenze. A trovare le offerte ci pensiamo noi.</p>
                         </div>
-
-                        <!-- <div>
-                            <g-image class="img-salmone" src="~/assets/images/icon/affidabili.svg" alt="" width="60" />
-                            <h3 class="orange-font">Affidabilità</h3>
-                            <p class="grey-font">Il nostro servizio è affidabile e gratis, siamo l’unico servizio ad
-                                affidarti un consulente dedicato che potrai contattare SEMPRE!</p>
-                        </div>-->
 
                     </div>
                 </div>
             </div>
 
 
-            <!-- Team -->
+            <!-- Team 
 
             <div class="full-container">
                 <div class="container">
@@ -109,7 +102,7 @@
 
                     </div>
                 </div>
-            </div>
+            </div> -->
 
             <!-- BG -->
             <div class="full-container container-image-bg">
@@ -204,6 +197,13 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.container-image-bg {
+    background-image: url('../assets/images/icon/bg.png');
+        background-size: cover;
+        background-position: right;
+        min-height: 500px;
+}
+
 @media screen and (min-width: 1850px) {
     .bg-cielo .VueCarousel-wrapper {
         margin-left: calc((100% - 1440px) / 2);

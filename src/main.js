@@ -2,7 +2,7 @@
 import '~/assets/style/index.scss'
 import DefaultLayout from '~/layouts/Default.vue'
 import Vue from 'vue'
-import VueDisqus from 'vue-disqus'
+
 
 import "@fontsource/lexend";
 import VueCookieAcceptDecline from 'vue-cookie-accept-decline';
@@ -36,15 +36,12 @@ export default function (Vue, { head, isClient }) {
 
 
   Vue.component('Layout', DefaultLayout)
-  Vue.use(VueDisqus)
+
 
   Vue.component('vue-cookie-accept-decline', VueCookieAcceptDecline)
 
   
   if (process.isClient) {
-
-
-
     const VueProgressiveImage = require('vue-progressive-image').default;
     
     Vue.use(VueProgressiveImage, {

@@ -59,20 +59,6 @@ module.exports = {
       }
     },
     
-    {
-      use: 'gridsome-plugin-flexsearch',
-      options: {
-        searchFields: ['title', 'excerpt'],
-        collections: [
-          {
-            indexName: 'Product',
-            query: `{ posts { edges { node { id, title, excerpt, slug, featuredImage { node { altText, mediaItemUrl } } } } } }`,
-            path: 'posts.edges.node'
-          }
-        ],
-      }
-    }, 
-    
     /* {
       use: 'gridsome-plugin-gtm',
       options: {
@@ -81,17 +67,6 @@ module.exports = {
         debug: true
       }
     }, */
-    
-    /* {
-      use: "gridsome-plugin-service-worker",
-      options: {
-        networkFirst: {
-          routes: ["/", "/chi-siamo"],
-          fileTypes: ["document", "script", "style", "image"],
-        },
-      },
-    }, */
-    
     
   ],
 }
